@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Honest answers to the community's hardest questions about the Intersect Community Hubs program — and why the 2026 framework is built differently.">
-    <title>Intersect Community Hubs — FAQ & Addressing Community Concerns</title>
+    <meta name="description" content="Intersect MCC 2026 Budget Proposal and Community Hubs Framework — covering hub model, tiers, KPIs, milestones, budget, and FAQ addressing 2025 community concerns.">
+    <title>Intersect MCC 2026 — Budget Proposal &amp; Community Hubs Framework</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
@@ -17,11 +17,7 @@
             min-height: 100vh;
         }
 
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
 
         /* ── Header ── */
         header {
@@ -32,422 +28,332 @@
             margin-bottom: 30px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.4);
         }
-
         .header-eyebrow {
-            font-size: 0.8em;
-            font-weight: 700;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: #00d4ff;
-            margin-bottom: 12px;
+            font-size: 0.78em; font-weight: 700; letter-spacing: 3px;
+            text-transform: uppercase; color: #00d4ff; margin-bottom: 12px;
         }
-
         header h1 {
-            font-size: 2.4em;
-            font-weight: 800;
+            font-size: 2.3em; font-weight: 800; line-height: 1.2; margin-bottom: 14px;
             background: linear-gradient(90deg, #00d4ff, #a78bfa);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 16px;
-            line-height: 1.25;
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
         }
-
         header p.subtitle {
-            color: #c0c0c0;
-            font-size: 1.1em;
-            max-width: 700px;
-            margin: 0 auto 20px;
+            color: #c0c0c0; font-size: 1em; max-width: 720px; margin: 0 auto 24px;
         }
-
+        .draft-badge {
+            display: inline-block; background: rgba(251,191,36,0.15);
+            border: 1px solid rgba(251,191,36,0.5); color: #fbbf24;
+            padding: 5px 16px; border-radius: 20px; font-size: 0.78em;
+            font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 20px;
+        }
         .header-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            justify-content: center;
-            margin-top: 20px;
+            display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 6px;
         }
-
         .header-link-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 10px 22px;
-            border-radius: 25px;
-            font-size: 0.9em;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border: 1px solid;
+            display: inline-flex; align-items: center; gap: 7px;
+            padding: 9px 18px; border-radius: 25px; font-size: 0.85em;
+            font-weight: 600; text-decoration: none; transition: all 0.3s ease; border: 1px solid;
         }
+        .header-link-btn.cyan { background: rgba(0,212,255,0.12); border-color: rgba(0,212,255,0.45); color: #00d4ff; }
+        .header-link-btn.cyan:hover { background: rgba(0,212,255,0.24); transform: translateY(-2px); }
+        .header-link-btn.purple { background: rgba(167,139,250,0.1); border-color: rgba(167,139,250,0.4); color: #a78bfa; }
+        .header-link-btn.purple:hover { background: rgba(167,139,250,0.22); transform: translateY(-2px); }
+        .header-link-btn.amber { background: rgba(251,191,36,0.1); border-color: rgba(251,191,36,0.4); color: #fbbf24; }
+        .header-link-btn.amber:hover { background: rgba(251,191,36,0.2); transform: translateY(-2px); }
 
-        .header-link-btn.primary {
-            background: rgba(0,212,255,0.15);
-            border-color: rgba(0,212,255,0.5);
-            color: #00d4ff;
-        }
-        .header-link-btn.primary:hover {
-            background: rgba(0,212,255,0.28);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(0,212,255,0.2);
-        }
-
-        .header-link-btn.secondary {
-            background: rgba(167,139,250,0.12);
-            border-color: rgba(167,139,250,0.4);
-            color: #a78bfa;
-        }
-        .header-link-btn.secondary:hover {
-            background: rgba(167,139,250,0.22);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(167,139,250,0.2);
-        }
-
-        /* ── Honest Framing Banner ── */
-        .framing-banner {
-            background: linear-gradient(135deg, rgba(15,52,96,0.7) 0%, rgba(83,52,131,0.5) 100%);
-            border: 1px solid rgba(0,212,255,0.2);
-            border-radius: 16px;
-            padding: 28px 32px;
-            margin-bottom: 30px;
-            position: relative;
-            overflow: hidden;
-        }
-        .framing-banner::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0;
-            width: 4px; height: 100%;
-            background: linear-gradient(180deg, #00d4ff, #a78bfa);
-        }
-        .framing-banner h2 {
-            font-size: 1.2em;
-            color: #00d4ff;
-            margin-bottom: 12px;
-        }
-        .framing-banner p {
-            color: #c8c8c8;
-            font-size: 0.97em;
-        }
-        .framing-banner p + p { margin-top: 10px; }
-
-        /* ── Quick Facts Bar ── */
+        /* ── Quick Facts ── */
         .quick-facts {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 14px;
-            margin-bottom: 30px;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 12px; margin-bottom: 28px;
         }
-
         .fact-chip {
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 14px;
-            padding: 18px 16px;
-            text-align: center;
-            transition: all 0.3s ease;
+            background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 14px; padding: 16px 14px; text-align: center; transition: all 0.3s ease;
         }
-        .fact-chip:hover {
-            background: rgba(255,255,255,0.09);
-            transform: translateY(-2px);
-        }
-        .fact-chip .fact-value {
-            font-size: 1.6em;
-            font-weight: 800;
-            color: #00d4ff;
-            display: block;
-            line-height: 1.1;
-            margin-bottom: 6px;
-        }
-        .fact-chip .fact-value.amber { color: #fbbf24; }
-        .fact-chip .fact-value.green { color: #34d399; }
-        .fact-chip .fact-value.purple { color: #a78bfa; }
-        .fact-chip .fact-label {
-            font-size: 0.78em;
-            color: #a0a0a0;
-            line-height: 1.35;
-        }
+        .fact-chip:hover { background: rgba(255,255,255,0.09); transform: translateY(-2px); }
+        .fact-chip .fv { font-size: 1.55em; font-weight: 800; color: #00d4ff; display: block; line-height: 1.1; margin-bottom: 5px; }
+        .fact-chip .fv.amber { color: #fbbf24; }
+        .fact-chip .fv.green { color: #34d399; }
+        .fact-chip .fv.purple { color: #a78bfa; }
+        .fact-chip .fl { font-size: 0.76em; color: #a0a0a0; line-height: 1.35; }
 
         /* ── Sticky Nav ── */
         .sticky-nav {
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            background: rgba(22, 33, 62, 0.97);
-            backdrop-filter: blur(12px);
-            padding: 12px 20px;
-            border-radius: 14px;
-            margin-bottom: 28px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-            border: 1px solid rgba(255,255,255,0.08);
+            position: sticky; top: 0; z-index: 100;
+            background: rgba(22,33,62,0.97); backdrop-filter: blur(12px);
+            padding: 11px 16px; border-radius: 14px; margin-bottom: 28px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.08);
         }
-        .sticky-nav-inner {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 8px;
-        }
+        .sticky-nav-inner { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; }
         .nav-link {
-            color: #a0a0a0;
-            text-decoration: none;
-            padding: 7px 15px;
-            border-radius: 20px;
-            font-size: 0.85em;
-            transition: all 0.3s ease;
-            background: rgba(255,255,255,0.05);
-            border: 1px solid transparent;
-            white-space: nowrap;
+            color: #a0a0a0; text-decoration: none; padding: 6px 13px;
+            border-radius: 20px; font-size: 0.82em; transition: all 0.3s ease;
+            background: rgba(255,255,255,0.04); border: 1px solid transparent; white-space: nowrap;
         }
         .nav-link:hover, .nav-link.active {
-            color: #00d4ff;
-            background: rgba(0,212,255,0.12);
-            border-color: rgba(0,212,255,0.3);
+            color: #00d4ff; background: rgba(0,212,255,0.12); border-color: rgba(0,212,255,0.3);
         }
 
         /* ── Section Headers ── */
-        .section-header {
-            margin: 40px 0 20px;
-            padding-bottom: 12px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+        .section-wrap { margin-bottom: 48px; }
+        .section-header { margin-bottom: 22px; padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .section-eyebrow { font-size: 0.7em; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #00d4ff; margin-bottom: 5px; }
+        .section-header h2 { font-size: 1.5em; font-weight: 700; color: #e8e8e8; }
+        .section-header p { color: #999; font-size: 0.92em; margin-top: 6px; max-width: 780px; }
+
+        /* ── Prose card ── */
+        .prose-card {
+            background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 16px; padding: 24px 28px; margin-bottom: 16px;
         }
-        .section-eyebrow {
-            font-size: 0.72em;
-            font-weight: 700;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: #00d4ff;
-            margin-bottom: 6px;
+        .prose-card h3 { font-size: 1.05em; color: #00d4ff; margin-bottom: 10px; font-weight: 700; }
+        .prose-card p { color: #ccc; font-size: 0.95em; margin-bottom: 8px; }
+        .prose-card p:last-child { margin-bottom: 0; }
+        .prose-card ul { padding-left: 20px; margin-top: 8px; }
+        .prose-card li { color: #ccc; font-size: 0.94em; margin-bottom: 5px; }
+
+        /* ── Work Package Grid ── */
+        .wp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+        .wp-card {
+            background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 14px; padding: 18px 20px; transition: all 0.3s ease;
         }
-        .section-header h2 {
-            font-size: 1.5em;
-            font-weight: 700;
-            color: #e8e8e8;
+        .wp-card:hover { background: rgba(255,255,255,0.07); transform: translateY(-2px); border-color: rgba(0,212,255,0.2); }
+        .wp-number { font-size: 0.7em; font-weight: 700; letter-spacing: 2px; color: #555; text-transform: uppercase; margin-bottom: 6px; }
+        .wp-title { font-size: 0.97em; font-weight: 700; color: #e0e0e0; margin-bottom: 6px; }
+        .wp-desc { font-size: 0.83em; color: #999; line-height: 1.5; }
+
+        /* ── Process Steps ── */
+        .steps-flow { display: flex; flex-direction: column; gap: 0; }
+        .step-item {
+            display: flex; gap: 20px; position: relative;
         }
-        .section-header p {
-            color: #999;
-            font-size: 0.92em;
-            margin-top: 6px;
+        .step-item:not(:last-child)::after {
+            content: ''; position: absolute; left: 22px; top: 48px;
+            width: 2px; height: calc(100% - 12px);
+            background: linear-gradient(180deg, rgba(0,212,255,0.4), rgba(167,139,250,0.2));
+        }
+        .step-num {
+            flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%;
+            background: linear-gradient(135deg, #0f3460, #533483);
+            border: 2px solid rgba(0,212,255,0.5);
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 800; font-size: 0.9em; color: #00d4ff; z-index: 1;
+        }
+        .step-body {
+            background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 14px; padding: 18px 22px; margin-bottom: 14px; flex: 1;
+        }
+        .step-body h3 { font-size: 1em; font-weight: 700; color: #e8e8e8; margin-bottom: 6px; }
+        .step-body p, .step-body li { font-size: 0.9em; color: #bbb; line-height: 1.6; }
+        .step-body ul { padding-left: 18px; margin-top: 6px; }
+        .step-body li { margin-bottom: 4px; }
+        .step-tag {
+            display: inline-block; font-size: 0.68em; font-weight: 700; letter-spacing: 1.5px;
+            text-transform: uppercase; padding: 2px 10px; border-radius: 10px; margin-bottom: 8px;
+        }
+        .step-tag.cyan { background: rgba(0,212,255,0.12); color: #00d4ff; border: 1px solid rgba(0,212,255,0.3); }
+        .step-tag.purple { background: rgba(167,139,250,0.12); color: #a78bfa; border: 1px solid rgba(167,139,250,0.3); }
+        .step-tag.green { background: rgba(52,211,153,0.12); color: #34d399; border: 1px solid rgba(52,211,153,0.3); }
+        .step-tag.amber { background: rgba(251,191,36,0.1); color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
+        .step-tag.red { background: rgba(239,68,68,0.1); color: #f87171; border: 1px solid rgba(239,68,68,0.3); }
+
+        /* ── Tier Cards ── */
+        .tier-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+        .tier-card {
+            border-radius: 18px; padding: 26px 24px;
+            border: 1px solid; position: relative; overflow: hidden;
+        }
+        .tier-card.t1 { background: rgba(96,165,250,0.07); border-color: rgba(96,165,250,0.3); }
+        .tier-card.t2 { background: rgba(167,139,250,0.07); border-color: rgba(167,139,250,0.3); }
+        .tier-card.t3 { background: rgba(251,191,36,0.06); border-color: rgba(251,191,36,0.3); }
+        .tier-badge {
+            font-size: 0.68em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+            padding: 4px 12px; border-radius: 12px; display: inline-block; margin-bottom: 10px;
+        }
+        .t1 .tier-badge { background: rgba(96,165,250,0.15); color: #60a5fa; }
+        .t2 .tier-badge { background: rgba(167,139,250,0.15); color: #a78bfa; }
+        .t3 .tier-badge { background: rgba(251,191,36,0.12); color: #fbbf24; }
+        .tier-card h3 { font-size: 1.1em; font-weight: 800; margin-bottom: 4px; }
+        .t1 h3 { color: #93c5fd; }
+        .t2 h3 { color: #c4b5fd; }
+        .t3 h3 { color: #fde68a; }
+        .tier-subtitle { font-size: 0.82em; color: #888; margin-bottom: 14px; }
+        .tier-focus { font-size: 0.78em; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #666; margin-bottom: 8px; }
+        .tier-card ul { padding-left: 18px; }
+        .tier-card li { font-size: 0.88em; color: #bbb; margin-bottom: 5px; line-height: 1.5; }
+        .tier-advance {
+            margin-top: 16px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.08);
+            font-size: 0.82em; color: #777;
+        }
+        .tier-advance strong { color: #999; }
+
+        /* ── KPI Tables ── */
+        .kpi-group { margin-bottom: 22px; }
+        .kpi-group-title {
+            font-size: 0.82em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+            color: #00d4ff; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;
+        }
+        .kpi-table { width: 100%; border-collapse: collapse; }
+        .kpi-table th {
+            text-align: left; font-size: 0.75em; font-weight: 700; letter-spacing: 1.5px;
+            text-transform: uppercase; color: #777; padding: 8px 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .kpi-table td {
+            padding: 10px 12px; font-size: 0.88em; color: #ccc;
+            border-bottom: 1px solid rgba(255,255,255,0.05); vertical-align: top;
+        }
+        .kpi-table tr:last-child td { border-bottom: none; }
+        .kpi-table tr:hover td { background: rgba(255,255,255,0.03); }
+
+        /* ── Milestone Grid ── */
+        .milestone-group-label {
+            font-size: 0.72em; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+            color: #555; margin: 22px 0 12px; display: flex; align-items: center; gap: 10px;
+        }
+        .milestone-group-label::after {
+            content: ''; flex: 1; height: 1px; background: rgba(255,255,255,0.07);
+        }
+        .milestone-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+        .ms-card {
+            background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 12px; padding: 16px 18px; transition: border-color 0.3s ease;
+        }
+        .ms-card:hover { border-color: rgba(0,212,255,0.2); }
+        .ms-num { font-size: 0.68em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #00d4ff; margin-bottom: 4px; }
+        .ms-title { font-size: 0.96em; font-weight: 700; color: #e0e0e0; margin-bottom: 8px; }
+        .ms-body { font-size: 0.85em; color: #aaa; line-height: 1.5; }
+        .ms-body ul { padding-left: 16px; margin-top: 6px; }
+        .ms-body li { margin-bottom: 3px; }
+
+        /* ── Budget Section ── */
+        .budget-highlight {
+            background: linear-gradient(135deg, rgba(15,52,96,0.8), rgba(83,52,131,0.6));
+            border: 1px solid rgba(0,212,255,0.25); border-radius: 18px;
+            padding: 28px 32px; margin-bottom: 24px; text-align: center;
+        }
+        .budget-amount { font-size: 3em; font-weight: 800; color: #00d4ff; line-height: 1; margin-bottom: 6px; }
+        .budget-label { color: #a0a0a0; font-size: 0.92em; }
+        .budget-note {
+            display: inline-block; margin-top: 10px;
+            background: rgba(251,191,36,0.12); border: 1px solid rgba(251,191,36,0.35);
+            color: #fbbf24; padding: 4px 14px; border-radius: 12px; font-size: 0.78em; font-weight: 700;
         }
 
-        /* ── Myth Cards ── */
+        .funding-cat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 12px; }
+        .fc-card {
+            background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 14px; overflow: hidden;
+        }
+        .fc-trigger {
+            width: 100%; background: none; border: none; cursor: pointer;
+            padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; text-align: left;
+        }
+        .fc-trigger-left { display: flex; align-items: center; gap: 12px; }
+        .fc-icon { font-size: 1.2em; }
+        .fc-name { font-size: 0.95em; font-weight: 700; color: #e0e0e0; }
+        .fc-chevron { color: #555; font-size: 0.8em; transition: transform 0.3s ease; }
+        .fc-card.open .fc-chevron { transform: rotate(180deg); color: #00d4ff; }
+        .fc-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+        .fc-body-inner { padding: 0 20px 18px; }
+        .fc-body-inner ul { padding-left: 18px; }
+        .fc-body-inner li { font-size: 0.87em; color: #aaa; margin-bottom: 4px; line-height: 1.5; }
+
+        /* ── Accordion FAQ Cards (reused from old page) ── */
         .myth-card {
-            background: rgba(255,255,255,0.04);
-            border: 1px solid rgba(255,255,255,0.09);
-            border-radius: 16px;
-            margin-bottom: 16px;
-            overflow: hidden;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 16px; margin-bottom: 14px; overflow: hidden; transition: border-color 0.3s ease;
         }
-        .myth-card:hover {
-            border-color: rgba(255,255,255,0.16);
-        }
-        .myth-card.open {
-            border-color: rgba(0,212,255,0.25);
-            box-shadow: 0 4px 24px rgba(0,212,255,0.08);
-        }
-
+        .myth-card.open { border-color: rgba(0,212,255,0.25); box-shadow: 0 4px 24px rgba(0,212,255,0.07); }
         .myth-trigger {
-            width: 100%;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 22px 24px;
-            display: flex;
-            align-items: flex-start;
-            gap: 16px;
-            text-align: left;
+            width: 100%; background: none; border: none; cursor: pointer;
+            padding: 20px 22px; display: flex; align-items: flex-start; gap: 14px; text-align: left;
         }
-        .myth-trigger:focus { outline: none; }
-
         .myth-icon {
-            flex-shrink: 0;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1em;
-            margin-top: 2px;
+            flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center; font-size: 0.95em; margin-top: 2px;
         }
-        .myth-icon.red   { background: rgba(239,68,68,0.15);  color: #f87171; border: 1px solid rgba(239,68,68,0.3); }
-        .myth-icon.amber { background: rgba(251,191,36,0.12); color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
-        .myth-icon.blue  { background: rgba(96,165,250,0.12); color: #60a5fa; border: 1px solid rgba(96,165,250,0.3); }
-        .myth-icon.green { background: rgba(52,211,153,0.12); color: #34d399; border: 1px solid rgba(52,211,153,0.3); }
-
+        .myth-icon.red   { background: rgba(239,68,68,0.14);  color: #f87171; border: 1px solid rgba(239,68,68,0.3); }
+        .myth-icon.amber { background: rgba(251,191,36,0.11);  color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
+        .myth-icon.blue  { background: rgba(96,165,250,0.11);  color: #60a5fa; border: 1px solid rgba(96,165,250,0.3); }
+        .myth-icon.green { background: rgba(52,211,153,0.11);  color: #34d399; border: 1px solid rgba(52,211,153,0.3); }
         .myth-trigger-text { flex: 1; }
-        .myth-tag {
-            font-size: 0.68em;
-            font-weight: 700;
-            letter-spacing: 2.5px;
-            text-transform: uppercase;
-            color: #f87171;
-            margin-bottom: 4px;
-            display: block;
-        }
-        .myth-question {
-            font-size: 1.05em;
-            font-weight: 600;
-            color: #e8e8e8;
-            line-height: 1.4;
-        }
-
-        .myth-chevron {
-            flex-shrink: 0;
-            color: #555;
-            font-size: 0.9em;
-            transition: transform 0.35s ease, color 0.3s ease;
-            margin-top: 4px;
-            padding-top: 4px;
-        }
-        .myth-card.open .myth-chevron {
-            transform: rotate(180deg);
-            color: #00d4ff;
-        }
-
-        .myth-body {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease;
-        }
-        .myth-body-inner {
-            padding: 0 24px 24px 76px;
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-        }
-
-        /* Response blocks */
-        .response-block {
-            border-radius: 10px;
-            padding: 16px 20px;
-        }
-        .response-label {
-            font-size: 0.68em;
-            font-weight: 700;
-            letter-spacing: 2.5px;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-            display: block;
-        }
-        .response-block p, .response-block li { font-size: 0.95em; line-height: 1.7; }
-        .response-block ul { padding-left: 18px; }
-        .response-block li { margin-bottom: 6px; }
-        .response-block p + p { margin-top: 8px; }
-
-        .reality-block {
-            background: rgba(0,212,255,0.07);
-            border-left: 3px solid #00d4ff;
-        }
+        .myth-tag { font-size: 0.66em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #f87171; margin-bottom: 4px; display: block; }
+        .myth-question { font-size: 1.02em; font-weight: 600; color: #e8e8e8; line-height: 1.4; }
+        .myth-chevron { flex-shrink: 0; color: #555; font-size: 0.85em; transition: transform 0.35s ease; margin-top: 4px; }
+        .myth-card.open .myth-chevron { transform: rotate(180deg); color: #00d4ff; }
+        .myth-body { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; }
+        .myth-body-inner { padding: 0 22px 22px 70px; display: flex; flex-direction: column; gap: 12px; }
+        .response-block { border-radius: 10px; padding: 15px 18px; }
+        .response-label { font-size: 0.66em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; display: block; }
+        .response-block p, .response-block li { font-size: 0.93em; line-height: 1.7; }
+        .response-block ul { padding-left: 17px; }
+        .response-block li { margin-bottom: 5px; }
+        .response-block p + p { margin-top: 7px; }
+        .reality-block { background: rgba(0,212,255,0.07); border-left: 3px solid #00d4ff; }
         .reality-block .response-label { color: #00d4ff; }
         .reality-block p, .reality-block li { color: #cce8f0; }
-
-        .talking-point-block {
-            background: rgba(251,191,36,0.07);
-            border-left: 3px solid #fbbf24;
-        }
+        .talking-point-block { background: rgba(251,191,36,0.07); border-left: 3px solid #fbbf24; }
         .talking-point-block .response-label { color: #fbbf24; }
         .talking-point-block p { color: #f0ddb0; font-style: italic; }
-
         .data-block {
-            background: rgba(167,139,250,0.07);
-            border-left: 3px solid #a78bfa;
-            border-radius: 10px;
-            padding: 14px 18px;
+            background: rgba(167,139,250,0.07); border-left: 3px solid #a78bfa;
+            border-radius: 10px; padding: 13px 17px;
         }
-        .data-block .response-label { color: #a78bfa; font-size: 0.68em; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; display: block; margin-bottom: 8px; }
-        .data-block .data-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            padding: 5px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.06);
-            font-size: 0.9em;
-        }
-        .data-block .data-row:last-child { border-bottom: none; }
-        .data-block .data-row .dk { color: #b0b0b0; }
-        .data-block .data-row .dv { color: #a78bfa; font-weight: 700; }
+        .data-block .response-label { color: #a78bfa; font-size: 0.66em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; display: block; margin-bottom: 8px; }
+        .data-row { display: flex; justify-content: space-between; align-items: baseline; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 0.88em; }
+        .data-row:last-child { border-bottom: none; }
+        .data-row .dk { color: #b0b0b0; }
+        .data-row .dv { color: #a78bfa; font-weight: 700; }
 
         /* ── CTA Footer ── */
         .cta-section {
             background: linear-gradient(135deg, #0f3460 0%, #533483 100%);
-            border-radius: 20px;
-            padding: 40px 30px;
-            text-align: center;
-            margin-top: 50px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            border-radius: 20px; padding: 40px 30px; text-align: center;
+            margin-top: 50px; box-shadow: 0 10px 40px rgba(0,0,0,0.3);
         }
-        .cta-section h2 {
-            font-size: 1.6em;
-            color: #e8e8e8;
-            margin-bottom: 12px;
-        }
-        .cta-section p {
-            color: #b0b0b0;
-            max-width: 600px;
-            margin: 0 auto 24px;
-            font-size: 0.97em;
-        }
-        .cta-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 14px;
-        }
+        .cta-section h2 { font-size: 1.5em; color: #e8e8e8; margin-bottom: 10px; }
+        .cta-section p { color: #b0b0b0; max-width: 580px; margin: 0 auto 22px; font-size: 0.95em; }
+        .cta-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
         .cta-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 9px;
-            padding: 13px 28px;
-            border-radius: 30px;
-            font-size: 0.95em;
-            font-weight: 700;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border: 2px solid;
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 12px 24px; border-radius: 28px; font-size: 0.92em;
+            font-weight: 700; text-decoration: none; transition: all 0.3s ease; border: 2px solid;
         }
-        .cta-btn.cyan {
-            background: rgba(0,212,255,0.15);
-            border-color: #00d4ff;
-            color: #00d4ff;
-        }
-        .cta-btn.cyan:hover {
-            background: rgba(0,212,255,0.28);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(0,212,255,0.25);
-        }
-        .cta-btn.purple {
-            background: rgba(167,139,250,0.15);
-            border-color: #a78bfa;
-            color: #a78bfa;
-        }
-        .cta-btn.purple:hover {
-            background: rgba(167,139,250,0.28);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(167,139,250,0.25);
-        }
+        .cta-btn.cyan { background: rgba(0,212,255,0.13); border-color: #00d4ff; color: #00d4ff; }
+        .cta-btn.cyan:hover { background: rgba(0,212,255,0.25); transform: translateY(-2px); box-shadow: 0 6px 22px rgba(0,212,255,0.22); }
+        .cta-btn.purple { background: rgba(167,139,250,0.13); border-color: #a78bfa; color: #a78bfa; }
+        .cta-btn.purple:hover { background: rgba(167,139,250,0.25); transform: translateY(-2px); }
+        .cta-btn.amber { background: rgba(251,191,36,0.1); border-color: #fbbf24; color: #fbbf24; }
+        .cta-btn.amber:hover { background: rgba(251,191,36,0.2); transform: translateY(-2px); }
 
         /* ── Back to top ── */
         .back-to-top {
-            position: fixed;
-            bottom: 28px; right: 28px;
-            width: 46px; height: 46px;
-            background: linear-gradient(135deg, #00d4ff 0%, #7b2cbf 100%);
-            border-radius: 50%;
+            position: fixed; bottom: 26px; right: 26px; width: 44px; height: 44px;
+            background: linear-gradient(135deg, #00d4ff 0%, #7b2cbf 100%); border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
-            color: white; font-size: 1.3em;
-            text-decoration: none;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-            transition: all 0.3s ease;
-            z-index: 99;
+            color: white; font-size: 1.2em; text-decoration: none;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.4); transition: all 0.3s ease; z-index: 99;
         }
         .back-to-top:hover { transform: translateY(-3px); }
 
-        /* ── Responsive ── */
+        /* ── Divider ── */
+        .divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent); margin: 20px 0; }
+
+        /* ── Info banner ── */
+        .info-banner {
+            background: rgba(15,52,96,0.6); border: 1px solid rgba(0,212,255,0.2);
+            border-radius: 12px; padding: 16px 22px; margin-bottom: 20px;
+            border-left: 3px solid #00d4ff; font-size: 0.9em; color: #b8d4e0;
+        }
+        .info-banner strong { color: #00d4ff; }
+
         @media (max-width: 680px) {
-            header h1 { font-size: 1.7em; }
-            .myth-body-inner { padding-left: 24px; }
+            header h1 { font-size: 1.65em; }
+            .myth-body-inner { padding-left: 22px; }
             .quick-facts { grid-template-columns: repeat(2, 1fr); }
+            .budget-amount { font-size: 2.2em; }
         }
     </style>
 </head>
@@ -458,82 +364,612 @@
 
     <!-- ══ HEADER ══ -->
     <header id="top">
-        <div class="header-eyebrow">Intersect Community Hubs Program</div>
-        <h1>Addressing the Community's Hardest Questions</h1>
+        <div class="header-eyebrow">Membership &amp; Community Committee · Intersect</div>
+        <h1>2026 MCC Budget Proposal &amp;<br>Community Hubs Framework</h1>
+        <div class="draft-badge">&#9679; Working Draft — March 2026</div>
         <p class="subtitle">
-            Honest answers to the concerns raised about the 2025 hubs program —
-            and a clear account of why the 2026 framework is built differently.
+            A scalable, performance-driven model for Intersect Community Hubs in 2026 —
+            covering governance structure, hub tiers, KPIs, milestones, budget, and addressing
+            the community's questions about the 2025 program.
         </p>
         <div class="header-links">
-            <a href="hub_report.html" class="header-link-btn primary">&#128196; Read the Full Post-Mortem</a>
-            <a href="https://docs.google.com/document/d/1l9gSmiIbdVVZeF7eBJRw_jFpC3oNHgNsL8enywRJXxA/edit?tab=t.0#heading=h.5o95kgmoqxc4" target="_blank" rel="noopener" class="header-link-btn secondary">&#128196; MCC Remit (Draft)</a>
-            <a href="https://docs.google.com/document/d/1h0w3swMntVyn6TL46vB2Arj5Irkmn_7b2w6bIsQzJeU/edit?tab=t.0#heading=h.43savjkutr4w" target="_blank" rel="noopener" class="header-link-btn secondary">&#128200; MCC Budget (Draft)</a>
+            <a href="hub_report.html" class="header-link-btn cyan">&#128196; 2025 Post-Mortem Report</a>
+            <a href="https://docs.google.com/document/d/1_InP2Hx3ZMnExfca_XaYpsrZpEY66bykKC8CzyjjvLs/edit?tab=t.0" target="_blank" rel="noopener" class="header-link-btn purple">&#128640; Hubs Proposal Doc</a>
+            <a href="https://docs.google.com/document/d/1l9gSmiIbdVVZeF7eBJRw_jFpC3oNHgNsL8enywRJXxA/edit?tab=t.0#heading=h.5o95kgmoqxc4" target="_blank" rel="noopener" class="header-link-btn purple">&#128196; MCC Remit (Draft)</a>
+            <a href="https://docs.google.com/document/d/1h0w3swMntVyn6TL46vB2Arj5Irkmn_7b2w6bIsQzJeU/edit?tab=t.0#heading=h.43savjkutr4w" target="_blank" rel="noopener" class="header-link-btn amber">&#128200; MCC Budget (Draft)</a>
         </div>
     </header>
 
-    <!-- ══ HONEST FRAMING ══ -->
-    <div class="framing-banner">
-        <h2>A note before we begin</h2>
-        <p>
-            The questions this page addresses are legitimate ones. The community deserves direct answers, not spin.
-            Some of those answers are "the program had structural gaps." Others are "that criticism misunderstands
-            how the funding worked." We will be specific about which is which.
-        </p>
-        <p>
-            This document is also a resource for committee members who need to have these conversations in community
-            forums. Each entry includes a <strong style="color:#fbbf24">Talking Point</strong> — plain language you can
-            use directly in discussions, governance calls, or Discord threads.
-        </p>
-    </div>
-
     <!-- ══ QUICK FACTS ══ -->
     <div class="quick-facts">
-        <div class="fact-chip">
-            <span class="fact-value amber">70%</span>
-            <span class="fact-label">of Intersect individual members<br>are in hub regions</span>
-        </div>
-        <div class="fact-chip">
-            <span class="fact-value green">1,268</span>
-            <span class="fact-label">Individual members<br>across hub regions</span>
-        </div>
-        <div class="fact-chip">
-            <span class="fact-value purple">48</span>
-            <span class="fact-label">Milestone Acceptance Forms<br>DocuSign-verified</span>
-        </div>
-        <div class="fact-chip">
-            <span class="fact-value">CDH</span>
-            <span class="fact-label">Phase 1 funded by private org —<br>not community treasury</span>
-        </div>
-        <div class="fact-chip">
-            <span class="fact-value green">Public</span>
-            <span class="fact-label">Bridge phase ADA amounts<br>fully disclosed on-chain</span>
-        </div>
+        <div class="fact-chip"><span class="fv">$250K</span><span class="fl">Proposed total hub budget<br>(not yet confirmed)</span></div>
+        <div class="fact-chip"><span class="fv amber">10–12</span><span class="fl">Target hubs for 2026</span></div>
+        <div class="fact-chip"><span class="fv purple">3</span><span class="fl">Progression tiers<br>(New → Established → High-Impact)</span></div>
+        <div class="fact-chip"><span class="fv green">10</span><span class="fl">Structured milestones<br>(monthly, quarterly, annual)</span></div>
+        <div class="fact-chip"><span class="fv">Request-Based</span><span class="fl">Per-event funding model<br>tied to KPIs &amp; milestones</span></div>
+        <div class="fact-chip"><span class="fv green">Treasury</span><span class="fl">Funded from community treasury —<br>full public disclosure required</span></div>
     </div>
 
     <!-- ══ STICKY NAV ══ -->
     <nav class="sticky-nav">
         <div class="sticky-nav-inner">
-            <a href="#section-money"  class="nav-link">&#128181; The Money</a>
-            <a href="#section-numbers" class="nav-link">&#128202; The Numbers</a>
-            <a href="#section-value"   class="nav-link">&#9989; The Value</a>
-            <a href="#section-future"  class="nav-link">&#128640; The Future</a>
+            <a href="#section-mcc"        class="nav-link">&#127970; About MCC</a>
+            <a href="#section-hub-model"  class="nav-link">&#128640; Hub Model</a>
+            <a href="#section-tiers"      class="nav-link">&#127881; Hub Tiers</a>
+            <a href="#section-budget"     class="nav-link">&#128181; Budget</a>
+            <a href="#section-kpis"       class="nav-link">&#128202; KPIs</a>
+            <a href="#section-milestones" class="nav-link">&#9989; Milestones</a>
+            <a href="#section-faq"        class="nav-link">&#128172; FAQ</a>
         </div>
     </nav>
 
 
     <!-- ════════════════════════════════════════════
-         SECTION 1 — THE MONEY
+         SECTION: ABOUT THE MCC
     ═════════════════════════════════════════════ -->
-    <div id="section-money">
+    <div id="section-mcc" class="section-wrap">
         <div class="section-header">
-            <div class="section-eyebrow">Section 1</div>
-            <h2>&#128181; The Money — Financial Accountability Questions</h2>
-            <p>The most common and most legitimate category of concern. Here is a precise accounting of what was and was not required — and why.</p>
+            <div class="section-eyebrow">About the Committee</div>
+            <h2>&#127970; Membership &amp; Community Committee</h2>
+            <p>The MCC connects Intersect to the real world — supporting membership growth, regional onboarding, community programs, and ensuring Intersect membership translates into activity and impact.</p>
         </div>
 
-        <!-- Myth 1.1 -->
-        <div class="myth-card" id="card-1-1">
-            <button class="myth-trigger" onclick="toggleCard('card-1-1')">
+        <div class="prose-card">
+            <h3>Mission</h3>
+            <p>The Membership &amp; Community Committee (MCC) is an Intersect-facing Committee focused on reviewing and improving the membership offerings and membership experience, and growing and supporting participation in the Intersect community. MCC ensures that members are actively engaged by creating pathways for people and organizations to join.</p>
+            <p>This committee collaborates closely with the Intersect Steering Committee, as both committees have an Intersect-facing focus.</p>
+        </div>
+
+        <div class="prose-card" style="margin-bottom:22px">
+            <h3>Core Values</h3>
+            <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:10px; margin-top:4px;">
+                <div><span style="color:#00d4ff;font-weight:700;">Inclusivity</span><br><span style="font-size:0.88em;color:#999;">Champion diversity and open governance tooling</span></div>
+                <div><span style="color:#a78bfa;font-weight:700;">Empowerment</span><br><span style="font-size:0.88em;color:#999;">Support members to lead impactful initiatives</span></div>
+                <div><span style="color:#34d399;font-weight:700;">Transparency</span><br><span style="font-size:0.88em;color:#999;">Open dialogue and accessible decision-making</span></div>
+                <div><span style="color:#60a5fa;font-weight:700;">Collaboration</span><br><span style="font-size:0.88em;color:#999;">Foster synergy across individuals, teams, and regions</span></div>
+                <div><span style="color:#fbbf24;font-weight:700;">Sustainability</span><br><span style="font-size:0.88em;color:#999;">Long-term engagement through responsible planning</span></div>
+            </div>
+        </div>
+
+        <div class="section-header" style="margin-top:32px;">
+            <div class="section-eyebrow">Work Packages</div>
+            <h2 style="font-size:1.2em;">MCC 2026 Budget Areas</h2>
+            <p>The MCC budget funds eight interconnected work packages. Regional Hubs &amp; Local Activation is one component of this broader mandate.</p>
+        </div>
+        <div class="wp-grid">
+            <div class="wp-card">
+                <div class="wp-number">WP 01</div>
+                <div class="wp-title">Membership Strategy &amp; Growth</div>
+                <div class="wp-desc">Tier review, growth targets, retention tracking, enterprise onboarding pathway, KPI dashboard.</div>
+            </div>
+            <div class="wp-card">
+                <div class="wp-number">WP 02</div>
+                <div class="wp-title">Member Experience &amp; Engagement</div>
+                <div class="wp-desc">End-to-end member journey, active participation, value realization, governance involvement.</div>
+            </div>
+            <div class="wp-card">
+                <div class="wp-number">WP 03</div>
+                <div class="wp-title">Member Education &amp; Governance Enablement</div>
+                <div class="wp-desc">Educate members on effective participation in Intersect governance and the Cardano ecosystem.</div>
+            </div>
+            <div class="wp-card" style="border-color:rgba(0,212,255,0.25); background:rgba(0,212,255,0.05);">
+                <div class="wp-number" style="color:#00d4ff;">WP 04</div>
+                <div class="wp-title" style="color:#7dd3fc;">Regional Hubs &amp; Local Activation</div>
+                <div class="wp-desc">Support and guide Intersect Hubs globally — translating online membership into meaningful local engagement.</div>
+            </div>
+            <div class="wp-card">
+                <div class="wp-number">WP 05</div>
+                <div class="wp-title">Hubs KPIs Framework</div>
+                <div class="wp-desc">Regional enablement, translation initiatives, localized communications and ecosystem messaging.</div>
+            </div>
+            <div class="wp-card">
+                <div class="wp-number">WP 06</div>
+                <div class="wp-title">Community Initiative Enablement</div>
+                <div class="wp-desc">Connect community-led initiatives with Intersect structure, resources, and visibility.</div>
+            </div>
+            <div class="wp-card">
+                <div class="wp-number">WP 07</div>
+                <div class="wp-title">Membership Benefits &amp; Partnerships</div>
+                <div class="wp-desc">Enterprise partnerships, university collaborations, professional services benefits for members.</div>
+            </div>
+            <div class="wp-card">
+                <div class="wp-number">WP 08</div>
+                <div class="wp-title">Events &amp; Ecosystem Participation</div>
+                <div class="wp-desc">Travel support, Intersect-hosted events, conference co-funding, branded ecosystem presence.</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         SECTION: HUB MODEL
+    ═════════════════════════════════════════════ -->
+    <div id="section-hub-model" class="section-wrap">
+        <div class="section-header">
+            <div class="section-eyebrow">2026 Hub Framework</div>
+            <h2>&#128640; The 2026 Community Hub Model</h2>
+            <p>A scalable, decentralized, performance-driven model — hubs request funding tied to measurable outputs rather than receiving fixed grants automatically.</p>
+        </div>
+
+        <div class="info-banner">
+            <strong>Important:</strong> The MCC operates strictly as a coordination and evaluation body. It does not hold final decision-making authority over hub approvals, funding, or strategic direction. That authority rests with Intersect.
+        </div>
+
+        <div class="prose-card" style="margin-bottom:24px;">
+            <h3>Philosophy</h3>
+            <p>This framework promotes a flexible, community-driven hub model allowing hubs to evolve in response to regional needs rather than operate within rigid, predefined constraints. Rather than receiving fixed funding automatically, hubs request funding tied to measurable outputs — increasing accountability, rewarding ambition, and allowing hubs of all sizes to participate appropriately.</p>
+            <p>The approach reflects the varied capabilities demonstrated by existing hubs in 2024–2025, where hubs showed differing strengths, capacities, and modes of engagement. By empowering hubs to build on proven capabilities, the program delivers direct value: increasing governance participation, strengthening the DRep pipeline, enabling developer and institutional onboarding, and supporting the infrastructure required for global adoption.</p>
+        </div>
+
+        <div class="section-header" style="margin-top:28px;">
+            <div class="section-eyebrow">Decision Process</div>
+            <h2 style="font-size:1.2em;">5-Step Governance &amp; Approval Flow</h2>
+        </div>
+
+        <div class="steps-flow">
+            <div class="step-item">
+                <div class="step-num">01</div>
+                <div class="step-body">
+                    <span class="step-tag cyan">Application Stage</span>
+                    <h3>Public Hub Application</h3>
+                    <p>Formal hub application made public via Intersect with MCC assistance. Interested parties submit an Expression of Interest (EOI). Must include both hub proposal and hub manager application.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-num">02</div>
+                <div class="step-body">
+                    <span class="step-tag purple">CHWG · ~1 Month</span>
+                    <h3>Community Hubs Application Working Group</h3>
+                    <p>A temporary working group (Intersect + MCC + volunteer hub managers + community members) evaluates applications and provides recommendations. It does not hold final decision-making power and dissolves once its purpose is fulfilled.</p>
+                    <ul>
+                        <li>Evaluates &amp; facilitates new hub applications</li>
+                        <li>Functions as knowledge-sharing and resource coordination body</li>
+                        <li>Promotes inclusivity — community members participate at every level</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-num">03</div>
+                <div class="step-body">
+                    <span class="step-tag green">Final Authority</span>
+                    <h3>Intersect — Strategic Oversight &amp; Approval</h3>
+                    <p>Final decision-making authority for hub approvals, funding, and strategic direction. CHWG and MCC submit a list of recommended hubs; Intersect ratifies and ensures strategic alignment with Cardano's broader governance vision.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-num">04</div>
+                <div class="step-body">
+                    <span class="step-tag amber">Per-Event Funding</span>
+                    <h3>Request-Based Fund Distribution</h3>
+                    <p>Once appointed, hub managers request funding on a per-event basis. Every funding request must include:</p>
+                    <ul>
+                        <li>Objective &amp; related KPIs</li>
+                        <li>Related milestones</li>
+                        <li>Budget breakdown</li>
+                        <li>Expected measurable outcome &amp; timeline</li>
+                    </ul>
+                    <p style="margin-top:8px;">Failure to deliver on expected outcomes results in lower priority for future funding requests and a more in-depth evaluation. Persistent inability to meet outcomes leads to appointment of a new hub manager.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-num">05</div>
+                <div class="step-body">
+                    <span class="step-tag red">Progression</span>
+                    <h3>Hub Tier Progression</h3>
+                    <p>Based on annual performance, hubs become eligible for tier upgrades that allow higher ranges of funding requests. Performance criteria include membership growth, engagement impact, and governance contributions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         SECTION: HUB TIERS
+    ═════════════════════════════════════════════ -->
+    <div id="section-tiers" class="section-wrap">
+        <div class="section-header">
+            <div class="section-eyebrow">Hub Progression</div>
+            <h2>&#127881; Three-Tier Hub System</h2>
+            <p>Every new hub starts at the same base level regardless of location. Progression to higher tiers is earned through demonstrated impact — not assumed.</p>
+        </div>
+
+        <div class="tier-grid">
+            <div class="tier-card t1">
+                <div class="tier-badge">Level 1</div>
+                <h3>New Hubs</h3>
+                <div class="tier-subtitle">First-year operation · Equal starting point for all</div>
+                <div class="tier-focus">Focus Areas</div>
+                <ul>
+                    <li>Community engagement &amp; education</li>
+                    <li>Events, town halls, and onboarding</li>
+                    <li>Local awareness &amp; ecosystem growth</li>
+                </ul>
+                <div class="tier-advance">
+                    <strong>Advance after:</strong> 12 months of operation, evaluated on membership growth, event execution, and governance contribution.
+                </div>
+            </div>
+            <div class="tier-card t2">
+                <div class="tier-badge">Level 2</div>
+                <h3>Established Hubs</h3>
+                <div class="tier-subtitle">1+ year of proven success · Expanded scope</div>
+                <div class="tier-focus">Focus Areas</div>
+                <ul>
+                    <li>Deeper Cardano governance integration</li>
+                    <li>Advanced blockchain education &amp; developer training</li>
+                    <li>Large-scale events &amp; partnerships</li>
+                    <li>Multi-region collaboration initiatives</li>
+                </ul>
+                <div class="tier-advance">
+                    <strong>Advance after:</strong> Continuous performance assessment, KPI tracking, and impact reporting across multiple funding cycles.
+                </div>
+            </div>
+            <div class="tier-card t3">
+                <div class="tier-badge">Level 3</div>
+                <h3>High-Impact Hubs</h3>
+                <div class="tier-subtitle">2027+ · Regional leadership &amp; scaling</div>
+                <div class="tier-focus">Focus Areas</div>
+                <ul>
+                    <li>Regional leadership &amp; multi-hub collaboration</li>
+                    <li>Government &amp; institutional partnerships</li>
+                    <li>Large-scale blockchain adoption initiatives</li>
+                    <li>Advanced developer programs &amp; infrastructure</li>
+                </ul>
+                <div class="tier-advance">
+                    <strong>Requirement:</strong> Demonstrate partial self-sustainability through enterprise partnerships, ecosystem integrations, or community-driven initiatives.
+                </div>
+            </div>
+        </div>
+
+        <div class="prose-card" style="margin-top:20px;">
+            <h3>Hub Lifecycle Stages</h3>
+            <div style="display:flex; gap:0; flex-wrap:wrap; margin-top:8px;">
+                <div style="flex:1; min-width:160px; padding:12px 16px; border-right:1px solid rgba(255,255,255,0.07);">
+                    <div style="color:#60a5fa; font-weight:700; font-size:0.88em; margin-bottom:4px;">Bootstrap Stage</div>
+                    <div style="font-size:0.82em; color:#999;">Establishing presence, onboarding members</div>
+                </div>
+                <div style="flex:1; min-width:160px; padding:12px 16px; border-right:1px solid rgba(255,255,255,0.07);">
+                    <div style="color:#a78bfa; font-weight:700; font-size:0.88em; margin-bottom:4px;">Operational Expansion</div>
+                    <div style="font-size:0.82em; color:#999;">Scaling local partnerships and education</div>
+                </div>
+                <div style="flex:1; min-width:160px; padding:12px 16px;">
+                    <div style="color:#fbbf24; font-weight:700; font-size:0.88em; margin-bottom:4px;">Governance Leadership</div>
+                    <div style="font-size:0.82em; color:#999;">Regional governance influencers within Intersect/Cardano</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         SECTION: BUDGET
+    ═════════════════════════════════════════════ -->
+    <div id="section-budget" class="section-wrap">
+        <div class="section-header">
+            <div class="section-eyebrow">Section 6.0 — Budget Planning</div>
+            <h2>&#128181; 2026 Hub Budget &amp; Eligible Funding Categories</h2>
+            <p>The budget falls within the broader Intersect MCC budget and does not represent an MCC operational budget. All funding is adaptable based on emerging needs and performance.</p>
+        </div>
+
+        <div class="budget-highlight">
+            <div class="budget-amount">USD 250,000</div>
+            <div class="budget-label">Total proposed hub funding for 2026 · 10–12 hubs</div>
+            <div class="budget-note">&#9888; Amount Not Yet Confirmed — Subject to Intersect Approval</div>
+        </div>
+
+        <div class="info-banner">
+            All hub funding requests must clearly state: <strong>which KPIs the request supports</strong>, <strong>which milestones it contributes toward</strong>, and the <strong>expected measurable outcome</strong>. This ensures accountability and impact-driven resource allocation.
+        </div>
+
+        <div class="section-header" style="margin-top:28px;">
+            <div class="section-eyebrow">Eligible Categories</div>
+            <h2 style="font-size:1.2em;">What Hubs Can Request Funding For</h2>
+        </div>
+
+        <div class="funding-cat-grid">
+            <div class="fc-card" id="fc-1">
+                <button class="fc-trigger" onclick="toggleFC('fc-1')">
+                    <div class="fc-trigger-left">
+                        <div class="fc-icon">&#127937;</div>
+                        <div class="fc-name">Community Engagement &amp; Events</div>
+                    </div>
+                    <div class="fc-chevron">&#9660;</div>
+                </button>
+                <div class="fc-body"><div class="fc-body-inner"><ul>
+                    <li>Venue rental for physical events</li>
+                    <li>Event logistics (AV, staging, seating, streaming)</li>
+                    <li>Speaker honorariums or facilitator fees</li>
+                    <li>Travel support for invited speakers</li>
+                    <li>Event materials &amp; branding</li>
+                    <li>Catering (where culturally appropriate)</li>
+                    <li>Community open days / onboarding sessions</li>
+                    <li>Local networking events</li>
+                    <li>Cross-hub collaborative events &amp; hackathons</li>
+                </ul></div></div>
+            </div>
+            <div class="fc-card" id="fc-2">
+                <button class="fc-trigger" onclick="toggleFC('fc-2')">
+                    <div class="fc-trigger-left">
+                        <div class="fc-icon">&#127963;</div>
+                        <div class="fc-name">Governance Activation &amp; Participation</div>
+                    </div>
+                    <div class="fc-chevron">&#9660;</div>
+                </button>
+                <div class="fc-body"><div class="fc-body-inner"><ul>
+                    <li>Governance workshops &amp; DRep onboarding sessions</li>
+                    <li>Governance research sessions</li>
+                    <li>Voter education campaigns</li>
+                    <li>Governance-focused content production</li>
+                    <li>Translation of governance materials</li>
+                    <li>Local governance awareness drives</li>
+                    <li>Hosting governance Q&amp;A sessions with ecosystem leaders</li>
+                </ul></div></div>
+            </div>
+            <div class="fc-card" id="fc-3">
+                <button class="fc-trigger" onclick="toggleFC('fc-3')">
+                    <div class="fc-trigger-left">
+                        <div class="fc-icon">&#127979;</div>
+                        <div class="fc-name">Education &amp; Capacity Building</div>
+                    </div>
+                    <div class="fc-chevron">&#9660;</div>
+                </button>
+                <div class="fc-body"><div class="fc-body-inner"><ul>
+                    <li>Curriculum development &amp; developer bootcamps</li>
+                    <li>Blockchain certification programs</li>
+                    <li>University guest lectures &amp; educational materials</li>
+                    <li>Workshop venue costs &amp; developer tool access</li>
+                    <li>Mentorship programs &amp; internship coordination</li>
+                    <li>Career development days</li>
+                    <li>Educational content video production</li>
+                </ul></div></div>
+            </div>
+            <div class="fc-card" id="fc-4">
+                <button class="fc-trigger" onclick="toggleFC('fc-4')">
+                    <div class="fc-trigger-left">
+                        <div class="fc-icon">&#128200;</div>
+                        <div class="fc-name">Community Growth &amp; Retention Infrastructure</div>
+                    </div>
+                    <div class="fc-chevron">&#9660;</div>
+                </button>
+                <div class="fc-body"><div class="fc-body-inner"><ul>
+                    <li>Leadership training sessions</li>
+                    <li>Regional outreach &amp; expansion events in new cities</li>
+                    <li>Diversity and inclusion initiatives</li>
+                    <li>Retention incentive programs</li>
+                </ul></div></div>
+            </div>
+            <div class="fc-card" id="fc-5">
+                <button class="fc-trigger" onclick="toggleFC('fc-5')">
+                    <div class="fc-trigger-left">
+                        <div class="fc-icon">&#129309;</div>
+                        <div class="fc-name">Partnerships &amp; Institutional Engagement</div>
+                    </div>
+                    <div class="fc-chevron">&#9660;</div>
+                </button>
+                <div class="fc-body"><div class="fc-body-inner"><ul>
+                    <li>University MOU development activities</li>
+                    <li>Industry roundtables &amp; government engagement meetings</li>
+                    <li>Institutional blockchain briefings</li>
+                    <li>Joint ecosystem initiatives</li>
+                    <li>Corporate blockchain education packages</li>
+                </ul></div></div>
+            </div>
+            <div class="fc-card" id="fc-6">
+                <button class="fc-trigger" onclick="toggleFC('fc-6')">
+                    <div class="fc-trigger-left">
+                        <div class="fc-icon">&#127758;</div>
+                        <div class="fc-name">Cross-Hub &amp; Regional Collaboration</div>
+                    </div>
+                    <div class="fc-chevron">&#9660;</div>
+                </button>
+                <div class="fc-body"><div class="fc-body-inner"><ul>
+                    <li>Joint regional events &amp; shared educational programs</li>
+                    <li>Cross-hub hackathons &amp; regional leadership summits</li>
+                    <li>Shared content production</li>
+                    <li>Multi-hub governance initiatives</li>
+                    <li>Inter-hub working groups</li>
+                </ul></div></div>
+            </div>
+            <div class="fc-card" id="fc-7">
+                <button class="fc-trigger" onclick="toggleFC('fc-7')">
+                    <div class="fc-trigger-left">
+                        <div class="fc-icon">&#128301;</div>
+                        <div class="fc-name">Strategic Innovation (Level 2/3 Hubs)</div>
+                    </div>
+                    <div class="fc-chevron">&#9660;</div>
+                </button>
+                <div class="fc-body"><div class="fc-body-inner"><ul>
+                    <li>Regional blockchain research initiatives</li>
+                    <li>Government pilot projects</li>
+                    <li>Enterprise blockchain awareness programs</li>
+                </ul></div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         SECTION: KPIs
+    ═════════════════════════════════════════════ -->
+    <div id="section-kpis" class="section-wrap">
+        <div class="section-header">
+            <div class="section-eyebrow">Section 7.0 — KPI Framework</div>
+            <h2>&#128202; KPI Models for Community Hubs</h2>
+            <p>Core KPI categories are defined, but hubs prioritize the KPIs that make most sense for their region. Semi-annual performance reviews with public KPI dashboards are planned.</p>
+        </div>
+
+        <div class="kpi-group">
+            <div class="kpi-group-title">&#128101; Membership Growth &amp; Retention</div>
+            <div style="overflow-x:auto;"><table class="kpi-table">
+                <thead><tr><th>KPI</th><th>Measurement</th><th>Target / Criteria</th></tr></thead>
+                <tbody>
+                    <tr><td>New Membership Growth</td><td>New members joining per month</td><td>Growth rate X–XX% per quarter</td></tr>
+                    <tr><td>Member Retention Rate</td><td>% of members active after 6 months</td><td>Maintain &gt; XX% retention rate</td></tr>
+                    <tr><td>Event Conversion Rate</td><td>% of event attendees who join as members</td><td>XX% conversion from events</td></tr>
+                    <tr><td>Regional Membership Diversity</td><td>% of members outside main hub area</td><td>Expand to X+ new cities/countries per year</td></tr>
+                    <tr><td>Leadership &amp; Volunteer Growth</td><td>Members taking active leadership roles</td><td>X members take active roles</td></tr>
+                </tbody>
+            </table></div>
+        </div>
+
+        <div class="kpi-group">
+            <div class="kpi-group-title">&#128293; Engagement &amp; Activity</div>
+            <div style="overflow-x:auto;"><table class="kpi-table">
+                <thead><tr><th>KPI</th><th>Measurement</th><th>Target / Criteria</th></tr></thead>
+                <tbody>
+                    <tr><td>Town Hall Participation</td><td>Members attending monthly town halls</td><td>xx–xxx attendees per session</td></tr>
+                    <tr><td>Educational Content Impact</td><td>Views/downloads of educational materials</td><td>xxx+ views per content piece</td></tr>
+                    <tr><td>Governance Involvement</td><td>% of members actively voting in governance polls</td><td>Increase voter participation by x% per quarter</td></tr>
+                </tbody>
+            </table></div>
+        </div>
+
+        <div class="kpi-group">
+            <div class="kpi-group-title">&#127963; Governance &amp; Decision-Making</div>
+            <div style="overflow-x:auto;"><table class="kpi-table">
+                <thead><tr><th>KPI</th><th>Measurement</th><th>Target / Criteria</th></tr></thead>
+                <tbody>
+                    <tr><td>DRep Participation</td><td>Members registered as DReps</td><td>Grow DRep count by X% per quarter</td></tr>
+                    <tr><td>Governance Discussions Hosted</td><td>Discussions on Cardano governance topics</td><td>At least 1 governance event per quarter</td></tr>
+                    <tr><td>Policy Impact &amp; Proposals</td><td>Governance proposals or policies influenced</td><td>1+ policy proposal per year</td></tr>
+                </tbody>
+            </table></div>
+        </div>
+
+        <div class="kpi-group">
+            <div class="kpi-group-title">&#127979; Educational &amp; University Engagement</div>
+            <div style="overflow-x:auto;"><table class="kpi-table">
+                <thead><tr><th>KPI</th><th>Measurement</th><th>Target / Criteria</th></tr></thead>
+                <tbody>
+                    <tr><td>University Partnerships</td><td>MOUs / SOWs signed with universities</td><td>x+ university partnerships per year</td></tr>
+                    <tr><td>Educational Workshops Conducted</td><td>In-person and online workshops</td><td>x per month / quarter</td></tr>
+                    <tr><td>Certification Program Success</td><td>Students completing blockchain certifications</td><td>xx+ certified students annually</td></tr>
+                    <tr><td>Internship Placement Rate</td><td>% of students placed in blockchain internships</td><td>x internship placements</td></tr>
+                </tbody>
+            </table></div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         SECTION: MILESTONES
+    ═════════════════════════════════════════════ -->
+    <div id="section-milestones" class="section-wrap">
+        <div class="section-header">
+            <div class="section-eyebrow">Section 8.0 — Milestone Requirements</div>
+            <h2>&#9989; Structured Milestone Framework</h2>
+            <p>10 milestones across monthly, quarterly, and annual cycles. Designed to be flexible across hub tiers while ensuring consistent accountability and easy verification.</p>
+        </div>
+
+        <div class="milestone-group-label">Monthly Milestones</div>
+        <div class="milestone-grid">
+            <div class="ms-card">
+                <div class="ms-num">Milestone 01</div>
+                <div class="ms-title">Community Activity Delivered</div>
+                <div class="ms-body">Hub must conduct a monthly virtual town hall AND complete at least one of:
+                    <ul><li>Run an educational workshop</li><li>Organize a community event</li></ul>
+                    Verification: links to town hall participation and event evidence.
+                </div>
+            </div>
+            <div class="ms-card">
+                <div class="ms-num">Milestone 02</div>
+                <div class="ms-title">Growth Signals</div>
+                <div class="ms-body">Track and report on new membership numbers and event-to-member conversion rate. No growth requirement monthly — just tracking and reporting to demonstrate active management.</div>
+            </div>
+            <div class="ms-card">
+                <div class="ms-num">Milestone 03</div>
+                <div class="ms-title">Governance Touchpoints</div>
+                <div class="ms-body">At least one governance-related action:
+                    <ul><li>Governance content published</li><li>Governance session hosted</li><li>Evidence of voter or DRep engagement effort</li></ul>
+                    <em style="font-size:0.85em;color:#777;">May be optional for Level 1 hubs</em>
+                </div>
+            </div>
+        </div>
+
+        <div class="milestone-group-label">Quarterly Milestones</div>
+        <div class="milestone-grid">
+            <div class="ms-card">
+                <div class="ms-num">Milestone 04</div>
+                <div class="ms-title">Positive Community Health</div>
+                <div class="ms-body">Meet at least 2 of 3:
+                    <ul><li>Positive membership growth or maintained retention threshold</li><li>Achieve minimum town hall attendance target</li><li>Event conversion rate within acceptable range</li></ul>
+                </div>
+            </div>
+            <div class="ms-card">
+                <div class="ms-num">Milestone 05</div>
+                <div class="ms-title">Governance Advancements</div>
+                <div class="ms-body">Achieve one of:
+                    <ul><li>Host 1 governance event</li><li>Increase DRep participation</li><li>Show measurable increase in voter participation</li></ul>
+                    Ensures governance is not just symbolic.
+                </div>
+            </div>
+            <div class="ms-card">
+                <div class="ms-num">Milestone 06</div>
+                <div class="ms-title">Educational Output</div>
+                <div class="ms-body">Achieve one (or two if possible):
+                    <ul><li>Deliver workshops</li><li>Establish university partnership</li><li>Advance certification or internship pipeline</li></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="milestone-group-label">Annual Milestones — Renewal Checkpoints</div>
+        <div class="milestone-grid">
+            <div class="ms-card">
+                <div class="ms-num">Milestone 07</div>
+                <div class="ms-title">Sustainable Community Base</div>
+                <div class="ms-body">
+                    <ul><li>Positive annual membership growth or stable retention above threshold</li><li>Active leadership pipeline demonstrated</li></ul>
+                    Long-term sustainability matters more than spikes.
+                </div>
+            </div>
+            <div class="ms-card">
+                <div class="ms-num">Milestone 08</div>
+                <div class="ms-title">Governance Impact</div>
+                <div class="ms-body">
+                    <ul><li>At least 1 governance event per quarter (aggregated annually)</li><li>AND either DRep growth OR 1 policy proposal influenced</li></ul>
+                    Proves the hub contributes to decentralized governance.
+                </div>
+            </div>
+            <div class="ms-card">
+                <div class="ms-num">Milestone 09</div>
+                <div class="ms-title">Education &amp; Ecosystem Contribution</div>
+                <div class="ms-body">Achieve one major impact outcome:
+                    <ul><li>Students trained or certifications completed</li><li>Internship placements made</li><li>University partnerships formalized</li></ul>
+                </div>
+            </div>
+            <div class="ms-card">
+                <div class="ms-num">Milestone 10</div>
+                <div class="ms-title">Geographic or Diversity Progress</div>
+                <div class="ms-body">If expansion is part of the hub's strategy:
+                    <ul><li>Demonstrate measurable regional diversity growth, OR</li><li>Demonstrate deepened engagement within existing region</li></ul>
+                    Allows flexibility while avoiding forced expansion.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         SECTION: FAQ — ADDRESSING 2025 CONCERNS
+    ═════════════════════════════════════════════ -->
+    <div id="section-faq" class="section-wrap">
+        <div class="section-header">
+            <div class="section-eyebrow">Community FAQ</div>
+            <h2>&#128172; Addressing Questions About the 2025 Program</h2>
+            <p>The 2026 framework is designed in direct response to the community's legitimate questions about 2025. These are the honest answers — framed as talking points for committee members and community representatives.</p>
+        </div>
+
+        <div class="info-banner" style="margin-bottom:22px;">
+            Each entry below includes a <strong style="color:#fbbf24;">Talking Point</strong> — plain language you can use directly in governance calls, Discord threads, or community forums.
+        </div>
+
+        <!-- FAQ: Financial Accountability -->
+        <div style="font-size:0.72em; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:#555; margin:0 0 12px; display:flex; align-items:center; gap:10px;">
+            Financial Accountability
+            <span style="flex:1; height:1px; background:rgba(255,255,255,0.07); display:block;"></span>
+        </div>
+
+        <div class="myth-card" id="faq-1-1">
+            <button class="myth-trigger" onclick="toggleCard('faq-1-1')">
                 <div class="myth-icon red">&#10067;</div>
                 <div class="myth-trigger-text">
                     <span class="myth-tag">Community Concern</span>
@@ -541,36 +977,33 @@
                 </div>
                 <div class="myth-chevron">&#9660;</div>
             </button>
-            <div class="myth-body">
-                <div class="myth-body-inner">
-                    <div class="reality-block response-block">
-                        <span class="response-label">The Reality</span>
-                        <p>The hub program had <strong>two distinct funding phases</strong> with different accountability structures — and this distinction matters a great deal.</p>
-                        <ul>
-                            <li><strong>Phase 1 (approx. 6 months):</strong> Funded by Cardano Development Holdings (CDH), a private organization. These were private contracts, not community treasury disbursements. The same public disclosure standard that applies to treasury grants does not — and legally cannot — be retroactively applied to private contracts.</li>
-                            <li><strong>Phase 2 (April – June 2025 bridge):</strong> Funded through public treasury withdrawal. These amounts <em>are</em> public record: North America 16,216 ADA · LATAM 23,438 ADA · Sri Lanka 18,182 ADA · Africa 18,182 ADA · Japan 12,000 ADA.</li>
-                            <li><strong>All activity was milestone-gated:</strong> 48 Milestone Acceptance Forms (MAFs), DocuSign-verified, were required before any payment was released. Work was verified — not taken on faith.</li>
-                        </ul>
-                    </div>
-                    <div class="data-block">
-                        <span class="response-label">Phase 2 Bridge Payments (Public Record)</span>
-                        <div class="data-row"><span class="dk">North America</span><span class="dv">16,216 ADA</span></div>
-                        <div class="data-row"><span class="dk">LATAM</span><span class="dv">23,438 ADA</span></div>
-                        <div class="data-row"><span class="dk">Sri Lanka</span><span class="dv">18,182 ADA</span></div>
-                        <div class="data-row"><span class="dk">Africa (WADA)</span><span class="dv">18,182 ADA</span></div>
-                        <div class="data-row"><span class="dk">Japan</span><span class="dv">12,000 ADA</span></div>
-                    </div>
-                    <div class="talking-point-block response-block">
-                        <span class="response-label">&#128172; Talking Point</span>
-                        <p>"When someone says 'no accountability,' ask them which phase they mean. Phase 1 was private CDH funding under private contracts — the same standard you'd apply to any vendor relationship. Phase 2 is on-chain, publicly verifiable. And every single payment in both phases required a signed milestone form confirming deliverables were met before the money moved. That's not 'no accountability' — that's how contracted work operates."</p>
-                    </div>
+            <div class="myth-body"><div class="myth-body-inner">
+                <div class="reality-block response-block">
+                    <span class="response-label">The Reality</span>
+                    <p>The hub program had two distinct funding phases with different accountability structures — and this distinction matters a great deal.</p>
+                    <ul>
+                        <li><strong>Phase 1 (~6 months):</strong> Funded by Cardano Development Holdings (CDH), a private organization. These were private contracts — the same public disclosure standard that applies to treasury grants cannot be retroactively applied to private contracts.</li>
+                        <li><strong>Phase 2 (April–June 2025 bridge):</strong> Funded through public treasury withdrawal. These amounts are public record: North America 16,216 ADA · LATAM 23,438 ADA · Sri Lanka 18,182 ADA · Africa 18,182 ADA · Japan 12,000 ADA.</li>
+                        <li><strong>All activity was milestone-gated:</strong> 48 Milestone Acceptance Forms (MAFs), DocuSign-verified, were required before any payment was released.</li>
+                    </ul>
                 </div>
-            </div>
+                <div class="data-block">
+                    <span class="response-label">Phase 2 Bridge Payments (Public Record)</span>
+                    <div class="data-row"><span class="dk">North America</span><span class="dv">16,216 ADA</span></div>
+                    <div class="data-row"><span class="dk">LATAM</span><span class="dv">23,438 ADA</span></div>
+                    <div class="data-row"><span class="dk">Sri Lanka</span><span class="dv">18,182 ADA</span></div>
+                    <div class="data-row"><span class="dk">Africa (WADA)</span><span class="dv">18,182 ADA</span></div>
+                    <div class="data-row"><span class="dk">Japan</span><span class="dv">12,000 ADA</span></div>
+                </div>
+                <div class="talking-point-block response-block">
+                    <span class="response-label">&#128172; Talking Point</span>
+                    <p>"When someone says 'no accountability,' ask them which phase they mean. Phase 1 was private CDH funding under private contracts — the same standard you'd apply to any vendor relationship. Phase 2 is on-chain, publicly verifiable. And every single payment in both phases required a signed milestone form confirming deliverables were met before money moved."</p>
+                </div>
+            </div></div>
         </div>
 
-        <!-- Myth 1.2 -->
-        <div class="myth-card" id="card-1-2">
-            <button class="myth-trigger" onclick="toggleCard('card-1-2')">
+        <div class="myth-card" id="faq-1-2">
+            <button class="myth-trigger" onclick="toggleCard('faq-1-2')">
                 <div class="myth-icon amber">&#128269;</div>
                 <div class="myth-trigger-text">
                     <span class="myth-tag">Community Concern</span>
@@ -578,100 +1011,50 @@
                 </div>
                 <div class="myth-chevron">&#9660;</div>
             </button>
-            <div class="myth-body">
-                <div class="myth-body-inner">
-                    <div class="reality-block response-block">
-                        <span class="response-label">The Reality</span>
-                        <p>Japan's detailed cost breakdown is genuinely commendable. It is also worth being precise about what it represents: a self-reported Google Sheet from a hub that wound down operations and needed to account for funds being returned. The circumstance created the reporting — it was not required by the contract.</p>
-                        <p>All six hubs operated under the same CDH private contract structure, which did not mandate detailed financial disclosure. Holding five hubs to a standard that was never a contract requirement — and asking them to reconstruct 2-year-old records retroactively — is not a reasonable accountability mechanism. It also is not how private contracting works in any other context.</p>
-                        <p>What we do have for all hubs: activity documentation, milestone sign-offs, event records, and membership outcomes. That is the accountability record that <em>was</em> required.</p>
-                    </div>
-                    <div class="talking-point-block response-block">
-                        <span class="response-label">&#128172; Talking Point</span>
-                        <p>"Japan's reporting sets the standard we want going forward — and it's built into the 2026 framework. But let's be honest about what we're comparing: Japan reported because they were returning funds and winding down. The other hubs completed their contracts. The gap isn't evidence of wrongdoing — it's a structural omission in the original contract design. That's a solvable problem. We solved it in 2026."</p>
-                    </div>
+            <div class="myth-body"><div class="myth-body-inner">
+                <div class="reality-block response-block">
+                    <span class="response-label">The Reality</span>
+                    <p>Japan's detailed cost breakdown is commendable. It's also worth being precise about what it represents: a self-reported Google Sheet from a hub that wound down operations and needed to account for funds being returned. The circumstance created the reporting — it was not a contract requirement.</p>
+                    <p>All six hubs operated under the same CDH private contract structure, which did not mandate detailed financial disclosure. Holding five hubs to a standard that was never contractually required — and asking them to reconstruct 2-year-old records retroactively — is not a reasonable accountability mechanism. What we do have for all hubs: activity documentation, milestone sign-offs, event records, and membership outcomes.</p>
+                    <p>The 2026 framework changes this entirely: treasury funding requires treasury-level reporting from day one, built directly into every contract.</p>
                 </div>
-            </div>
+                <div class="talking-point-block response-block">
+                    <span class="response-label">&#128172; Talking Point</span>
+                    <p>"Japan's reporting is the standard we want — and it's now built into the 2026 framework. But let's be precise: Japan reported because they were returning funds and winding down. The other hubs completed their contracts under the same structure. The gap isn't evidence of wrongdoing — it's a structural omission in the original contract design. That's a solvable problem. We solved it for 2026."</p>
+                </div>
+            </div></div>
         </div>
 
-        <!-- Myth 1.3 -->
-        <div class="myth-card" id="card-1-3">
-            <button class="myth-trigger" onclick="toggleCard('card-1-3')">
+        <div class="myth-card" id="faq-1-3">
+            <button class="myth-trigger" onclick="toggleCard('faq-1-3')">
                 <div class="myth-icon red">&#128181;</div>
                 <div class="myth-trigger-text">
                     <span class="myth-tag">Community Concern</span>
-                    <span class="myth-question">"Where's the accounting for LATAM's 23k? Sri Lanka's 18k? What did they spend it on?"</span>
+                    <span class="myth-question">"Where's the accounting for LATAM's 23k ADA? Sri Lanka's 18k? What did they spend it on?"</span>
                 </div>
                 <div class="myth-chevron">&#9660;</div>
             </button>
-            <div class="myth-body">
-                <div class="myth-body-inner">
-                    <div class="reality-block response-block">
-                        <span class="response-label">The Reality</span>
-                        <p>These are the Phase 2 bridge payment amounts — the treasury-funded period. The ADA amounts are publicly confirmed. What we do not have are itemized receipts for those funds, because the contracts for this period did not require them. That is a gap in contract design, and it is one the 2026 framework directly addresses.</p>
-                        <p>Using Japan as a benchmark: Japan spent approximately $19,000 USD across events (55%), staff labor (26%), hub management (18%), and tools (1%). For a hub of similar scope and 3-month duration, that breakdown provides a reasonable reference range for what hub operational costs look like. It is not a perfect answer — but it is a meaningful one.</p>
-                    </div>
-                    <div class="talking-point-block response-block">
-                        <span class="response-label">&#128172; Talking Point</span>
-                        <p>"The 'where did it go' question deserves a real answer, and the honest answer is: the Phase 2 amounts are on-chain, the Phase 1 amounts were private contracts. For what hub operations actually cost, Japan's breakdown is the best public reference we have — events, labor, management, tools. The 2026 contracts require all of that to be reported by default. That's the structural fix."</p>
-                    </div>
+            <div class="myth-body"><div class="myth-body-inner">
+                <div class="reality-block response-block">
+                    <span class="response-label">The Reality</span>
+                    <p>These are the Phase 2 bridge payment amounts — the treasury-funded period. The ADA amounts are publicly confirmed. Itemized receipts for those funds were not required by the contracts for this period. That is a gap in contract design, and it is one the 2026 framework directly addresses.</p>
+                    <p>Using Japan as a benchmark: Japan spent approximately $19,000 USD across events (55%), staff labor (26%), hub management (18%), and tools (1%). For a hub of similar scope and duration, that breakdown provides a reasonable reference range for what hub operational costs look like.</p>
                 </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- ════════════════════════════════════════════
-         SECTION 2 — THE NUMBERS
-    ═════════════════════════════════════════════ -->
-    <div id="section-numbers">
-        <div class="section-header">
-            <div class="section-eyebrow">Section 2</div>
-            <h2>&#128202; The Numbers — Data &amp; Metrics Questions</h2>
-            <p>Concerns about reported figures, methodology, and whether the metrics can be trusted.</p>
-        </div>
-
-        <!-- Myth 2.2 -->
-        <div class="myth-card" id="card-2-2">
-            <button class="myth-trigger" onclick="toggleCard('card-2-2')">
-                <div class="myth-icon amber">&#128203;</div>
-                <div class="myth-trigger-text">
-                    <span class="myth-tag">Community Concern</span>
-                    <span class="myth-question">"Inconsistent reporting across hubs means we can't trust any of the numbers."</span>
+                <div class="talking-point-block response-block">
+                    <span class="response-label">&#128172; Talking Point</span>
+                    <p>"The Phase 2 amounts are on-chain. For what hub operations actually cost, Japan's breakdown is the best public reference — events, labor, management, tools. The 2026 contracts require all of that to be reported by default. That's the structural fix, and it applies from day one of the new program."</p>
                 </div>
-                <div class="myth-chevron">&#9660;</div>
-            </button>
-            <div class="myth-body">
-                <div class="myth-body-inner">
-                    <div class="reality-block response-block">
-                        <span class="response-label">The Reality</span>
-                        <p>Reporting was inconsistent across hubs. That is accurate. Six hubs operated in six different regions under different cultural, organizational, and operational contexts, without a mandated common reporting standard. Inconsistency in reporting does not invalidate the underlying data — it means the data requires interpretation, which the post-mortem provides.</p>
-                        <p>The numbers that are cross-verifiable — membership figures, milestone completion records, contract amounts — are sourced from Intersect's own documentation, not hub self-reporting. Member counts are from Intersect's membership system. Contract amounts are from DocuSign-verified MAF documents. These are not estimates.</p>
-                        <p>Inconsistent reporting is, however, precisely the gap the 2026 framework closes — standardized KPI reporting is a core requirement.</p>
-                    </div>
-                    <div class="talking-point-block response-block">
-                        <span class="response-label">&#128172; Talking Point</span>
-                        <p>"Reporting inconsistency is a real criticism of the 2025 program structure. It's also why the membership numbers in the post-mortem come from Intersect's own system — not hub self-reports. The numbers we're citing are verifiable. The 2026 framework standardizes reporting so this isn't a conversation we need to have again."</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- ════════════════════════════════════════════
-         SECTION 3 — THE VALUE
-    ═════════════════════════════════════════════ -->
-    <div id="section-value">
-        <div class="section-header">
-            <div class="section-eyebrow">Section 3</div>
-            <h2>&#9989; The Value — Was It Worth It?</h2>
-            <p>The ROI question. What did the program actually produce, and how does it compare to not having hubs at all?</p>
+            </div></div>
         </div>
 
-        <!-- Myth 3.1 -->
-        <div class="myth-card" id="card-3-1">
-            <button class="myth-trigger" onclick="toggleCard('card-3-1')">
+        <!-- FAQ: Program Value -->
+        <div style="font-size:0.72em; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:#555; margin:24px 0 12px; display:flex; align-items:center; gap:10px;">
+            Program Value &amp; ROI
+            <span style="flex:1; height:1px; background:rgba(255,255,255,0.07); display:block;"></span>
+        </div>
+
+        <div class="myth-card" id="faq-2-1">
+            <button class="myth-trigger" onclick="toggleCard('faq-2-1')">
                 <div class="myth-icon blue">&#128200;</div>
                 <div class="myth-trigger-text">
                     <span class="myth-tag">Community Concern</span>
@@ -679,103 +1062,63 @@
                 </div>
                 <div class="myth-chevron">&#9660;</div>
             </button>
-            <div class="myth-body">
-                <div class="myth-body-inner">
-                    <div class="reality-block response-block">
-                        <span class="response-label">The Reality</span>
-                        <p>The post-mortem represents the most complete picture of hub activity and outcomes ever compiled. The data we have is not perfect — but it is substantial, and it points in one consistent direction.</p>
-                        <ul>
-                            <li><strong>70% of Intersect's individual members</strong> are located in hub regions. That correlation is not coincidental.</li>
-                            <li><strong>Japan:</strong> 533 individual members from 61 events at ~$19K total spend ≈ <strong>~$36 per individual member acquired</strong> in direct event costs.</li>
-                            <li><strong>North America:</strong> 239 individual members, 225 associates, 6 enterprise members from 12 events.</li>
-                            <li>These are not passive event attendees — these are people who made an active commitment to join and participate in Intersect's governance.</li>
-                        </ul>
-                        <p>The relevant comparison is not "was every dollar optimally deployed?" It is: <em>what is the alternative cost of acquiring committed, governance-active members through digital-only channels?</em> Hubs create in-person trust that online channels cannot replicate at this depth.</p>
-                    </div>
-                    <div class="data-block">
-                        <span class="response-label">Membership Outcomes by Hub</span>
-                        <div class="data-row"><span class="dk">Japan</span><span class="dv">533 individual · 63 associates</span></div>
-                        <div class="data-row"><span class="dk">North America</span><span class="dv">239 individual · 225 associates · 6 enterprise</span></div>
-                        <div class="data-row"><span class="dk">LATAM</span><span class="dv">127 individual · 427 associates</span></div>
-                        <div class="data-row"><span class="dk">Sri Lanka</span><span class="dv">263 individual · 243 associates</span></div>
-                        <div class="data-row"><span class="dk">Africa (WADA)</span><span class="dv">87 individual · 127 associates</span></div>
-                        <div class="data-row"><span class="dk">Europe</span><span class="dv">19 individual · 26 associates · 3 enterprise</span></div>
-                    </div>
-                    <div class="talking-point-block response-block">
-                        <span class="response-label">&#128172; Talking Point</span>
-                        <p>"70% of Intersect's individual members live in hub regions. 1,268 individual members, 1,111 associates, 16 enterprise accounts. Japan alone: 533 individual members at roughly $36 per member in event costs. What's the cost of acquiring a committed, governance-active Cardano ecosystem member through online campaigns alone? Hubs are not expensive community infrastructure — they're competitive."</p>
-                    </div>
+            <div class="myth-body"><div class="myth-body-inner">
+                <div class="reality-block response-block">
+                    <span class="response-label">The Reality</span>
+                    <p>The post-mortem is the most complete picture of hub activity and outcomes ever compiled. The data is not perfect — but it is substantial and points in one consistent direction.</p>
+                    <ul>
+                        <li><strong>70% of Intersect's individual members</strong> are located in hub regions. That is not coincidental.</li>
+                        <li><strong>Japan:</strong> 533 individual members from 61 events at ~$19K total spend ≈ <strong>~$36 per individual member</strong> in direct event costs.</li>
+                        <li><strong>North America:</strong> 239 individual members, 225 associates, 6 enterprise members from 12 events.</li>
+                        <li>These are not passive attendees — they made an active commitment to join and participate in Intersect governance.</li>
+                    </ul>
                 </div>
-            </div>
+                <div class="data-block">
+                    <span class="response-label">Membership Outcomes by Hub</span>
+                    <div class="data-row"><span class="dk">Japan</span><span class="dv">533 individual · 63 associates</span></div>
+                    <div class="data-row"><span class="dk">North America</span><span class="dv">239 individual · 225 associates · 6 enterprise</span></div>
+                    <div class="data-row"><span class="dk">LATAM</span><span class="dv">127 individual · 427 associates</span></div>
+                    <div class="data-row"><span class="dk">Sri Lanka</span><span class="dv">263 individual · 243 associates</span></div>
+                    <div class="data-row"><span class="dk">Africa (WADA)</span><span class="dv">87 individual · 127 associates</span></div>
+                    <div class="data-row"><span class="dk">Europe</span><span class="dv">19 individual · 26 associates · 3 enterprise</span></div>
+                </div>
+                <div class="talking-point-block response-block">
+                    <span class="response-label">&#128172; Talking Point</span>
+                    <p>"70% of Intersect's individual members live in hub regions. 1,268 individual members, 1,111 associates, 16 enterprise accounts. Japan alone: 533 individual members at roughly $36 per member in event costs. What's the cost of acquiring a committed, governance-active member through online channels alone? Hubs are competitive infrastructure."</p>
+                </div>
+            </div></div>
         </div>
 
-        <!-- Myth 3.2 -->
-        <div class="myth-card" id="card-3-2">
-            <button class="myth-trigger" onclick="toggleCard('card-3-2')">
+        <div class="myth-card" id="faq-2-2">
+            <button class="myth-trigger" onclick="toggleCard('faq-2-2')">
                 <div class="myth-icon blue">&#128337;</div>
                 <div class="myth-trigger-text">
                     <span class="myth-tag">Community Concern</span>
-                    <span class="myth-question">"Until we see what happened in 2024-25, we can't approve 2026 funding."</span>
+                    <span class="myth-question">"Until we see what happened in 2024–25, we can't approve 2026 funding."</span>
                 </div>
                 <div class="myth-chevron">&#9660;</div>
             </button>
-            <div class="myth-body">
-                <div class="myth-body-inner">
-                    <div class="reality-block response-block">
-                        <span class="response-label">The Reality</span>
-                        <p>The post-mortem report <em>is</em> the 2024-2025 record. It is the most comprehensive aggregation of hub activity, membership outcomes, and contract documentation ever compiled for this program. That is exactly the information this concern is calling for.</p>
-                        <p>If the concern is specifically "we need itemized expense receipts from private CDH-funded contracts" — that is a different bar, and one that cannot be retroactively applied to private contracting arrangements. No reasonable procurement standard requires it. If that is the condition for approval, it is not a realistic one.</p>
-                        <p>If the concern is "we need confidence that 2026 will have the accountability mechanisms 2025 lacked" — that is a forward-looking question, and it has a concrete answer: the 2026 framework. Review the framework. The accountability structure is built in from the start.</p>
-                    </div>
-                    <div class="talking-point-block response-block">
-                        <span class="response-label">&#128172; Talking Point</span>
-                        <p>"The post-mortem is the answer to 'show us what happened.' It's the most complete picture we've ever had. If the concern is about 2026 accountability rather than 2025 history — that's the right question, and the framework answers it. What we should not do is treat an imperfect past as a reason to forfeit the momentum hubs created. Delaying 2026 doesn't recover 2025 data. It just loses the community relationships we built."</p>
-                    </div>
+            <div class="myth-body"><div class="myth-body-inner">
+                <div class="reality-block response-block">
+                    <span class="response-label">The Reality</span>
+                    <p>The post-mortem report is the 2024–2025 record — the most comprehensive aggregation of hub activity, membership outcomes, and contract documentation ever compiled for this program.</p>
+                    <p>If the concern is specifically "we need itemized expense receipts from private CDH-funded contracts" — that standard cannot be retroactively applied to private contracting arrangements made under different terms. If the concern is "we need confidence that 2026 will have the accountability mechanisms 2025 lacked" — that is a forward-looking question, and the 2026 framework answers it directly.</p>
                 </div>
-            </div>
+                <div class="talking-point-block response-block">
+                    <span class="response-label">&#128172; Talking Point</span>
+                    <p>"The post-mortem is the answer to 'show us what happened.' If the concern is about 2026 accountability rather than 2025 history — that's the right question, and the framework answers it. What we should not do is treat an imperfect past as a reason to forfeit the membership momentum hubs created. Delaying 2026 doesn't recover 2025 data. It loses the community relationships we built."</p>
+                </div>
+            </div></div>
         </div>
 
-        <!-- Myth 3.3 -->
-        <div class="myth-card" id="card-3-3">
-            <button class="myth-trigger" onclick="toggleCard('card-3-3')">
-                <div class="myth-icon red">&#128465;&#65039;</div>
-                <div class="myth-trigger-text">
-                    <span class="myth-tag">Community Concern</span>
-                    <span class="myth-question">"This report gives ammunition to hub opponents, not evidence to support them."</span>
-                </div>
-                <div class="myth-chevron">&#9660;</div>
-            </button>
-            <div class="myth-body">
-                <div class="myth-body-inner">
-                    <div class="reality-block response-block">
-                        <span class="response-label">The Reality</span>
-                        <p>This concern reflects a real tension: a transparent report that acknowledges gaps is harder to use as promotional material than a polished success narrative. But it is significantly more credible — and credibility is exactly what the hubs program needs right now.</p>
-                        <p>A report that honestly documents the financial disclosure gaps, explains why they existed, and identifies what the 2026 framework changes is not ammunition for opponents. It is the response to opponents. It demonstrates that the program has been evaluated honestly, not whitewashed.</p>
-                        <p>A hub opponent can always say "the report is incomplete." They cannot credibly say "the report is dishonest" — because the report says the same things they're saying, and then answers them.</p>
-                    </div>
-                    <div class="talking-point-block response-block">
-                        <span class="response-label">&#128172; Talking Point</span>
-                        <p>"The best response to 'hubs were unaccountable' is a report that says 'here's what the accountability gaps were, here's why they existed, and here's exactly how we've fixed them.' That's a much stronger position than a report that claims everything was perfect. Opponents can argue with a polished narrative. They can't argue with a self-critical assessment that then makes the case for 2026."</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- ════════════════════════════════════════════
-         SECTION 4 — THE FUTURE
-    ═════════════════════════════════════════════ -->
-    <div id="section-future">
-        <div class="section-header">
-            <div class="section-eyebrow">Section 4</div>
-            <h2>&#128640; The Future — Why 2026 Is Different</h2>
-            <p>Every structural gap identified in 2025 has a specific remedy in the 2026 framework. Here is the direct mapping.</p>
+        <!-- FAQ: Why 2026 Is Different -->
+        <div style="font-size:0.72em; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:#555; margin:24px 0 12px; display:flex; align-items:center; gap:10px;">
+            The Path Forward
+            <span style="flex:1; height:1px; background:rgba(255,255,255,0.07); display:block;"></span>
         </div>
 
-        <!-- Myth 4.1 -->
-        <div class="myth-card" id="card-4-1">
-            <button class="myth-trigger" onclick="toggleCard('card-4-1')">
+        <div class="myth-card" id="faq-3-1">
+            <button class="myth-trigger" onclick="toggleCard('faq-3-1')">
                 <div class="myth-icon green">&#128736;&#65039;</div>
                 <div class="myth-trigger-text">
                     <span class="myth-tag">Community Concern</span>
@@ -783,96 +1126,57 @@
                 </div>
                 <div class="myth-chevron">&#9660;</div>
             </button>
-            <div class="myth-body">
-                <div class="myth-body-inner">
-                    <div class="reality-block response-block">
-                        <span class="response-label">The Reality</span>
-                        <p>Three structural differences that directly address the 2025 gaps:</p>
-                        <ul>
-                            <li><strong>Funding source:</strong> 2026 hubs will be funded from the community treasury, not private CDH funds. Treasury funding carries explicit public accountability requirements that private contracts do not.</li>
-                            <li><strong>Reporting requirements:</strong> Standardized financial reporting and KPI disclosure are built into the 2026 contracts from day one — not added retroactively.</li>
-                            <li><strong>Community approval:</strong> The community approves the framework, the budget, and can set the conditions. The accountability structure is not internal to Intersect — it is governed by the same community asking the questions.</li>
-                        </ul>
-                        <p>The hubs program also now has something it did not have in 2025: a post-mortem. A documented record of what worked, what didn't, and what the program actually produced. That is institutional knowledge the 2026 design is built on.</p>
-                    </div>
-                    <div class="talking-point-block response-block">
-                        <span class="response-label">&#128172; Talking Point</span>
-                        <p>"2026 is different because the funding structure is different, the reporting requirements are different, and — critically — the community governs the approval. You don't have to trust us. You have to approve the framework. That's the accountability mechanism. Review the framework, set your conditions, and vote."</p>
-                    </div>
+            <div class="myth-body"><div class="myth-body-inner">
+                <div class="reality-block response-block">
+                    <span class="response-label">Three Structural Differences</span>
+                    <ul>
+                        <li><strong>Funding source:</strong> 2026 hubs funded from community treasury — not private CDH funds. Treasury funding carries explicit public accountability requirements by default.</li>
+                        <li><strong>Reporting requirements:</strong> Standardized financial reporting and KPI disclosure are built into every 2026 contract from day one — not added retroactively.</li>
+                        <li><strong>Community governance approval:</strong> The community approves the framework, the budget, and the conditions. Accountability is not internal to Intersect — it is governed by the community itself.</li>
+                    </ul>
+                    <p>The hubs program also now has something it lacked in 2025: a post-mortem. A documented record of what worked, what didn't, and what the program actually produced. The 2026 design is built on that foundation.</p>
                 </div>
-            </div>
+                <div class="talking-point-block response-block">
+                    <span class="response-label">&#128172; Talking Point</span>
+                    <p>"2026 is different because the funding structure is different, the reporting requirements are different, and the community governs the approval. You don't have to trust us. You have to approve the framework. That's the accountability mechanism. Review it, set your conditions, and vote."</p>
+                </div>
+            </div></div>
         </div>
 
-        <!-- Myth 4.2 -->
-        <div class="myth-card" id="card-4-2">
-            <button class="myth-trigger" onclick="toggleCard('card-4-2')">
+        <div class="myth-card" id="faq-3-2">
+            <button class="myth-trigger" onclick="toggleCard('faq-3-2')">
                 <div class="myth-icon green">&#128203;</div>
                 <div class="myth-trigger-text">
                     <span class="myth-tag">Community Concern</span>
-                    <span class="myth-question">"The hub program was mismanaged. What makes you think the same people can run it better?"</span>
+                    <span class="myth-question">"The hub program was mismanaged. Why should the same people run it again?"</span>
                 </div>
                 <div class="myth-chevron">&#9660;</div>
             </button>
-            <div class="myth-body">
-                <div class="myth-body-inner">
-                    <div class="reality-block response-block">
-                        <span class="response-label">The Reality</span>
-                        <p>"Mismanagement" implies behavioral failure. The gaps in 2025 were structural, not behavioral: reporting was inconsistent because reporting standards were not mandated. Financial disclosure was uneven because the contracts did not require it uniformly. These are contract design problems, not character problems.</p>
-                        <p>Evidence of actual operational delivery: 35 original contracts and 13 interim contracts completed with milestone sign-offs. 167 events run across six regions. 2,395 total Intersect members in hub regions. Six regions maintained active presence across a 14-month program period. That is not mismanagement — that is delivery under an imperfect accountability structure.</p>
-                        <p>The people who ran 2025 hubs also built the community relationships, the local credibility, and the institutional knowledge that a new program needs. Replacing them to signal accountability theater would cost more than it gains.</p>
-                    </div>
-                    <div class="talking-point-block response-block">
-                        <span class="response-label">&#128172; Talking Point</span>
-                        <p>"Point to a specific operational failure. What was asked for and not delivered? The milestone forms exist. The events happened. The members joined. The gaps were in reporting requirements that weren't written into the contracts — that's a design problem, not an execution problem. 2026 fixes the design."</p>
-                    </div>
+            <div class="myth-body"><div class="myth-body-inner">
+                <div class="reality-block response-block">
+                    <span class="response-label">The Reality</span>
+                    <p>"Mismanagement" implies behavioral failure. The gaps in 2025 were structural, not behavioral: reporting was inconsistent because reporting standards were not mandated. Financial disclosure was uneven because contracts did not require it uniformly. These are contract design problems, not character problems.</p>
+                    <p>Evidence of actual delivery: 35 original contracts and 13 interim contracts completed with milestone sign-offs. 167 events run across six regions. 2,395 total Intersect members in hub regions. Six regions maintained active presence across a 14-month program period.</p>
+                    <p>The people who ran 2025 hubs built the community relationships, local credibility, and institutional knowledge that a new program needs. Replacing them to signal accountability would cost more than it gains.</p>
                 </div>
-            </div>
-        </div>
-
-        <!-- Myth 4.3 -->
-        <div class="myth-card" id="card-4-3">
-            <button class="myth-trigger" onclick="toggleCard('card-4-3')">
-                <div class="myth-icon green">&#127775;</div>
-                <div class="myth-trigger-text">
-                    <span class="myth-tag">Looking Forward</span>
-                    <span class="myth-question">"What does the 2026 framework actually require that 2025 didn't?"</span>
+                <div class="talking-point-block response-block">
+                    <span class="response-label">&#128172; Talking Point</span>
+                    <p>"Point to a specific operational failure. What was asked for and not delivered? The milestone forms exist. The events happened. The members joined. The gaps were in reporting requirements that weren't written into the contracts — that's a design problem, not an execution problem. 2026 fixes the design."</p>
                 </div>
-                <div class="myth-chevron">&#9660;</div>
-            </button>
-            <div class="myth-body">
-                <div class="myth-body-inner">
-                    <div class="reality-block response-block">
-                        <span class="response-label">What Changes in 2026</span>
-                        <ul>
-                            <li><strong>Treasury funding:</strong> On-chain, publicly verifiable from day one — not private CDH contracts.</li>
-                            <li><strong>Mandatory financial reporting:</strong> Standardized expense reporting built into every hub contract, not optional.</li>
-                            <li><strong>Standardized KPIs:</strong> Common metrics framework across all hubs — no more reporting inconsistency.</li>
-                            <li><strong>Community governance approval:</strong> The community votes on the framework, budget, and conditions.</li>
-                            <li><strong>Post-mortem baseline:</strong> The 2025 post-mortem gives the 2026 program a documented foundation to build on — and be held against.</li>
-                        </ul>
-                    </div>
-                    <div class="talking-point-block response-block">
-                        <span class="response-label">&#128172; Talking Point</span>
-                        <p>"Every specific concern raised about 2025 has a specific remedy in 2026. Not vague promises — structural changes written into the contracts and the framework. Read the framework. If you find a gap we haven't addressed, tell us and we will address it. That's how this is supposed to work."</p>
-                    </div>
-                </div>
-            </div>
+            </div></div>
         </div>
     </div>
 
 
     <!-- ══ CTA ══ -->
     <div class="cta-section">
-        <h2>Have a concern not addressed here?</h2>
-        <p>
-            This FAQ will be updated as the community conversation evolves.
-            If you have a specific question that isn't covered, raise it in the governance forums —
-            we will address it directly and add it here.
-        </p>
+        <h2>Working Documents</h2>
+        <p>All documents are live drafts. If you have questions not addressed here, raise them in the governance forums and they will be addressed directly.</p>
         <div class="cta-buttons">
-            <a href="hub_report.html" class="cta-btn cyan">&#128196; Full Post-Mortem Report</a>
+            <a href="hub_report.html" class="cta-btn cyan">&#128196; 2025 Post-Mortem Report</a>
+            <a href="https://docs.google.com/document/d/1_InP2Hx3ZMnExfca_XaYpsrZpEY66bykKC8CzyjjvLs/edit?tab=t.0" target="_blank" rel="noopener" class="cta-btn purple">&#128640; Hubs Proposal Doc</a>
             <a href="https://docs.google.com/document/d/1l9gSmiIbdVVZeF7eBJRw_jFpC3oNHgNsL8enywRJXxA/edit?tab=t.0#heading=h.5o95kgmoqxc4" target="_blank" rel="noopener" class="cta-btn purple">&#128196; MCC Remit (Draft)</a>
-            <a href="https://docs.google.com/document/d/1h0w3swMntVyn6TL46vB2Arj5Irkmn_7b2w6bIsQzJeU/edit?tab=t.0#heading=h.43savjkutr4w" target="_blank" rel="noopener" class="cta-btn purple">&#128200; MCC Budget (Draft)</a>
+            <a href="https://docs.google.com/document/d/1h0w3swMntVyn6TL46vB2Arj5Irkmn_7b2w6bIsQzJeU/edit?tab=t.0#heading=h.43savjkutr4w" target="_blank" rel="noopener" class="cta-btn amber">&#128200; MCC Budget (Draft)</a>
         </div>
     </div>
 
@@ -883,46 +1187,32 @@
         const card = document.getElementById(id);
         const body = card.querySelector('.myth-body');
         const isOpen = card.classList.contains('open');
-
-        if (isOpen) {
-            card.classList.remove('open');
-            body.style.maxHeight = '0';
-        } else {
-            card.classList.add('open');
-            body.style.maxHeight = body.scrollHeight + 400 + 'px';
-        }
+        card.classList.toggle('open', !isOpen);
+        body.style.maxHeight = isOpen ? '0' : (body.scrollHeight + 400) + 'px';
     }
 
-    // Expand all cards slightly on first interaction to hint they're clickable
-    document.querySelectorAll('.myth-trigger').forEach(btn => {
-        btn.addEventListener('mouseenter', function () {
-            const card = this.closest('.myth-card');
-            if (!card.classList.contains('open')) {
-                card.style.borderColor = 'rgba(0,212,255,0.18)';
-            }
-        });
-        btn.addEventListener('mouseleave', function () {
-            const card = this.closest('.myth-card');
-            if (!card.classList.contains('open')) {
-                card.style.borderColor = '';
-            }
-        });
-    });
+    function toggleFC(id) {
+        const card = document.getElementById(id);
+        const body = card.querySelector('.fc-body');
+        const isOpen = card.classList.contains('open');
+        card.classList.toggle('open', !isOpen);
+        body.style.maxHeight = isOpen ? '0' : (body.scrollHeight + 100) + 'px';
+    }
 
-    // Back to top button
+    // Back to top
     const backBtn = document.getElementById('backToTop');
     window.addEventListener('scroll', () => {
         backBtn.style.display = window.scrollY > 400 ? 'flex' : 'none';
     });
 
-    // Active nav link on scroll
-    const sections = ['section-money','section-numbers','section-value','section-future'];
+    // Active nav on scroll
+    const sections = ['section-mcc','section-hub-model','section-tiers','section-budget','section-kpis','section-milestones','section-faq'];
     const navLinks = document.querySelectorAll('.nav-link');
     window.addEventListener('scroll', () => {
         let current = '';
         sections.forEach(id => {
             const el = document.getElementById(id);
-            if (el && window.scrollY >= el.offsetTop - 120) current = id;
+            if (el && window.scrollY >= el.offsetTop - 130) current = id;
         });
         navLinks.forEach(link => {
             link.classList.toggle('active', link.getAttribute('href') === '#' + current);
