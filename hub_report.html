@@ -6,6 +6,7 @@
     <meta name="description" content="Post-Mortem Report for Intersect MCC Community Hubs program (May 2024 – June 2025), covering 6 regional hubs: North America, LATAM, Japan, Sri Lanka, Africa (WADA), and Europe.">
     <title>Intersect Community Hubs - Post-Mortem Report</title>
     <link rel="icon" href="https://www.intersectmbo.org/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -18,9 +19,9 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: #e8e8e8;
+            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7ff;
+            color: #333;
             line-height: 1.6;
             min-height: 100vh;
         }
@@ -34,28 +35,25 @@
         header {
             text-align: center;
             padding: 40px 20px;
-            background: linear-gradient(135deg, #0f3460 0%, #533483 100%);
+            background: linear-gradient(135deg, #0228aa 0%, #011555 100%);
             border-radius: 20px;
             margin-bottom: 30px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 40px rgba(2,40,170,0.2);
         }
 
         header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
-            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: #fff;
         }
 
         header p {
-            color: #b8b8b8;
+            color: #C8D5FD;
             font-size: 1.1em;
         }
 
         .data-complete {
-            background: linear-gradient(90deg, #2ecc71, #27ae60);
+            background: #059669;
             color: white;
             padding: 8px 20px;
             border-radius: 20px;
@@ -77,18 +75,17 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
+            background: #fff;
             padding: 10px 18px;
             border-radius: 25px;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid #e0e4f0;
             transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(2,40,170,0.06);
         }
 
         .metric-badge:hover {
             transform: translateY(-2px);
-            background: rgba(255,255,255,0.15);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            box-shadow: 0 5px 20px rgba(2,40,170,0.12);
         }
 
         .metric-badge .icon {
@@ -98,11 +95,11 @@
         .metric-badge .metric-value {
             font-weight: bold;
             font-size: 1.1em;
-            color: #00d4ff;
+            color: #0228aa;
         }
 
         .metric-badge .metric-label {
-            color: #ccc;
+            color: #575757;
             font-size: 0.9em;
         }
 
@@ -111,12 +108,13 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            background: rgba(255,255,255,0.97);
+            backdrop-filter: blur(12px);
             padding: 12px 20px;
             border-radius: 15px;
             margin-bottom: 25px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 4px 20px rgba(2,40,170,0.1);
+            border: 1px solid #e0e4f0;
         }
 
         .sticky-nav-inner {
@@ -128,26 +126,26 @@
         }
 
         .nav-link {
-            color: #a0a0a0;
+            color: #575757;
             text-decoration: none;
             padding: 8px 16px;
             border-radius: 20px;
             font-size: 0.9em;
             transition: all 0.3s ease;
-            background: rgba(255,255,255,0.05);
+            background: transparent;
             border: 1px solid transparent;
         }
 
         .nav-link:hover {
-            color: #00d4ff;
-            background: rgba(0,212,255,0.15);
-            border-color: rgba(0,212,255,0.3);
+            color: #2353ff;
+            background: #ebf0ff;
+            border-color: #C8D5FD;
         }
 
         .nav-link.active {
-            color: #00d4ff;
-            background: rgba(0,212,255,0.2);
-            border-color: rgba(0,212,255,0.4);
+            color: #2353ff;
+            background: #ebf0ff;
+            border-color: #2353ff;
         }
 
         /* Back to Top Button */
@@ -157,7 +155,7 @@
             right: 30px;
             width: 50px;
             height: 50px;
-            background: linear-gradient(135deg, #00d4ff 0%, #7b2cbf 100%);
+            background: #2353ff;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -165,7 +163,7 @@
             color: white;
             font-size: 1.5em;
             text-decoration: none;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+            box-shadow: 0 5px 20px rgba(35,83,255,0.3);
             transition: all 0.3s ease;
             z-index: 99;
         }
@@ -189,14 +187,14 @@
             top: 50%;
             width: 100%;
             height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(0,212,255,0.3), transparent);
+            background: linear-gradient(90deg, transparent, #C8D5FD, transparent);
         }
 
         .section-divider span {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            background: #f5f7ff;
             padding: 0 25px;
             position: relative;
-            color: #00d4ff;
+            color: #0228aa;
             font-size: 1.1em;
             font-weight: 600;
             text-transform: uppercase;
@@ -237,10 +235,11 @@
             flex-wrap: wrap;
             gap: 20px;
             padding: 20px;
-            background: rgba(0,0,0,0.2);
+            background: #f8f9ff;
             border-radius: 12px;
             margin-bottom: 20px;
             align-items: flex-start;
+            border: 1px solid #e0e4f0;
         }
 
         .hub-summary-left {
@@ -278,41 +277,41 @@
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            background: linear-gradient(135deg, rgba(0,212,255,0.12), rgba(123,44,191,0.12));
+            background: #ebf0ff;
             padding: 8px 14px;
             border-radius: 20px;
             font-size: 0.82em;
-            color: #00d4ff;
+            color: #2353ff;
             text-decoration: none;
-            border: 1px solid rgba(0,212,255,0.2);
+            border: 1px solid #C8D5FD;
             transition: all 0.2s ease;
             font-weight: 500;
         }
 
         .quick-event-link:hover {
-            background: linear-gradient(135deg, rgba(0,212,255,0.2), rgba(123,44,191,0.2));
+            background: #dce4ff;
             transform: translateY(-2px);
-            box-shadow: 0 4px 16px rgba(0,212,255,0.15);
-            border-color: rgba(0,212,255,0.35);
+            box-shadow: 0 4px 16px rgba(35,83,255,0.12);
+            border-color: #2353ff;
         }
 
         /* Event Cards with X Links */
         .event-with-links {
-            background: rgba(0,0,0,0.15);
+            background: #f8f9ff;
             border-radius: 12px;
             padding: 18px;
             margin-bottom: 15px;
-            border-left: 3px solid #7b2cbf;
+            border-left: 3px solid #2353ff;
             transition: background 0.2s ease, transform 0.2s ease;
         }
 
         .event-with-links:hover {
-            background: rgba(0,0,0,0.25);
+            background: #f0f3ff;
             transform: translateX(3px);
         }
 
         .event-with-links h4 {
-            color: #00d4ff;
+            color: #0228aa;
             margin-bottom: 10px;
             font-size: 1.1em;
         }
@@ -360,12 +359,12 @@
             display: inline-flex;
             align-items: center;
             gap: 5px;
-            background: rgba(46,204,113,0.15);
-            color: #2ecc71;
+            background: #ecfdf5;
+            color: #059669;
             padding: 5px 12px;
             border-radius: 15px;
             font-size: 0.85em;
-            border: 1px solid rgba(46,204,113,0.3);
+            border: 1px solid #a7f3d0;
         }
 
         /* Section Headers within Hub */
@@ -375,11 +374,11 @@
             gap: 10px;
             margin: 25px 0 15px;
             padding-bottom: 10px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid #e0e4f0;
         }
 
         .hub-section-header h3 {
-            color: #00d4ff;
+            color: #0228aa;
             font-size: 1.2em;
             margin: 0;
         }
@@ -392,46 +391,45 @@
         }
 
         .summary-card {
-            background: linear-gradient(145deg, #1e3a5f 0%, #2d1b4e 100%);
+            background: #fff;
             padding: 24px 20px;
             border-radius: 14px;
             text-align: center;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.2), 0 0 0 1px rgba(255,255,255,0.05);
+            box-shadow: 0 4px 24px rgba(2,40,170,0.08);
+            border: 1px solid #e0e4f0;
             transition: transform 0.25s ease, box-shadow 0.25s ease;
         }
 
         .summary-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.08);
+            box-shadow: 0 8px 32px rgba(2,40,170,0.14);
         }
 
         .summary-card .number {
             font-size: 3em;
             font-weight: bold;
-            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: #0228aa;
         }
 
         .summary-card .label {
-            color: #a0a0a0;
+            color: #575757;
             font-size: 0.95em;
             margin-top: 5px;
         }
 
         .hub-section {
-            background: linear-gradient(145deg, #1e2a4a 0%, #2a1f4e 100%);
+            background: #fff;
             border-radius: 16px;
             margin-bottom: 30px;
             overflow: hidden;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.25), 0 0 0 1px rgba(255,255,255,0.05);
+            box-shadow: 0 4px 24px rgba(2,40,170,0.08);
+            border: 1px solid #e0e4f0;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
         .hub-section:hover {
             transform: translateY(-2px);
-            box-shadow: 0 12px 48px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.08);
+            box-shadow: 0 8px 32px rgba(2,40,170,0.12);
         }
 
         .hub-header {
@@ -458,11 +456,12 @@
         }
 
         .hub-header .region-badge {
-            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            background: rgba(255,255,255,0.2);
             padding: 5px 15px;
             border-radius: 20px;
             font-size: 0.5em;
             font-weight: normal;
+            color: #fff;
         }
 
         .hub-header .status {
@@ -485,24 +484,23 @@
         }
 
         .info-card {
-            background: rgba(255,255,255,0.04);
+            background: #f8f9ff;
             padding: 20px;
             border-radius: 12px;
-            border: 1px solid rgba(255,255,255,0.08);
-            backdrop-filter: blur(10px);
+            border: 1px solid #e0e4f0;
             transition: border-color 0.2s ease, background 0.2s ease;
         }
 
         .info-card:hover {
-            border-color: rgba(255,255,255,0.15);
-            background: rgba(255,255,255,0.06);
+            border-color: #C8D5FD;
+            background: #f0f3ff;
         }
 
         .info-card h3 {
-            color: #00d4ff;
+            color: #0228aa;
             margin-bottom: 15px;
             font-size: 1.1em;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid #e0e4f0;
             padding-bottom: 10px;
         }
 
@@ -516,7 +514,7 @@
         }
 
         .info-card .value {
-            color: #fff;
+            color: #333;
             font-weight: 500;
         }
 
@@ -530,17 +528,17 @@
         .milestone-table td {
             padding: 12px 15px;
             text-align: left;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid #e0e4f0;
         }
 
         .milestone-table th {
-            background: rgba(0,0,0,0.2);
-            color: #00d4ff;
+            background: #ebf0ff;
+            color: #0228aa;
             font-weight: 600;
         }
 
         .milestone-table tr:hover {
-            background: rgba(255,255,255,0.05);
+            background: #f8f9ff;
         }
 
         .status-badge {
@@ -554,9 +552,9 @@
         }
 
         .status-completed {
-            background: rgba(46, 204, 113, 0.15);
-            color: #2ecc71;
-            border: 1px solid rgba(46, 204, 113, 0.3);
+            background: #ecfdf5;
+            color: #059669;
+            border: 1px solid #a7f3d0;
         }
 
         .kpi-grid {
@@ -566,29 +564,29 @@
         }
 
         .kpi-item {
-            background: rgba(0,212,255,0.08);
+            background: #ebf0ff;
             padding: 16px;
             border-radius: 12px;
             text-align: center;
-            border: 1px solid rgba(0,212,255,0.15);
+            border: 1px solid #C8D5FD;
             transition: background 0.2s ease, border-color 0.2s ease;
         }
 
         .kpi-item:hover {
-            background: rgba(0,212,255,0.12);
-            border-color: rgba(0,212,255,0.25);
+            background: #dce4ff;
+            border-color: #2353ff;
         }
 
         .kpi-item .kpi-value {
             font-size: 1.8em;
             font-weight: 700;
-            color: #00d4ff;
+            color: #0228aa;
             line-height: 1.2;
         }
 
         .kpi-item .kpi-label {
             font-size: 0.8em;
-            color: #a0a0a0;
+            color: #575757;
             margin-top: 4px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -600,10 +598,10 @@
 
         .events-list li {
             padding: 10px 15px;
-            background: rgba(255,255,255,0.03);
+            background: #f8f9ff;
             margin-bottom: 8px;
             border-radius: 8px;
-            border-left: 3px solid #7b2cbf;
+            border-left: 3px solid #2353ff;
         }
 
         .channels-list {
@@ -613,17 +611,18 @@
         }
 
         .channel-badge {
-            background: rgba(123, 44, 191, 0.2);
+            background: #ebf0ff;
             padding: 6px 14px;
             border-radius: 18px;
             font-size: 0.82em;
-            border: 1px solid rgba(123, 44, 191, 0.3);
+            border: 1px solid #C8D5FD;
+            color: #2353ff;
             transition: all 0.2s ease;
         }
 
         .channel-badge:hover {
-            background: rgba(123, 44, 191, 0.3);
-            border-color: rgba(123, 44, 191, 0.5);
+            background: #dce4ff;
+            border-color: #2353ff;
         }
 
         .regional-events {
@@ -631,13 +630,13 @@
         }
 
         .regional-events h4 {
-            color: #7b2cbf;
+            color: #0228aa;
             margin: 15px 0 10px;
             font-size: 1em;
         }
 
         .event-card {
-            background: rgba(0,0,0,0.2);
+            background: #f8f9ff;
             padding: 15px;
             border-radius: 10px;
             margin-bottom: 10px;
@@ -646,6 +645,7 @@
             align-items: center;
             flex-wrap: wrap;
             gap: 10px;
+            border: 1px solid #e0e4f0;
         }
 
         .event-card .event-name {
@@ -658,7 +658,8 @@
         }
 
         .event-card .attendees {
-            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            background: #2353ff;
+            color: #fff;
             padding: 5px 15px;
             border-radius: 15px;
             font-weight: bold;
@@ -673,7 +674,7 @@
         }
 
         .leadership-change h4 {
-            color: #f1c40f;
+            color: #d97706;
             margin-bottom: 10px;
         }
 
@@ -692,20 +693,20 @@
         }
 
         .schedule-item {
-            background: rgba(0,0,0,0.2);
+            background: #ebf0ff;
             padding: 10px;
             border-radius: 8px;
             text-align: center;
         }
 
         .schedule-item .day {
-            color: #00d4ff;
+            color: #0228aa;
             font-weight: bold;
         }
 
         .schedule-item .event-type {
             font-size: 0.85em;
-            color: #a0a0a0;
+            color: #575757;
         }
 
         /* Table scroll wrapper */
@@ -1010,20 +1011,19 @@
         .hub-tabs {
             display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
             margin-bottom: 24px; padding: 14px 16px;
-            background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
-            border-radius: 14px;
+            background: #fff; border: 1px solid #e0e4f0;
+            border-radius: 14px; box-shadow: 0 2px 8px rgba(2,40,170,0.06);
         }
         .hub-tab {
-            background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
-            color: #a0a0a0; padding: 10px 18px; border-radius: 22px; cursor: pointer;
+            background: transparent; border: 1px solid #e0e4f0;
+            color: #575757; padding: 10px 18px; border-radius: 22px; cursor: pointer;
             font-size: 0.88em; font-weight: 600; transition: all 0.3s ease;
             font-family: inherit;
         }
-        .hub-tab:hover { background: rgba(0,212,255,0.12); color: #00d4ff; border-color: rgba(0,212,255,0.3); }
+        .hub-tab:hover { background: #ebf0ff; color: #2353ff; border-color: #C8D5FD; }
         .hub-tab.active {
-            background: linear-gradient(135deg, rgba(0,212,255,0.2), rgba(123,44,191,0.2));
-            color: #00d4ff; border-color: rgba(0,212,255,0.5);
-            box-shadow: 0 2px 12px rgba(0,212,255,0.15);
+            background: #0228aa; color: #fff; border-color: #0228aa;
+            box-shadow: 0 2px 12px rgba(2,40,170,0.2);
         }
         .hub-panel { display: none; }
         .hub-panel.active { display: block; }
@@ -1038,7 +1038,7 @@
             cursor: pointer; user-select: none;
         }
         .hub-section-header.collapsible h3::after {
-            content: ' ▾'; font-size: 0.7em; color: #555; transition: transform 0.3s ease;
+            content: ' ▾'; font-size: 0.7em; color: #a5a6a7; transition: transform 0.3s ease;
             display: inline-block; margin-left: 8px;
         }
         .hub-section-header.collapsible.collapsed h3::after {
@@ -1053,10 +1053,11 @@
 
         /* ── FAQ Accordion Cards ── */
         .myth-card {
-            background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09);
+            background: #fff; border: 1px solid #e0e4f0;
             border-radius: 16px; margin-bottom: 14px; overflow: hidden; transition: border-color 0.3s ease;
+            box-shadow: 0 2px 8px rgba(2,40,170,0.04);
         }
-        .myth-card.open { border-color: rgba(0,212,255,0.25); box-shadow: 0 4px 24px rgba(0,212,255,0.07); }
+        .myth-card.open { border-color: #2353ff; box-shadow: 0 4px 24px rgba(35,83,255,0.1); }
         .myth-trigger {
             width: 100%; background: none; border: none; cursor: pointer;
             padding: 20px 22px; display: flex; align-items: flex-start; gap: 14px; text-align: left;
@@ -1066,15 +1067,15 @@
             flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%;
             display: flex; align-items: center; justify-content: center; font-size: 0.95em; margin-top: 2px;
         }
-        .myth-icon.red   { background: rgba(239,68,68,0.14);  color: #f87171; border: 1px solid rgba(239,68,68,0.3); }
-        .myth-icon.amber { background: rgba(251,191,36,0.11);  color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
-        .myth-icon.blue  { background: rgba(96,165,250,0.11);  color: #60a5fa; border: 1px solid rgba(96,165,250,0.3); }
-        .myth-icon.green { background: rgba(52,211,153,0.11);  color: #34d399; border: 1px solid rgba(52,211,153,0.3); }
+        .myth-icon.red   { background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; }
+        .myth-icon.amber { background: #fffbeb; color: #d97706; border: 1px solid #fde68a; }
+        .myth-icon.blue  { background: #ebf0ff; color: #2353ff; border: 1px solid #C8D5FD; }
+        .myth-icon.green { background: #ecfdf5; color: #059669; border: 1px solid #a7f3d0; }
         .myth-trigger-text { flex: 1; }
-        .myth-tag { font-size: 0.66em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #f87171; margin-bottom: 4px; display: block; }
-        .myth-question { font-size: 1.02em; font-weight: 600; color: #e8e8e8; line-height: 1.4; }
-        .myth-chevron { flex-shrink: 0; color: #555; font-size: 0.85em; transition: transform 0.35s ease; margin-top: 4px; }
-        .myth-card.open .myth-chevron { transform: rotate(180deg); color: #00d4ff; }
+        .myth-tag { font-size: 0.66em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #dc2626; margin-bottom: 4px; display: block; }
+        .myth-question { font-size: 1.02em; font-weight: 600; color: #333; line-height: 1.4; }
+        .myth-chevron { flex-shrink: 0; color: #a5a6a7; font-size: 0.85em; transition: transform 0.35s ease; margin-top: 4px; }
+        .myth-card.open .myth-chevron { transform: rotate(180deg); color: #2353ff; }
         .myth-body { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; }
         .myth-body-inner { padding: 0 22px 22px 70px; display: flex; flex-direction: column; gap: 12px; }
         .response-block { border-radius: 10px; padding: 15px 18px; }
@@ -1083,29 +1084,29 @@
         .response-block ul { padding-left: 17px; }
         .response-block li { margin-bottom: 5px; }
         .response-block p + p { margin-top: 7px; }
-        .reality-block { background: rgba(0,212,255,0.07); border-left: 3px solid #00d4ff; }
-        .reality-block .response-label { color: #00d4ff; }
-        .reality-block p, .reality-block li { color: #cce8f0; }
+        .reality-block { background: #ebf0ff; border-left: 3px solid #2353ff; }
+        .reality-block .response-label { color: #0228aa; }
+        .reality-block p, .reality-block li { color: #333; }
         .data-block {
-            background: rgba(167,139,250,0.07); border-left: 3px solid #a78bfa;
+            background: #f8f9ff; border-left: 3px solid #0228aa;
             border-radius: 10px; padding: 13px 17px;
         }
-        .data-block .response-label { color: #a78bfa; }
-        .data-row { display: flex; justify-content: space-between; align-items: baseline; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 0.88em; }
+        .data-block .response-label { color: #0228aa; }
+        .data-row { display: flex; justify-content: space-between; align-items: baseline; padding: 4px 0; border-bottom: 1px solid #e0e4f0; font-size: 0.88em; }
         .data-row:last-child { border-bottom: none; }
-        .data-row .dk { color: #b0b0b0; }
-        .data-row .dv { color: #a78bfa; font-weight: 700; }
+        .data-row .dk { color: #575757; }
+        .data-row .dv { color: #0228aa; font-weight: 700; }
 
         .faq-section-header {
             text-align: center; margin: 40px 0 30px; position: relative;
         }
         .faq-section-header::before {
             content: ''; position: absolute; left: 0; top: 50%; width: 100%; height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(0,212,255,0.3), transparent);
+            background: linear-gradient(90deg, transparent, #C8D5FD, transparent);
         }
         .faq-section-header span {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            padding: 0 25px; position: relative; color: #00d4ff; font-size: 1.1em;
+            background: #f5f7ff;
+            padding: 0 25px; position: relative; color: #0228aa; font-size: 1.1em;
             font-weight: 600; text-transform: uppercase; letter-spacing: 2px;
         }
         .faq-category-label {
@@ -1130,8 +1131,8 @@
         </header>
 
         <!-- Disclaimer Banner -->
-        <div style="background: linear-gradient(135deg, rgba(241,196,15,0.2) 0%, rgba(230,126,34,0.2) 100%); border: 1px solid rgba(241,196,15,0.5); border-radius: 12px; padding: 15px 20px; margin-bottom: 20px;">
-            <p style="margin: 0; color: #f1c40f; font-size: 0.95em;">
+        <div style="background: linear-gradient(135deg, rgba(217,119,6,0.08) 0%, rgba(230,126,34,0.2) 100%); border: 1px solid rgba(217,119,6,0.3); border-radius: 12px; padding: 15px 20px; margin-bottom: 20px;">
+            <p style="margin: 0; color: #d97706; font-size: 0.95em;">
                 <strong>⚠️ Disclaimer:</strong> Information in this document was gathered from public records (Development Updates, X posts, Luma events) and select internal documents (Milestone Acceptance Forms).
             </p>
         </div>
@@ -1153,7 +1154,7 @@
             <p style="margin-bottom: 15px; color: #b8b8b8;">Hubs serve as a bridge between local and global Cardano communities, enabling decentralized governance participation, impactful project development, and strengthening the global Cardano network.</p>
             <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px;">
                 <a href="https://committees.docs.intersectmbo.org/groups-overview/working-groups/mcc-community-hubs-working-group" target="_blank" style="background: rgba(0,212,255,0.2); color: #00d4ff; padding: 8px 15px; border-radius: 20px; text-decoration: none; font-size: 0.9em;">📋 Working Group & KPIs</a>
-                <a href="https://docs.intersectmbo.org/intersect-overview/intersect-committees/membership-and-community-committee-mcc/community-hubs" target="_blank" style="background: rgba(46,204,113,0.2); color: #2ecc71; padding: 8px 15px; border-radius: 20px; text-decoration: none; font-size: 0.9em;">🌍 Community Hubs Docs</a>
+                <a href="https://docs.intersectmbo.org/intersect-overview/intersect-committees/membership-and-community-committee-mcc/community-hubs" target="_blank" style="background: rgba(46,204,113,0.2); color: #059669; padding: 8px 15px; border-radius: 20px; text-decoration: none; font-size: 0.9em;">🌍 Community Hubs Docs</a>
                 <a href="https://docs.intersectmbo.org/intersect-overview/intersect-committees/membership-and-community-committee-mcc" target="_blank" style="background: rgba(155,89,182,0.2); color: #9b59b6; padding: 8px 15px; border-radius: 20px; text-decoration: none; font-size: 0.9em;">🏛️ MCC Overview</a>
             </div>
         </div>
@@ -1166,19 +1167,19 @@
             <div class="hub-content">
                 <div class="info-card">
                     <h3>Hub Overview & Timeline</h3>
-                    <p style="margin-bottom: 15px; color: #888; font-size: 0.9em;">Japan and LATAM were founding hubs operational before May 2024. Hub applications opened in <a href="https://www.intersectmbo.org/news/intersect-development-update-13-may-10th" target="_blank" style="color: #00d4ff;">Update #13</a> for expansion.</p>
+                    <p style="margin-bottom: 15px; color: #888; font-size: 0.9em;">Japan and LATAM were founding hubs operational before May 2024. Hub applications opened in <a href="https://www.intersectmbo.org/news/intersect-development-update-13-may-10th" target="_blank" style="color: #2353ff;">Update #13</a> for expansion.</p>
                     <div class="table-scroll">
                         <table class="milestone-table">
                             <tr><th>#</th><th>Hub</th><th>Region</th><th>Launched</th><th>Contract Period</th><th>Milestones</th></tr>
-                            <tr><td>1</td><td><a href="#japan-hub" style="color: #00d4ff;">Japan Hub</a></td><td>Asia</td><td><a href="https://www.intersectmbo.org/news/intersect-development-update-13-may-10th" style="color: #888;">#13</a></td><td>May 2024 - Jun 2025</td><td>10 (7+3)</td></tr>
-                            <tr><td>2</td><td><a href="#latam-hub" style="color: #00d4ff;">LATAM Hub</a></td><td>Latin America</td><td><a href="https://www.intersectmbo.org/news/intersect-development-update-13-may-10th" style="color: #888;">#13</a></td><td>May 2024 - Jun 2025</td><td>9 (7+2)</td></tr>
-                            <tr><td>3</td><td><a href="#srilanka-hub" style="color: #00d4ff;">Sri Lanka Hub</a> <span style="color: #888; font-size: 0.8em;">(CoinCeylon)</span></td><td>South Asia</td><td><a href="https://www.intersectmbo.org/news/intersect-development-update-15-may-24th" style="color: #888;">#15</a></td><td>May 24, 2024 - Jun 2025</td><td>10 (7+3)</td></tr>
-                            <tr><td>4</td><td><a href="#wada-hub" style="color: #00d4ff;">WADA Hub</a></td><td>Africa</td><td><a href="https://www.intersectmbo.org/news/intersect-development-update-16-may-31st" style="color: #888;">#16</a></td><td>May 31, 2024 - Jun 2025</td><td>8 (5+3)</td></tr>
-                            <tr><td>5</td><td><a href="#europe-hub" style="color: #00d4ff;">Europe Hub</a> <span style="color: #888; font-size: 0.8em;">(Clay Nation)</span></td><td>Europe</td><td><a href="https://www.intersectmbo.org/news/intersect-development-update-31-september-13th" style="color: #888;">#31</a></td><td>Sep 6, 2024 - Jun 2025</td><td>3 (3+0)</td></tr>
-                            <tr><td>6</td><td><a href="#awen-hub" style="color: #00d4ff;">North America Hub</a> <span style="color: #888; font-size: 0.8em;">(AWEN)</span></td><td>North America</td><td><a href="https://www.intersectmbo.org/news/intersect-development-update-32-september-20th" style="color: #888;">#32</a></td><td>Sep 17, 2024 - Jun 2025</td><td>9 (6+3)</td></tr>
+                            <tr><td>1</td><td><a href="#japan-hub" style="color: #2353ff;">Japan Hub</a></td><td>Asia</td><td><a href="https://www.intersectmbo.org/news/intersect-development-update-13-may-10th" style="color: #888;">#13</a></td><td>May 2024 - Jun 2025</td><td>10 (7+3)</td></tr>
+                            <tr><td>2</td><td><a href="#latam-hub" style="color: #2353ff;">LATAM Hub</a></td><td>Latin America</td><td><a href="https://www.intersectmbo.org/news/intersect-development-update-13-may-10th" style="color: #888;">#13</a></td><td>May 2024 - Jun 2025</td><td>9 (7+2)</td></tr>
+                            <tr><td>3</td><td><a href="#srilanka-hub" style="color: #2353ff;">Sri Lanka Hub</a> <span style="color: #888; font-size: 0.8em;">(CoinCeylon)</span></td><td>South Asia</td><td><a href="https://www.intersectmbo.org/news/intersect-development-update-15-may-24th" style="color: #888;">#15</a></td><td>May 24, 2024 - Jun 2025</td><td>10 (7+3)</td></tr>
+                            <tr><td>4</td><td><a href="#wada-hub" style="color: #2353ff;">WADA Hub</a></td><td>Africa</td><td><a href="https://www.intersectmbo.org/news/intersect-development-update-16-may-31st" style="color: #888;">#16</a></td><td>May 31, 2024 - Jun 2025</td><td>8 (5+3)</td></tr>
+                            <tr><td>5</td><td><a href="#europe-hub" style="color: #2353ff;">Europe Hub</a> <span style="color: #888; font-size: 0.8em;">(Clay Nation)</span></td><td>Europe</td><td><a href="https://www.intersectmbo.org/news/intersect-development-update-31-september-13th" style="color: #888;">#31</a></td><td>Sep 6, 2024 - Jun 2025</td><td>3 (3+0)</td></tr>
+                            <tr><td>6</td><td><a href="#awen-hub" style="color: #2353ff;">North America Hub</a> <span style="color: #888; font-size: 0.8em;">(AWEN)</span></td><td>North America</td><td><a href="https://www.intersectmbo.org/news/intersect-development-update-32-september-20th" style="color: #888;">#32</a></td><td>Sep 17, 2024 - Jun 2025</td><td>9 (6+3)</td></tr>
                         </table>
                     </div>
-                    <p style="margin-top: 15px; color: #888; font-size: 0.9em;"><strong>Contract Phases:</strong> Original contracts funded by CDH. Interim 3-month bridge funding (Apr-Jun 2025) until Treasury withdrawal. Source: <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts" target="_blank" style="color: #00d4ff;">Intersect MBO Documentation</a></p>
+                    <p style="margin-top: 15px; color: #888; font-size: 0.9em;"><strong>Contract Phases:</strong> Original contracts funded by CDH. Interim 3-month bridge funding (Apr-Jun 2025) until Treasury withdrawal. Source: <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts" target="_blank" style="color: #2353ff;">Intersect MBO Documentation</a></p>
                 </div>
 
             </div>
@@ -1186,17 +1187,17 @@
 
         <!-- Sources/References Summary -->
         <div style="background: rgba(0,212,255,0.08); border: 1px solid rgba(0,212,255,0.25); border-radius: 12px; padding: 15px 20px; margin-bottom: 25px;">
-            <h4 style="color: #00d4ff; margin-bottom: 12px;">📚 <a href="#references" style="color: #00d4ff; text-decoration: none;">Sources & References</a></h4>
+            <h4 style="color: #2353ff; margin-bottom: 12px;">📚 <a href="#references" style="color: #2353ff; text-decoration: none;">Sources & References</a></h4>
             <div style="display: flex; flex-wrap: wrap; gap: 15px; font-size: 0.9em; color: #a0a0a0;">
-                <span><strong style="color: #00d4ff;">48</strong> MAF Documents</span>
-                <span><strong style="color: #00d4ff;">49</strong> Milestones</span>
-                <span><strong style="color: #00d4ff;">185+</strong> X/Twitter Links</span>
-                <span><strong style="color: #00d4ff;">37</strong> Dev Updates</span>
-                <span><strong style="color: #00d4ff;">30+</strong> Luma Events</span>
-                <span><strong style="color: #00d4ff;">15+</strong> Video Recordings</span>
+                <span><strong style="color: #2353ff;">48</strong> MAF Documents</span>
+                <span><strong style="color: #2353ff;">49</strong> Milestones</span>
+                <span><strong style="color: #2353ff;">185+</strong> X/Twitter Links</span>
+                <span><strong style="color: #2353ff;">37</strong> Dev Updates</span>
+                <span><strong style="color: #2353ff;">30+</strong> Luma Events</span>
+                <span><strong style="color: #2353ff;">15+</strong> Video Recordings</span>
             </div>
             <p style="margin-top: 10px; font-size: 0.85em; color: #888;">
-                <a href="#references" style="color: #00d4ff;">View full references ↓</a>
+                <a href="#references" style="color: #2353ff;">View full references ↓</a>
             </p>
         </div>
 
@@ -1252,7 +1253,7 @@
         <!-- Hub Statistics Table (March 2025) -->
         <div class="info-card" style="margin: 30px 0;">
             <h3 style="margin-bottom: 15px; color: #00d4ff;">📊 Hub Statistics (as of March 12, 2025)</h3>
-            <p style="font-size: 0.85em; color: #888; margin-bottom: 15px;">Source: <a href="https://docs.google.com/presentation/d/1LckpJMmmd4ctA9NUfA-yYwlVFI7HWiuihy1d94C9n5s/edit" target="_blank" style="color: #00d4ff;">Existing Community Hubs Report</a></p>
+            <p style="font-size: 0.85em; color: #888; margin-bottom: 15px;">Source: <a href="https://docs.google.com/presentation/d/1LckpJMmmd4ctA9NUfA-yYwlVFI7HWiuihy1d94C9n5s/edit" target="_blank" style="color: #2353ff;">Existing Community Hubs Report</a></p>
             <div class="table-scroll">
                 <table class="milestone-table" style="font-size: 0.9em;">
                     <tr>
@@ -1322,13 +1323,13 @@
                 </table>
             </div>
             <div style="margin-top: 15px; display: flex; flex-wrap: wrap; gap: 20px; font-size: 0.85em; color: #a0a0a0;">
-                <span><strong style="color: #2ecc71;">70%</strong> Individual Members in hub regions</span>
-                <span><strong style="color: #3498db;">30%</strong> Individual Members attributed to Japan</span>
+                <span><strong style="color: #059669;">70%</strong> Individual Members in hub regions</span>
+                <span><strong style="color: #2353ff;">30%</strong> Individual Members attributed to Japan</span>
                 <span><strong style="color: #9b59b6;">39%</strong> Associates in hub regions</span>
                 <span><strong style="color: #e67e22;">28%</strong> Enterprise Members in hub regions</span>
             </div>
             <p style="font-size: 0.8em; color: #666; margin-top: 10px;"><em>*Attendees include industry events where hubs were represented. Figures are those attributed to a community hub region.</em></p>
-            <p style="font-size: 0.8em; color: #888; margin-top: 6px;"><sup>†</sup> <strong style="color: #f1c40f;">Outlier figures</strong> — Sri Lanka (165,122) and Europe (100,853) reflect total attendance at large conferences/events where the hub was present, not hub-organised or hub-attributed attendance specifically. These two figures account for 265,975 of the 293,254 reported total (90.7%). <strong>Adjusted attendee total excluding these outliers: ~27,279.</strong> See <a href="#attendee-note" style="color: #00d4ff;">Data Methodology Note</a> in References.</p>
+            <p style="font-size: 0.8em; color: #888; margin-top: 6px;"><sup>†</sup> <strong style="color: #d97706;">Outlier figures</strong> — Sri Lanka (165,122) and Europe (100,853) reflect total attendance at large conferences/events where the hub was present, not hub-organised or hub-attributed attendance specifically. These two figures account for 265,975 of the 293,254 reported total (90.7%). <strong>Adjusted attendee total excluding these outliers: ~27,279.</strong> See <a href="#attendee-note" style="color: #2353ff;">Data Methodology Note</a> in References.</p>
         </div>
 
         <!-- Section: Regional Hubs with Tabs -->
@@ -1559,7 +1560,7 @@
                         <li>Workshop #2 - Apr 24, 2025 (Core Category Proposals)</li>
                         <li>Budget Town Hall - Apr 30, 2025</li>
                     </ul>
-                    <p style="font-size: 0.85em; color: #888;">Feedback anonymized and submitted to <a href="https://gov.tools" style="color: #00d4ff;">gov.tools</a></p>
+                    <p style="font-size: 0.85em; color: #888;">Feedback anonymized and submitted to <a href="https://gov.tools" style="color: #2353ff;">gov.tools</a></p>
                     <div class="event-links">
                         <a href="https://lu.ma/yn1uh7yg" target="_blank" class="luma-link">📅 Workshop #2 Luma</a>
                     </div>
@@ -1640,10 +1641,10 @@
                         <tr><td>5</td><td>Continued Engagement</td><td><span class="status-badge status-completed">Completed</span></td></tr>
                         <tr><td>6</td><td>Expansion</td><td><span class="status-badge status-completed">Completed</span></td></tr>
                     </table>
-                    <p style="font-size: 0.85em; color: #888; margin: 15px 0 10px;"><strong>Interim Period</strong> (Apr 1 - Jun 30, 2025) · Contract: MCC-0001-25 · 16,216 ADA · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts/north-america-community-hub-interim-contract" target="_blank" style="color: #2ecc71;">SOW</a></p>
+                    <p style="font-size: 0.85em; color: #888; margin: 15px 0 10px;"><strong>Interim Period</strong> (Apr 1 - Jun 30, 2025) · Contract: MCC-0001-25 · 16,216 ADA · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts/north-america-community-hub-interim-contract" target="_blank" style="color: #059669;">SOW</a></p>
                     <table class="milestone-table">
                         <tr><th>#</th><th>Milestone</th><th>Status</th><th>Key Deliverables</th></tr>
-                        <tr><td>7</td><td>April 2025</td><td><span class="status-badge status-completed">Completed</span></td><td style="text-align: left; font-size: 0.85em;">Budget Workshop #1 (29 RSVPs, 8 attended) · Budget Workshop #2 (18 RSVPs, 7 attended) · Town Hall X Space with Growth Committee · 12 proposals commented on <a href="https://gov.tools/budget_discussion" target="_blank" style="color: #3498db;">gov.tools</a></td></tr>
+                        <tr><td>7</td><td>April 2025</td><td><span class="status-badge status-completed">Completed</span></td><td style="text-align: left; font-size: 0.85em;">Budget Workshop #1 (29 RSVPs, 8 attended) · Budget Workshop #2 (18 RSVPs, 7 attended) · Town Hall X Space with Growth Committee · 12 proposals commented on <a href="https://gov.tools/budget_discussion" target="_blank" style="color: #2353ff;">gov.tools</a></td></tr>
                         <tr><td>8</td><td>May 2025</td><td><span class="status-badge status-completed">Completed</span></td><td style="text-align: left; font-size: 0.85em;"><strong>Cardano x Consensus Toronto</strong> (621 signups, 143 attended) · Partners: Rare Network, Clay Nation, Sundial Protocol, Draper University · Town Hall with Civics Committee</td></tr>
                         <tr><td>9</td><td>June 2025</td><td><span class="status-badge status-completed">Completed</span></td><td style="text-align: left; font-size: 0.85em;">Final Town Hall (24 attendees) · Hub operations concluded · Discussion on future of NA community building</td></tr>
                     </table>
@@ -1891,10 +1892,10 @@
                     </div>
                     <p style="margin-top: 15px; font-size: 0.85em; color: #888;"><strong>Total in Yen:</strong> ¥2,857,325</p>
                     <div style="margin-top: 15px; padding: 12px; background: rgba(46,204,113,0.15); border-radius: 8px;">
-                        <p style="margin: 0; color: #2ecc71;"><strong>✓ 15,436 ADA returned to treasury</strong></p>
-                        <p style="margin-top: 5px; font-size: 0.85em; color: #888;">Unused funds fully returned upon hub closure. <a href="https://cardanoscan.io/address/0111e909a2fb7ed1b970f7e4ca388350b07ec1151a2a01234f622c584edb506c52dad37a14f71a1d7309f2e9e24f594eb880ec13a9f670fa11" target="_blank" style="color: #00d4ff;">View on Cardanoscan</a></p>
+                        <p style="margin: 0; color: #059669;"><strong>✓ 15,436 ADA returned to treasury</strong></p>
+                        <p style="margin-top: 5px; font-size: 0.85em; color: #888;">Unused funds fully returned upon hub closure. <a href="https://cardanoscan.io/address/0111e909a2fb7ed1b970f7e4ca388350b07ec1151a2a01234f622c584edb506c52dad37a14f71a1d7309f2e9e24f594eb880ec13a9f670fa11" target="_blank" style="color: #2353ff;">View on Cardanoscan</a></p>
                     </div>
-                    <p style="margin-top: 10px; font-size: 0.8em; color: #666;">Source: <a href="https://docs.google.com/spreadsheets/d/1muVvwKtyk6WZHOKFpXRorlfGUdqiXAl70P88ttcK_ns/edit" target="_blank" style="color: #00d4ff;">Japan Hub Council Expenditure Spreadsheet</a></p>
+                    <p style="margin-top: 10px; font-size: 0.8em; color: #666;">Source: <a href="https://docs.google.com/spreadsheets/d/1muVvwKtyk6WZHOKFpXRorlfGUdqiXAl70P88ttcK_ns/edit" target="_blank" style="color: #2353ff;">Japan Hub Council Expenditure Spreadsheet</a></p>
                 </div>
 
                 <!-- Events & Activations -->
@@ -1999,7 +2000,7 @@
                         <a href="https://x.com/IntersectJapan/status/1807738405595521049" target="_blank" class="x-link">𝕏 Jun 2024 Space</a>
                         <a href="https://x.com/intersectjapan/status/1897795801847636163" target="_blank" class="x-link">𝕏 Mar 2025 Space</a>
                     </div>
-                    <p style="margin-top: 12px; font-size: 0.85em;"><strong>📅 Event Calendar:</strong> <a href="https://linktr.ee/cardanoeventjapan" target="_blank" style="color: #00d4ff;">linktr.ee/cardanoeventjapan</a></p>
+                    <p style="margin-top: 12px; font-size: 0.85em;"><strong>📅 Event Calendar:</strong> <a href="https://linktr.ee/cardanoeventjapan" target="_blank" style="color: #2353ff;">linktr.ee/cardanoeventjapan</a></p>
                 </div>
 
                 <!-- Weekly Schedule -->
@@ -2041,10 +2042,10 @@
                         <tr><td>6</td><td>Expansion</td><td><span class="status-badge status-completed">Completed</span></td></tr>
                         <tr><td>7</td><td>Final</td><td><span class="status-badge status-completed">Completed</span></td></tr>
                     </table>
-                    <p style="font-size: 0.85em; color: #888; margin: 15px 0 10px;"><strong>Interim Period</strong> (Apr 1 - Jun 30, 2025) · Contract: MCC-0005-25 · 12,000 ADA · Manager: Kyosuke Takatsuki · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts/japan-community-hub-interim-contract" target="_blank" style="color: #2ecc71;">SOW</a></p>
+                    <p style="font-size: 0.85em; color: #888; margin: 15px 0 10px;"><strong>Interim Period</strong> (Apr 1 - Jun 30, 2025) · Contract: MCC-0005-25 · 12,000 ADA · Manager: Kyosuke Takatsuki · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts/japan-community-hub-interim-contract" target="_blank" style="color: #059669;">SOW</a></p>
                     <table class="milestone-table">
                         <tr><th>#</th><th>Milestone</th><th>Status</th><th>Key Deliverables</th></tr>
-                        <tr><td>8</td><td>April 2025</td><td><span class="status-badge status-completed">Completed</span></td><td style="text-align: left; font-size: 0.85em;">Budget Workshops Apr 11 & 17 (65 total participants) · 19 proposals reviewed · <a href="https://lu.ma/zlrgjwxl" target="_blank" style="color: #3498db;">Budget Showcase</a> · TEAMZ Web3 Tokyo · Town Halls Apr 4/18</td></tr>
+                        <tr><td>8</td><td>April 2025</td><td><span class="status-badge status-completed">Completed</span></td><td style="text-align: left; font-size: 0.85em;">Budget Workshops Apr 11 & 17 (65 total participants) · 19 proposals reviewed · <a href="https://lu.ma/zlrgjwxl" target="_blank" style="color: #2353ff;">Budget Showcase</a> · TEAMZ Web3 Tokyo · Town Halls Apr 4/18</td></tr>
                         <tr><td>9</td><td>May 2025</td><td><span class="status-badge status-completed">Completed</span></td><td style="text-align: left; font-size: 0.85em;">Town Halls May 16/23/30 · <strong>SPO JAPAN GUILD event</strong> (36 participants, Speaker: Mr. BTBF) · "A New Dawn" campaign translated · CC election announcements</td></tr>
                         <tr><td>10</td><td>June 2025</td><td><span class="status-badge status-completed">Completed</span></td><td style="text-align: left; font-size: 0.85em;">Town Halls Jun 6/20/27 · <strong>Brave Software Asia event</strong> (20 participants) - First Brave x Cardano event in Japan · 2025 CC election voting reminders translated</td></tr>
                     </table>
@@ -2224,7 +2225,7 @@
                         <tr><td>6</td><td>Expansion</td><td><span class="status-badge status-completed">Completed</span></td></tr>
                         <tr><td>7</td><td>Final</td><td><span class="status-badge status-completed">Completed</span></td></tr>
                     </table>
-                    <p style="font-size: 0.85em; color: #888; margin: 15px 0 10px;"><strong>Interim Period</strong> (Apr 1 - Jun 30, 2025) · 23,438 ADA · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts/latam-community-hub-interim-contract" target="_blank" style="color: #2ecc71;">SOW</a></p>
+                    <p style="font-size: 0.85em; color: #888; margin: 15px 0 10px;"><strong>Interim Period</strong> (Apr 1 - Jun 30, 2025) · 23,438 ADA · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts/latam-community-hub-interim-contract" target="_blank" style="color: #059669;">SOW</a></p>
                     <table class="milestone-table">
                         <tr><th>#</th><th>Milestone</th><th>Status</th><th>Key Deliverables</th></tr>
                         <tr><td>8</td><td>April 2025</td><td><span class="status-badge status-completed">Completed</span></td><td style="text-align: left; font-size: 0.85em;">4 Budget Workshops: Argentina (Apr 12, 26) & Brazil (Apr 19, 29) · 24+ proposals reviewed with GovTool feedback · Sub-hub coordination</td></tr>
@@ -2308,7 +2309,7 @@
                     <div class="hub-summary-left">
                         <div class="hub-meta">
                             <p><strong>Manager:</strong> <span>Kavinda Kariyapperuma</span></p>
-                            <p style="font-size: 0.9em; color: #f1c40f;"><em>First Intersect Hub in South Asia</em></p>
+                            <p style="font-size: 0.9em; color: #d97706;"><em>First Intersect Hub in South Asia</em></p>
                         </div>
                         <div class="channels-list" style="margin-top: 10px;">
                             <a href="https://x.com/IntersectSriL" target="_blank" class="channel-badge" style="text-decoration: none; color: inherit;">@IntersectSriL</a>
@@ -2463,12 +2464,12 @@
                         <tr><td>6</td><td>University Partnerships</td><td><span class="status-badge status-completed">Completed</span></td></tr>
                         <tr><td>7</td><td>Final</td><td><span class="status-badge status-completed">Completed</span></td></tr>
                     </table>
-                    <p style="font-size: 0.85em; color: #888; margin: 15px 0 10px;"><strong>Interim Period</strong> (Apr 1 - Jun 30, 2025) · 18,182 ADA · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts/sri-lanka-community-hub-interim-contract" target="_blank" style="color: #2ecc71;">SOW</a></p>
+                    <p style="font-size: 0.85em; color: #888; margin: 15px 0 10px;"><strong>Interim Period</strong> (Apr 1 - Jun 30, 2025) · 18,182 ADA · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts/sri-lanka-community-hub-interim-contract" target="_blank" style="color: #059669;">SOW</a></p>
                     <table class="milestone-table">
                         <tr><th>#</th><th>Milestone</th><th>Status</th><th>Key Deliverables</th></tr>
                         <tr><td>8</td><td>April 2025</td><td><span class="status-badge status-completed">Completed</span></td><td style="text-align: left; font-size: 0.85em;"><strong>Physical Workshop</strong> (Apr 19, 21 participants) · <strong>Virtual Workshop</strong> (Apr 20, 41 participants) · <strong>Town Hall</strong> (Apr 26, 72 attendees) · Multi-language content (Sinhala/Tamil/English)</td></tr>
                         <tr><td>9</td><td>May 2025</td><td><span class="status-badge status-completed">Completed</span></td><td style="text-align: left; font-size: 0.85em;"><strong>Town Hall</strong> (May 30, 90 attendees) with Daniel Friedman & Sebastien Guillemot · <strong>Uni Kelaniya Final</strong> (108 certified) · <strong>Uni Ruhuna Launch</strong> (168 students) · <strong>Met President of Sri Lanka</strong></td></tr>
-                        <tr><td>10</td><td>June 2025</td><td><span class="status-badge status-completed">Completed</span></td><td style="text-align: left; font-size: 0.85em;"><strong>UniHack 2025</strong> (225 students, 61 teams, 18 universities) · <strong>Red Cypher 2.0</strong> (200+ participants) · Uni Ruhuna Workshops 02-04 · X Space series in Sinhala/Tamil · <a href="https://youtu.be/zQuA67sxU8I" target="_blank" style="color: #3498db;">Town Hall Video</a></td></tr>
+                        <tr><td>10</td><td>June 2025</td><td><span class="status-badge status-completed">Completed</span></td><td style="text-align: left; font-size: 0.85em;"><strong>UniHack 2025</strong> (225 students, 61 teams, 18 universities) · <strong>Red Cypher 2.0</strong> (200+ participants) · Uni Ruhuna Workshops 02-04 · X Space series in Sinhala/Tamil · <a href="https://youtu.be/zQuA67sxU8I" target="_blank" style="color: #2353ff;">Town Hall Video</a></td></tr>
                     </table>
                 </div>
 
@@ -2667,7 +2668,7 @@
                         <tr><td>4</td><td>West Africa Launch</td><td><span class="status-badge status-completed">Completed</span></td><td>Sep 4, 2024</td></tr>
                         <tr><td>5</td><td>East Africa Launch</td><td><span class="status-badge status-completed">Completed</span></td><td>Oct 2, 2024</td></tr>
                     </table>
-                    <p style="font-size: 0.85em; color: #888; margin: 15px 0 10px;"><strong>Interim Period</strong> (Apr 1 - Jun 30, 2025) · Contract: MCC-0006-25 · 18,182 ADA · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts/africa-community-hub-interim-contract" target="_blank" style="color: #2ecc71;">SOW</a></p>
+                    <p style="font-size: 0.85em; color: #888; margin: 15px 0 10px;"><strong>Interim Period</strong> (Apr 1 - Jun 30, 2025) · Contract: MCC-0006-25 · 18,182 ADA · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts/africa-community-hub-interim-contract" target="_blank" style="color: #059669;">SOW</a></p>
                     <table class="milestone-table">
                         <tr><th>#</th><th>Milestone</th><th>Status</th><th>Key Deliverables</th></tr>
                         <tr><td>6</td><td>April 2025</td><td><span class="status-badge status-completed">Completed</span></td><td style="text-align: left; font-size: 0.85em;"><strong>Budget Workshops:</strong> Kenya (Apr 22), DRC (Apr 23), Cameroon (Apr 24) · Multi-language support (English/French/Swahili) · GovTool feedback</td></tr>
@@ -2901,7 +2902,7 @@
         </div>
 
         <footer id="references">
-            <h3 style="color: #00d4ff; margin-bottom: 15px;">📚 Sources & References</h3>
+            <h3 style="color: #2353ff; margin-bottom: 15px;">📚 Sources & References</h3>
             <p>Report generated from Intersect Milestone Acceptance Forms</p>
             <p>All milestones approved via DocuSign verification</p>
             <p style="margin-top: 10px;"><strong>Key Approvers:</strong> Hannah Williams (Community Hub Lead), Duncan Soutar, Abbie Yeates</p>
@@ -2944,38 +2945,38 @@
                 <p style="font-size: 0.9em; color: #888; margin-bottom: 10px;"><strong>Data Sources:</strong></p>
                 <ul style="font-size: 0.85em; color: #888; list-style: none; padding: 0;">
                     <li style="margin-bottom: 5px;">- <strong>Primary:</strong> 48 Milestone Acceptance Forms (MAF) - 35 original + 13 interim contracts - DocuSign-verified documents submitted to billing@intersectmbo.org</li>
-                    <li style="margin-bottom: 5px;">- <strong>Contract Data:</strong> <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts" target="_blank" style="color: #00d4ff;">Intersect MBO - Membership and Community Committee Contracts</a></li>
-                    <li style="margin-bottom: 5px;">- <strong>Hub Timeline & KPIs:</strong> Intersect Development Updates #13-#70 (May 2024 - July 2025) - <a href="https://intersectmbo.org/news" target="_blank" style="color: #00d4ff;">intersectmbo.org/news</a></li>
-                    <li style="margin-bottom: 5px;">- <strong>Community Hubs:</strong> <a href="https://docs.intersectmbo.org/intersect-overview/intersect-committees/membership-and-community-committee-mcc/community-hubs" target="_blank" style="color: #00d4ff;">Community Hubs Documentation</a> · <a href="https://committees.docs.intersectmbo.org/groups-overview/working-groups/mcc-community-hubs-working-group" target="_blank" style="color: #00d4ff;">Working Group KPIs</a></li>
-                    <li style="margin-bottom: 5px;">- <strong>Event Reports:</strong> <a href="https://forum.cardano.org" target="_blank" style="color: #00d4ff;">Cardano Forum</a></li>
-                    <li style="margin-bottom: 5px;">- <strong>Event Coverage:</strong> <a href="https://www.lidonation.com" target="_blank" style="color: #00d4ff;">Lido Nation</a></li>
+                    <li style="margin-bottom: 5px;">- <strong>Contract Data:</strong> <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts" target="_blank" style="color: #2353ff;">Intersect MBO - Membership and Community Committee Contracts</a></li>
+                    <li style="margin-bottom: 5px;">- <strong>Hub Timeline & KPIs:</strong> Intersect Development Updates #13-#70 (May 2024 - July 2025) - <a href="https://intersectmbo.org/news" target="_blank" style="color: #2353ff;">intersectmbo.org/news</a></li>
+                    <li style="margin-bottom: 5px;">- <strong>Community Hubs:</strong> <a href="https://docs.intersectmbo.org/intersect-overview/intersect-committees/membership-and-community-committee-mcc/community-hubs" target="_blank" style="color: #2353ff;">Community Hubs Documentation</a> · <a href="https://committees.docs.intersectmbo.org/groups-overview/working-groups/mcc-community-hubs-working-group" target="_blank" style="color: #2353ff;">Working Group KPIs</a></li>
+                    <li style="margin-bottom: 5px;">- <strong>Event Reports:</strong> <a href="https://forum.cardano.org" target="_blank" style="color: #2353ff;">Cardano Forum</a></li>
+                    <li style="margin-bottom: 5px;">- <strong>Event Coverage:</strong> <a href="https://www.lidonation.com" target="_blank" style="color: #2353ff;">Lido Nation</a></li>
                 </ul>
                 <!-- Attendee Outlier Methodology Note -->
-                <div id="attendee-note" style="background: rgba(241,196,15,0.1); border: 1px solid rgba(241,196,15,0.35); border-radius: 10px; padding: 14px 18px; margin: 20px 0;">
-                    <p style="font-size: 0.9em; color: #f1c40f; font-weight: bold; margin-bottom: 8px;">⚠️ Data Methodology Note: Attendee Outliers Removed</p>
-                    <p style="font-size: 0.85em; color: #a0a0a0; margin-bottom: 8px;">Two attendee figures in the Hub Statistics table (sourced from the <a href="https://docs.google.com/presentation/d/1LckpJMmmd4ctA9NUfA-yYwlVFI7HWiuihy1d94C9n5s/edit" target="_blank" style="color: #00d4ff;">Existing Community Hubs Report, March 2025</a>) were identified as outliers and have been flagged (†) in the table above:</p>
+                <div id="attendee-note" style="background: rgba(217,119,6,0.06); border: 1px solid rgba(217,119,6,0.25); border-radius: 10px; padding: 14px 18px; margin: 20px 0;">
+                    <p style="font-size: 0.9em; color: #d97706; font-weight: bold; margin-bottom: 8px;">⚠️ Data Methodology Note: Attendee Outliers Removed</p>
+                    <p style="font-size: 0.85em; color: #a0a0a0; margin-bottom: 8px;">Two attendee figures in the Hub Statistics table (sourced from the <a href="https://docs.google.com/presentation/d/1LckpJMmmd4ctA9NUfA-yYwlVFI7HWiuihy1d94C9n5s/edit" target="_blank" style="color: #2353ff;">Existing Community Hubs Report, March 2025</a>) were identified as outliers and have been flagged (†) in the table above:</p>
                     <ul style="font-size: 0.85em; color: #a0a0a0; padding-left: 20px; margin-bottom: 8px;">
                         <li><strong style="color: #fff;">Sri Lanka — 165,122 attendees:</strong> Reflects the total attendance of large-scale industry events (e.g. Cardano Summit 2024) where the hub was represented, not attendees at hub-organised or hub-specific programming.</li>
                         <li style="margin-top: 6px;"><strong style="color: #fff;">Europe — 100,853 attendees:</strong> Similarly reflects total footfall at conferences (e.g. Cardano Summit 2024 Dubai) co-located or co-hosted with the hub, not hub-attributed attendance.</li>
                     </ul>
-                    <p style="font-size: 0.85em; color: #a0a0a0;">These two figures represent <strong style="color: #f1c40f;">265,975 of the 293,254 reported total (90.7%)</strong>. The adjusted attendee figure across all six hubs, excluding these outliers, is approximately <strong style="color: #2ecc71;">27,279</strong>. The raw figures are retained in the table as originally reported for transparency.</p>
+                    <p style="font-size: 0.85em; color: #a0a0a0;">These two figures represent <strong style="color: #d97706;">265,975 of the 293,254 reported total (90.7%)</strong>. The adjusted attendee figure across all six hubs, excluding these outliers, is approximately <strong style="color: #059669;">27,279</strong>. The raw figures are retained in the table as originally reported for transparency.</p>
                 </div>
 
                 <p style="font-size: 0.85em; color: #888; margin-top: 15px;"><strong>Key Development Updates Referenced:</strong></p>
                 <ul style="font-size: 0.8em; color: #666; list-style: none; padding: 0; columns: 2;">
-                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-13-may-10th" style="color: #00d4ff;">#13</a> - Hub applications open</li>
-                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-15-may-24th" style="color: #00d4ff;">#15</a> - Sri Lanka launched</li>
-                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-16-may-31st" style="color: #00d4ff;">#16</a> - WADA 4th hub</li>
-                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-18-june-14th" style="color: #00d4ff;">#18</a> - Japan launch event</li>
-                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-25-august-2nd" style="color: #00d4ff;">#25</a> - Sub-hubs launched</li>
-                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-28-august-23rd" style="color: #00d4ff;">#28</a> - 35% memberships from hubs</li>
-                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-31-september-13th" style="color: #00d4ff;">#31</a> - Europe Hub launched</li>
-                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-32-september-20th" style="color: #00d4ff;">#32</a> - North American Hub launched</li>
-                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-36-october-18" style="color: #00d4ff;">#36</a> - AMM events (141 Sri Lanka)</li>
-                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-39-november-8" style="color: #00d4ff;">#39</a> - Town Halls (Europe 155)</li>
-                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-47-january-31st" style="color: #00d4ff;">#47</a> - GM 2025, Uruguay Launch</li>
-                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-52-march-7th" style="color: #00d4ff;">#52</a> - Inter-Regional Town Hall (110)</li>
-                    <li><a href="https://intersectmbo.org/news/intersect-development-update-70-july-11" style="color: #00d4ff;">#70</a> - Hub wrap-up report</li>
+                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-13-may-10th" style="color: #2353ff;">#13</a> - Hub applications open</li>
+                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-15-may-24th" style="color: #2353ff;">#15</a> - Sri Lanka launched</li>
+                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-16-may-31st" style="color: #2353ff;">#16</a> - WADA 4th hub</li>
+                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-18-june-14th" style="color: #2353ff;">#18</a> - Japan launch event</li>
+                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-25-august-2nd" style="color: #2353ff;">#25</a> - Sub-hubs launched</li>
+                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-28-august-23rd" style="color: #2353ff;">#28</a> - 35% memberships from hubs</li>
+                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-31-september-13th" style="color: #2353ff;">#31</a> - Europe Hub launched</li>
+                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-32-september-20th" style="color: #2353ff;">#32</a> - North American Hub launched</li>
+                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-36-october-18" style="color: #2353ff;">#36</a> - AMM events (141 Sri Lanka)</li>
+                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-39-november-8" style="color: #2353ff;">#39</a> - Town Halls (Europe 155)</li>
+                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-47-january-31st" style="color: #2353ff;">#47</a> - GM 2025, Uruguay Launch</li>
+                    <li><a href="https://www.intersectmbo.org/news/intersect-development-update-52-march-7th" style="color: #2353ff;">#52</a> - Inter-Regional Town Hall (110)</li>
+                    <li><a href="https://intersectmbo.org/news/intersect-development-update-70-july-11" style="color: #2353ff;">#70</a> - Hub wrap-up report</li>
                 </ul>
             </div>
         </footer>
