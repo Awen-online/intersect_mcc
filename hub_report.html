@@ -994,6 +994,118 @@
                 font-size: 1.1em;
             }
         }
+
+        /* ── Hub Tabs ── */
+        .hub-tabs {
+            display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+            margin-bottom: 24px; padding: 14px 16px;
+            background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 14px;
+        }
+        .hub-tab {
+            background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+            color: #a0a0a0; padding: 10px 18px; border-radius: 22px; cursor: pointer;
+            font-size: 0.88em; font-weight: 600; transition: all 0.3s ease;
+            font-family: inherit;
+        }
+        .hub-tab:hover { background: rgba(0,212,255,0.12); color: #00d4ff; border-color: rgba(0,212,255,0.3); }
+        .hub-tab.active {
+            background: linear-gradient(135deg, rgba(0,212,255,0.2), rgba(123,44,191,0.2));
+            color: #00d4ff; border-color: rgba(0,212,255,0.5);
+            box-shadow: 0 2px 12px rgba(0,212,255,0.15);
+        }
+        .hub-panel { display: none; }
+        .hub-panel.active { display: block; }
+
+        @media (max-width: 680px) {
+            .hub-tabs { gap: 6px; padding: 10px 12px; }
+            .hub-tab { padding: 8px 12px; font-size: 0.8em; }
+        }
+
+        /* ── Collapsible Subsections ── */
+        .hub-section-header.collapsible {
+            cursor: pointer; user-select: none;
+        }
+        .hub-section-header.collapsible h3::after {
+            content: ' ▾'; font-size: 0.7em; color: #555; transition: transform 0.3s ease;
+            display: inline-block; margin-left: 8px;
+        }
+        .hub-section-header.collapsible.collapsed h3::after {
+            content: ' ▸';
+        }
+        .subsection-content {
+            overflow: hidden; transition: max-height 0.4s ease;
+        }
+        .subsection-content.collapsed {
+            max-height: 0 !important;
+        }
+
+        /* ── FAQ Accordion Cards ── */
+        .myth-card {
+            background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 16px; margin-bottom: 14px; overflow: hidden; transition: border-color 0.3s ease;
+        }
+        .myth-card.open { border-color: rgba(0,212,255,0.25); box-shadow: 0 4px 24px rgba(0,212,255,0.07); }
+        .myth-trigger {
+            width: 100%; background: none; border: none; cursor: pointer;
+            padding: 20px 22px; display: flex; align-items: flex-start; gap: 14px; text-align: left;
+            font-family: inherit;
+        }
+        .myth-icon {
+            flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center; font-size: 0.95em; margin-top: 2px;
+        }
+        .myth-icon.red   { background: rgba(239,68,68,0.14);  color: #f87171; border: 1px solid rgba(239,68,68,0.3); }
+        .myth-icon.amber { background: rgba(251,191,36,0.11);  color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
+        .myth-icon.blue  { background: rgba(96,165,250,0.11);  color: #60a5fa; border: 1px solid rgba(96,165,250,0.3); }
+        .myth-icon.green { background: rgba(52,211,153,0.11);  color: #34d399; border: 1px solid rgba(52,211,153,0.3); }
+        .myth-trigger-text { flex: 1; }
+        .myth-tag { font-size: 0.66em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #f87171; margin-bottom: 4px; display: block; }
+        .myth-question { font-size: 1.02em; font-weight: 600; color: #e8e8e8; line-height: 1.4; }
+        .myth-chevron { flex-shrink: 0; color: #555; font-size: 0.85em; transition: transform 0.35s ease; margin-top: 4px; }
+        .myth-card.open .myth-chevron { transform: rotate(180deg); color: #00d4ff; }
+        .myth-body { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; }
+        .myth-body-inner { padding: 0 22px 22px 70px; display: flex; flex-direction: column; gap: 12px; }
+        .response-block { border-radius: 10px; padding: 15px 18px; }
+        .response-label { font-size: 0.66em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; display: block; }
+        .response-block p, .response-block li { font-size: 0.93em; line-height: 1.7; }
+        .response-block ul { padding-left: 17px; }
+        .response-block li { margin-bottom: 5px; }
+        .response-block p + p { margin-top: 7px; }
+        .reality-block { background: rgba(0,212,255,0.07); border-left: 3px solid #00d4ff; }
+        .reality-block .response-label { color: #00d4ff; }
+        .reality-block p, .reality-block li { color: #cce8f0; }
+        .data-block {
+            background: rgba(167,139,250,0.07); border-left: 3px solid #a78bfa;
+            border-radius: 10px; padding: 13px 17px;
+        }
+        .data-block .response-label { color: #a78bfa; }
+        .data-row { display: flex; justify-content: space-between; align-items: baseline; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 0.88em; }
+        .data-row:last-child { border-bottom: none; }
+        .data-row .dk { color: #b0b0b0; }
+        .data-row .dv { color: #a78bfa; font-weight: 700; }
+
+        .faq-section-header {
+            text-align: center; margin: 40px 0 30px; position: relative;
+        }
+        .faq-section-header::before {
+            content: ''; position: absolute; left: 0; top: 50%; width: 100%; height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(0,212,255,0.3), transparent);
+        }
+        .faq-section-header span {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 0 25px; position: relative; color: #00d4ff; font-size: 1.1em;
+            font-weight: 600; text-transform: uppercase; letter-spacing: 2px;
+        }
+        .faq-category-label {
+            font-size: 0.72em; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+            color: #555; display: flex; align-items: center; gap: 10px;
+        }
+        .faq-category-label span { flex: 1; height: 1px; background: rgba(255,255,255,0.07); display: block; }
+
+        @media (max-width: 680px) {
+            .myth-body-inner { padding-left: 22px; }
+        }
     </style>
 </head>
 <body>
@@ -1017,12 +1129,9 @@
         <nav class="sticky-nav">
             <div class="sticky-nav-inner">
                 <a href="#executive-summary" class="nav-link">📋 Summary</a>
-                <a href="#awen-hub" class="nav-link">🇺🇸 North America</a>
-                <a href="#latam-hub" class="nav-link">🌎 LATAM</a>
-                <a href="#japan-hub" class="nav-link">🇯🇵 Japan</a>
-                <a href="#srilanka-hub" class="nav-link">🇱🇰 Sri Lanka</a>
-                <a href="#wada-hub" class="nav-link">🌍 Africa</a>
-                <a href="#europe-hub" class="nav-link">🇪🇺 Europe</a>
+                <a href="#hub-tabs-section" class="nav-link">🌐 Regional Hubs</a>
+                <a href="#section-faq" class="nav-link">💬 FAQ</a>
+                <a href="#references" class="nav-link">📚 References</a>
             </div>
         </nav>
 
@@ -1211,13 +1320,23 @@
             <p style="font-size: 0.8em; color: #888; margin-top: 6px;"><sup>†</sup> <strong style="color: #f1c40f;">Outlier figures</strong> — Sri Lanka (165,122) and Europe (100,853) reflect total attendance at large conferences/events where the hub was present, not hub-organised or hub-attributed attendance specifically. These two figures account for 265,975 of the 293,254 reported total (90.7%). <strong>Adjusted attendee total excluding these outliers: ~27,279.</strong> See <a href="#attendee-note" style="color: #00d4ff;">Data Methodology Note</a> in References.</p>
         </div>
 
-        <!-- Section Divider: Regional Hubs -->
-        <div class="section-divider">
-            <span>Regional Hub Details</span>
-        </div>
+        <!-- Section: Regional Hubs with Tabs -->
+        <div id="hub-tabs-section">
+            <div class="section-divider">
+                <span>Regional Hub Details</span>
+            </div>
+
+            <div class="hub-tabs">
+                <button class="hub-tab active" onclick="switchHub('awen-hub')">🇺🇸 North America</button>
+                <button class="hub-tab" onclick="switchHub('europe-hub')">🇪🇺 Europe</button>
+                <button class="hub-tab" onclick="switchHub('japan-hub')">🇯🇵 Japan</button>
+                <button class="hub-tab" onclick="switchHub('latam-hub')">🌎 LATAM</button>
+                <button class="hub-tab" onclick="switchHub('srilanka-hub')">🇱🇰 Sri Lanka</button>
+                <button class="hub-tab" onclick="switchHub('wada-hub')">🌍 Africa</button>
+            </div>
 
         <!-- North American Hub -->
-        <div class="hub-section" id="awen-hub">
+        <div class="hub-section hub-panel active" id="awen-hub">
             <div class="hub-header" style="background: linear-gradient(90deg, #1a5276 0%, #2e86ab 100%);">
                 <h2>🇺🇸 North American Hub <span class="region-badge">North America</span></h2>
                 <div style="text-align: right;">
@@ -1522,7 +1641,7 @@
         </div>
 
         <!-- Europe Hub -->
-        <div class="hub-section" id="europe-hub">
+        <div class="hub-section hub-panel" id="europe-hub">
             <div class="hub-header" style="background: linear-gradient(90deg, #6c3483 0%, #a569bd 100%);">
                 <h2>🇪🇺 Europe Hub <span class="region-badge">Clay Nation</span></h2>
                 <div style="text-align: right;">
@@ -1669,7 +1788,7 @@
         </div>
 
         <!-- Japan Hub -->
-        <div class="hub-section" id="japan-hub">
+        <div class="hub-section hub-panel" id="japan-hub">
             <div class="hub-header" style="background: linear-gradient(90deg, #c0392b 0%, #e74c3c 100%);">
                 <h2>🇯🇵 Japan Hub <span class="region-badge">Asia</span></h2>
                 <div style="text-align: right;">
@@ -1923,7 +2042,7 @@
         </div>
 
         <!-- LATAM Hub -->
-        <div class="hub-section" id="latam-hub">
+        <div class="hub-section hub-panel" id="latam-hub">
             <div class="hub-header" style="background: linear-gradient(90deg, #27ae60 0%, #2ecc71 100%);">
                 <h2>🌎 LATAM Hub <span class="region-badge">Latin America</span></h2>
                 <div style="text-align: right;">
@@ -2165,7 +2284,7 @@
         </div>
 
         <!-- Sri Lanka Hub -->
-        <div class="hub-section" id="srilanka-hub">
+        <div class="hub-section hub-panel" id="srilanka-hub">
             <div class="hub-header" style="background: linear-gradient(90deg, #d35400 0%, #e67e22 100%);">
                 <h2>🇱🇰 Sri Lanka Hub <span class="region-badge">CoinCeylon - South Asia</span></h2>
                 <div style="text-align: right;">
@@ -2379,7 +2498,7 @@
         </div>
 
         <!-- WADA Hub -->
-        <div class="hub-section" id="wada-hub">
+        <div class="hub-section hub-panel" id="wada-hub">
             <div class="hub-header" style="background: linear-gradient(90deg, #8e44ad 0%, #9b59b6 100%);">
                 <h2>🌍 WADA Hub <span class="region-badge">Africa</span></h2>
                 <div style="text-align: right;">
@@ -2590,6 +2709,185 @@
                 </div>
             </div>
         </div>
+        </div><!-- end hub-tabs-section -->
+
+        <!-- ════════════════════════════════════════════
+             SECTION: FAQ — ADDRESSING 2025 CONCERNS
+        ═════════════════════════════════════════════ -->
+        <div id="section-faq">
+            <div class="faq-section-header">
+                <span>Community FAQ</span>
+            </div>
+            <p style="text-align:center; color:#999; font-size:0.92em; max-width:780px; margin:0 auto 28px;">The 2026 framework is designed in direct response to the community's legitimate questions about 2025. These are honest, direct answers.</p>
+
+            <!-- Financial Accountability -->
+            <div class="faq-category-label" style="margin:0 0 12px;">Financial Accountability<span></span></div>
+
+            <div class="myth-card" id="faq-1-1">
+                <button class="myth-trigger" onclick="toggleCard('faq-1-1')">
+                    <div class="myth-icon red">❓</div>
+                    <div class="myth-trigger-text">
+                        <span class="myth-tag">Community Concern</span>
+                        <span class="myth-question">"Hubs had no financial accountability. We have no idea where the money went."</span>
+                    </div>
+                    <div class="myth-chevron">▼</div>
+                </button>
+                <div class="myth-body"><div class="myth-body-inner">
+                    <div class="reality-block response-block">
+                        <span class="response-label">The Reality</span>
+                        <p>The hub program had two distinct funding phases with different accountability structures — and this distinction matters a great deal.</p>
+                        <ul>
+                            <li><strong>Phase 1 (~6 months):</strong> Funded by Cardano Development Holdings (CDH), a private organization. These were private contracts — the same public disclosure standard that applies to treasury grants cannot be retroactively applied to private contracts.</li>
+                            <li><strong>Phase 2 (April–June 2025 bridge):</strong> Funded through public treasury withdrawal. These amounts are on-chain public record: see the table below.</li>
+                            <li><strong>All activity was milestone-gated:</strong> 48 Milestone Acceptance Forms (MAFs), DocuSign-verified, were required before any payment was released. Deliverables were confirmed before funds moved — in both phases.</li>
+                        </ul>
+                    </div>
+                    <div class="data-block">
+                        <span class="response-label">Phase 2 Bridge Payments (Public Record)</span>
+                        <div class="data-row"><span class="dk">North America</span><span class="dv">16,216 ADA</span></div>
+                        <div class="data-row"><span class="dk">LATAM</span><span class="dv">23,438 ADA</span></div>
+                        <div class="data-row"><span class="dk">Sri Lanka</span><span class="dv">18,182 ADA</span></div>
+                        <div class="data-row"><span class="dk">Africa (WADA)</span><span class="dv">18,182 ADA</span></div>
+                        <div class="data-row"><span class="dk">Japan</span><span class="dv">12,000 ADA</span></div>
+                    </div>
+                </div></div>
+            </div>
+
+            <div class="myth-card" id="faq-1-2">
+                <button class="myth-trigger" onclick="toggleCard('faq-1-2')">
+                    <div class="myth-icon amber">🔍</div>
+                    <div class="myth-trigger-text">
+                        <span class="myth-tag">Community Concern</span>
+                        <span class="myth-question">"Only Japan was transparent. The other five hubs are financial black boxes."</span>
+                    </div>
+                    <div class="myth-chevron">▼</div>
+                </button>
+                <div class="myth-body"><div class="myth-body-inner">
+                    <div class="reality-block response-block">
+                        <span class="response-label">The Reality</span>
+                        <p>Japan's detailed cost breakdown is commendable. It's also worth being precise about what it represents: a self-reported Google Sheet from a hub that wound down operations and needed to account for funds being returned. The circumstance created the reporting — it was not a contract requirement.</p>
+                        <p>All six hubs operated under the same CDH private contract structure, which did not mandate detailed financial disclosure. Holding five hubs to a standard that was never contractually required — and asking them to reconstruct 2-year-old records retroactively — is not a reasonable accountability mechanism. What we do have for all hubs: activity documentation, milestone sign-offs, event records, and membership outcomes.</p>
+                        <p>Japan's level of financial reporting is exactly the standard the 2026 framework now requires of all hubs. The gap between Japan's reporting and the others was not evidence of wrongdoing — it was a structural omission in the original contract design. The 2026 framework corrects it: all hubs will operate under treasury funding with mandatory financial disclosure built into every contract from the start.</p>
+                    </div>
+                </div></div>
+            </div>
+
+            <div class="myth-card" id="faq-1-3">
+                <button class="myth-trigger" onclick="toggleCard('faq-1-3')">
+                    <div class="myth-icon red">💱</div>
+                    <div class="myth-trigger-text">
+                        <span class="myth-tag">Community Concern</span>
+                        <span class="myth-question">"Where's the accounting for LATAM's 23k ADA? Sri Lanka's 18k? What did they spend it on?"</span>
+                    </div>
+                    <div class="myth-chevron">▼</div>
+                </button>
+                <div class="myth-body"><div class="myth-body-inner">
+                    <div class="reality-block response-block">
+                        <span class="response-label">The Reality</span>
+                        <p>These are the Phase 2 bridge payment amounts — the treasury-funded period. The ADA amounts are publicly confirmed. Itemized receipts for those funds were not required by the contracts for this period. That is a gap in contract design, and it is one the 2026 framework directly addresses.</p>
+                        <p>Japan's cost breakdown is the most useful public reference for what hub operations cost: approximately $19,000 USD across events (55%), staff labor (26%), hub management (18%), and tools (1%). The 2026 contracts require this level of itemized reporting by default from all hubs — that standard now applies program-wide from day one.</p>
+                    </div>
+                </div></div>
+            </div>
+
+            <!-- Program Value & ROI -->
+            <div class="faq-category-label" style="margin:24px 0 12px;">Program Value &amp; ROI<span></span></div>
+
+            <div class="myth-card" id="faq-2-1">
+                <button class="myth-trigger" onclick="toggleCard('faq-2-1')">
+                    <div class="myth-icon blue">📈</div>
+                    <div class="myth-trigger-text">
+                        <span class="myth-tag">Community Concern</span>
+                        <span class="myth-question">"We don't have enough data to know if hubs were worth the investment."</span>
+                    </div>
+                    <div class="myth-chevron">▼</div>
+                </button>
+                <div class="myth-body"><div class="myth-body-inner">
+                    <div class="reality-block response-block">
+                        <span class="response-label">The Reality</span>
+                        <p>The post-mortem is the most complete picture of hub activity and outcomes ever compiled. The data is not perfect — but it is substantial and points in one consistent direction.</p>
+                        <ul>
+                            <li><strong>70% of Intersect's individual members</strong> are located in hub regions. That is not coincidental.</li>
+                            <li><strong>Japan:</strong> 533 individual members from 61 events at ~$19K total spend ≈ <strong>~$36 per individual member</strong> in direct event costs.</li>
+                            <li><strong>North America:</strong> 239 individual members, 225 associates, 6 enterprise members from 12 events.</li>
+                            <li>These are not passive attendees — they made an active commitment to join and participate in Intersect governance.</li>
+                        </ul>
+                        <p>Across all hubs, that adds up to 1,268 individual members, 1,111 associates, and 16 enterprise accounts — 70% of Intersect's total individual membership.</p>
+                    </div>
+                    <div class="data-block">
+                        <span class="response-label">Membership Outcomes by Hub</span>
+                        <div class="data-row"><span class="dk">Japan</span><span class="dv">533 individual · 63 associates</span></div>
+                        <div class="data-row"><span class="dk">North America</span><span class="dv">239 individual · 225 associates · 6 enterprise</span></div>
+                        <div class="data-row"><span class="dk">LATAM</span><span class="dv">127 individual · 427 associates</span></div>
+                        <div class="data-row"><span class="dk">Sri Lanka</span><span class="dv">263 individual · 243 associates</span></div>
+                        <div class="data-row"><span class="dk">Africa (WADA)</span><span class="dv">87 individual · 127 associates</span></div>
+                        <div class="data-row"><span class="dk">Europe</span><span class="dv">19 individual · 26 associates · 3 enterprise</span></div>
+                    </div>
+                </div></div>
+            </div>
+
+            <div class="myth-card" id="faq-2-2">
+                <button class="myth-trigger" onclick="toggleCard('faq-2-2')">
+                    <div class="myth-icon blue">⏱</div>
+                    <div class="myth-trigger-text">
+                        <span class="myth-tag">Community Concern</span>
+                        <span class="myth-question">"Until we see what happened in 2024–25, we can't approve 2026 funding."</span>
+                    </div>
+                    <div class="myth-chevron">▼</div>
+                </button>
+                <div class="myth-body"><div class="myth-body-inner">
+                    <div class="reality-block response-block">
+                        <span class="response-label">The Reality</span>
+                        <p>The post-mortem report is the 2024–2025 record — the most comprehensive aggregation of hub activity, membership outcomes, and contract documentation ever compiled for this program.</p>
+                        <p>If the concern is specifically about itemized expense receipts from private CDH-funded contracts — that standard cannot be retroactively applied to private contracting arrangements made under different terms. If the concern is about confidence that 2026 will have the accountability mechanisms 2025 lacked — the 2026 framework answers that directly. Delaying 2026 approval does not recover 2025 data. It forfeits the membership momentum and community relationships that hubs already built.</p>
+                    </div>
+                </div></div>
+            </div>
+
+            <!-- The Path Forward -->
+            <div class="faq-category-label" style="margin:24px 0 12px;">The Path Forward<span></span></div>
+
+            <div class="myth-card" id="faq-3-1">
+                <button class="myth-trigger" onclick="toggleCard('faq-3-1')">
+                    <div class="myth-icon green">👨‍💼</div>
+                    <div class="myth-trigger-text">
+                        <span class="myth-tag">Community Concern</span>
+                        <span class="myth-question">"Why should we trust that 2026 will be any different from 2025?"</span>
+                    </div>
+                    <div class="myth-chevron">▼</div>
+                </button>
+                <div class="myth-body"><div class="myth-body-inner">
+                    <div class="reality-block response-block">
+                        <span class="response-label">Three Structural Differences</span>
+                        <ul>
+                            <li><strong>Funding source:</strong> 2026 hubs funded from community treasury — not private CDH funds. Treasury funding carries explicit public accountability requirements by default.</li>
+                            <li><strong>Reporting requirements:</strong> Standardized financial reporting and KPI disclosure are built into every 2026 contract from day one — not added retroactively.</li>
+                            <li><strong>Community governance approval:</strong> The community approves the framework, the budget, and the conditions. Accountability is not internal to Intersect — it is governed by the community itself.</li>
+                        </ul>
+                        <p>The 2026 design is built on the post-mortem foundation — a documented record of what worked, what didn't, and what the program actually produced.</p>
+                    </div>
+                </div></div>
+            </div>
+
+            <div class="myth-card" id="faq-3-2">
+                <button class="myth-trigger" onclick="toggleCard('faq-3-2')">
+                    <div class="myth-icon green">📋</div>
+                    <div class="myth-trigger-text">
+                        <span class="myth-tag">Community Concern</span>
+                        <span class="myth-question">"The hub program was mismanaged. Why should the same people run it again?"</span>
+                    </div>
+                    <div class="myth-chevron">▼</div>
+                </button>
+                <div class="myth-body"><div class="myth-body-inner">
+                    <div class="reality-block response-block">
+                        <span class="response-label">The Reality</span>
+                        <p>"Mismanagement" implies behavioral failure. The gaps in 2025 were structural, not behavioral: reporting was inconsistent because reporting standards were not mandated. Financial disclosure was uneven because contracts did not require it uniformly. These are contract design problems, not character problems.</p>
+                        <p>Evidence of actual delivery: 35 original contracts and 13 interim contracts completed with milestone sign-offs. 167 events run across six regions. 2,395 total Intersect members in hub regions. Six regions maintained active presence across a 14-month program period.</p>
+                        <p>The people who ran 2025 hubs built the community relationships, local credibility, and institutional knowledge that a new program needs. The 2026 framework fixes the contract design.</p>
+                    </div>
+                </div></div>
+            </div>
+        </div>
 
         <footer id="references">
             <h3 style="color: #00d4ff; margin-bottom: 15px;">📚 Sources & References</h3>
@@ -2690,7 +2988,7 @@
         // --- Active nav link on scroll ---
         const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
         const sectionIds = Array.from(navLinks).map(l => l.getAttribute('href').slice(1));
-        const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
+        const navSections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
 
         const navObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -2702,23 +3000,57 @@
             });
         }, { rootMargin: '-15% 0px -70% 0px' });
 
-        sections.forEach(s => navObserver.observe(s));
+        navSections.forEach(s => navObserver.observe(s));
 
-        // --- Collapsible hub sections ---
-        document.querySelectorAll('.hub-section').forEach(section => {
-            const header = section.querySelector('.hub-header');
-            const content = section.querySelector('.hub-content');
-            if (!header || !content) return;
+        // --- Hub Tab Switching ---
+        function switchHub(hubId) {
+            document.querySelectorAll('.hub-panel').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.hub-tab').forEach(t => t.classList.remove('active'));
+            const panel = document.getElementById(hubId);
+            if (panel) panel.classList.add('active');
+            // Find matching tab button
+            document.querySelectorAll('.hub-tab').forEach(t => {
+                if (t.getAttribute('onclick').includes(hubId)) t.classList.add('active');
+            });
+        }
 
-            header.classList.add('collapsible-header');
-            content.classList.add('collapsible-content');
-            header.style.cursor = 'pointer';
+        // --- Collapsible h3 Subsections ---
+        document.querySelectorAll('.hub-panel .hub-section-header').forEach(header => {
+            header.classList.add('collapsible');
+            // Collect all siblings until next hub-section-header or end of hub-content
+            const wrapper = document.createElement('div');
+            wrapper.className = 'subsection-content';
+            let next = header.nextElementSibling;
+            const toWrap = [];
+            while (next && !next.classList.contains('hub-section-header')) {
+                toWrap.push(next);
+                next = next.nextElementSibling;
+            }
+            if (toWrap.length === 0) return;
+            header.parentNode.insertBefore(wrapper, toWrap[0]);
+            toWrap.forEach(el => wrapper.appendChild(el));
+            wrapper.style.maxHeight = wrapper.scrollHeight + 'px';
 
             header.addEventListener('click', () => {
-                const collapsed = header.classList.toggle('collapsed');
-                content.classList.toggle('collapsed', collapsed);
+                const isCollapsed = header.classList.toggle('collapsed');
+                if (isCollapsed) {
+                    wrapper.style.maxHeight = wrapper.scrollHeight + 'px';
+                    requestAnimationFrame(() => { wrapper.classList.add('collapsed'); wrapper.style.maxHeight = '0'; });
+                } else {
+                    wrapper.classList.remove('collapsed');
+                    wrapper.style.maxHeight = wrapper.scrollHeight + 'px';
+                }
             });
         });
+
+        // --- FAQ Accordion ---
+        function toggleCard(id) {
+            const card = document.getElementById(id);
+            const body = card.querySelector('.myth-body');
+            const isOpen = card.classList.contains('open');
+            card.classList.toggle('open', !isOpen);
+            body.style.maxHeight = isOpen ? '0' : (body.scrollHeight + 400) + 'px';
+        }
     </script>
 </body>
 </html>
