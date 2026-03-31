@@ -16,7 +16,7 @@ The MCC's 2026 budget proposal covers seven work packages totalling $300,000 USD
 | 6 | Membership Benefits & Partnerships | $50,000 |
 | 7 | The Grid Events & Ecosystem Participation | $60,000 |
 
-[View the full 2026 MCC Budget Proposal & Hubs Framework](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Awen-online/intersect_mcc/refs/heads/master/hub_faq.html)
+[View the full 2026 MCC Budget Proposal](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Awen-online/intersect_mcc/refs/heads/master/mcc_budget_2026.html)
 
 ## Key Links
 
@@ -27,7 +27,7 @@ The MCC's 2026 budget proposal covers seven work packages totalling $300,000 USD
 
 ## Reports
 
-- [2026 MCC Budget Proposal & Hubs Framework](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Awen-online/intersect_mcc/refs/heads/master/hub_faq.html) — Budget breakdown, hub model, tiers, KPIs, milestones, and community FAQ
+- [2026 MCC Budget Proposal](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Awen-online/intersect_mcc/refs/heads/master/mcc_budget_2026.html) — Budget breakdown, hub model, tiers, KPIs, milestones, and community FAQ
 - [2025 Community Hubs Post-Mortem](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Awen-online/intersect_mcc/refs/heads/master/hub_report.html) — Full analysis of all 6 regional hubs (May 2024 – June 2025), including FAQ addressing community questions
 
 ---
