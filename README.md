@@ -1,19 +1,41 @@
 # Intersect MCC
 
-Resources and reports from Intersect's Membership & Community Committee (MCC), including the 2025 Community Hubs post-mortem and the 2026 MCC budget framework.
+Public-facing resources from Intersect's Membership & Community Committee (MCC) — the committee responsible for membership growth, member engagement, and community-driven participation across the Cardano ecosystem.
+
+## 2026 MCC Budget
+
+The MCC's 2026 budget proposal covers seven work packages totalling $300,000 USD:
+
+| # | Work Package | Budget |
+|---|-------------|--------|
+| 1 | Membership Strategy & Growth | $25,000 |
+| 2 | Member Experience & Engagement | $30,000 |
+| 3 | Member Education & Governance Enablement | $26,000 |
+| 4 | Global Community Hubs, Regional Enablement & Localization | $75,000 |
+| 5 | Community Initiative Enablement | $60,000 |
+| 6 | Membership Benefits & Partnerships | $50,000 |
+| 7 | The Grid Events & Ecosystem Participation | $60,000 |
+
+[View the full 2026 MCC Budget Proposal & Hubs Framework](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Awen-online/intersect_mcc/refs/heads/master/hub_faq.html)
+
+## Key Links
+
+- [MCC on Intersect Docs](https://docs.intersectmbo.org/intersect-overview/intersect-committees/membership-and-community-committee-mcc)
+- [MCC Contracts & Delivery Assurance](https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts)
+- [MCC Budget Document (Google Doc)](https://docs.google.com/document/d/1h0w3swMntVyn6TL46vB2Arj5Irkmn_7b2w6bIsQzJeU/edit)
+- [Intersect Committee Miro Boards](https://miro.com/app/board/uXjVKc5x4ak=/)
 
 ## Reports
 
-- [2025 Community Hubs Post-Mortem Report](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Awen-online/intersect_mcc/refs/heads/master/hub_report.html) — Full analysis of all 6 regional hubs (May 2024 – June 2025)
-- [2026 MCC Budget Proposal & Hubs Framework FAQ](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Awen-online/intersect_mcc/refs/heads/master/hub_faq.html) — Budget breakdown, framework details, and community FAQ
+- [2026 MCC Budget Proposal & Hubs Framework](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Awen-online/intersect_mcc/refs/heads/master/hub_faq.html) — Budget breakdown, hub model, tiers, KPIs, milestones, and community FAQ
+- [2025 Community Hubs Post-Mortem](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Awen-online/intersect_mcc/refs/heads/master/hub_report.html) — Full analysis of all 6 regional hubs (May 2024 – June 2025), including FAQ addressing community questions
 
-## Key External Links
+---
 
-- [MCC Contracts & Delivery Assurance](https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts)
-- [Community Hubs Documentation](https://docs.intersectmbo.org/intersect-overview/intersect-committees/membership-and-community-committee-mcc/community-hubs)
-- [Community Hubs Stats (March 2025)](https://docs.google.com/presentation/d/1LckpJMmmd4ctA9NUfA-yYwlVFI7HWiuihy1d94C9n5s/edit)
+<details>
+<summary>2025 Community Hubs Reference Data</summary>
 
-## 2025 Community Hubs Overview
+### The 6 Regional Hubs (May 2024 – June 2025)
 
 | Hub | Region | Milestones |
 |-----|--------|------------|
@@ -24,25 +46,14 @@ Resources and reports from Intersect's Membership & Community Committee (MCC), i
 | WADA | Africa | 8 |
 | Europe (Clay Nation) | Europe | 3 |
 
-### Key Statistics
+**Key Statistics:** 167 events · 293,000+ attendees · 70% of individual memberships within hub regions · 49 milestones completed · 48 MAF documents (DocuSign-verified)
 
-- **167 Events** delivered across all hubs
-- **293,000+ Attendees** reached through hub activities
-- **70%** of Individual Memberships within hub regions
-- **49 Milestones** completed
-- **48 MAF Documents** verified via DocuSign
+**Data Sources:** Milestone Acceptance Forms, Intersect Development Updates #13–#70, public records (X posts, Luma events, YouTube recordings), [Community Hubs Stats (March 2025)](https://docs.google.com/presentation/d/1LckpJMmmd4ctA9NUfA-yYwlVFI7HWiuihy1d94C9n5s/edit)
 
-## Data Sources
-
-- Milestone Acceptance Forms (MAFs) — DocuSign-verified payment documents
-- Intersect Development Updates #13–#70
-- Public records (X posts, Luma events, YouTube recordings)
-- Existing Community Hubs Report (March 2025)
-
-## About
-
-Compiled by **IntersectMCC** (Membership & Community Committee).
+</details>
 
 ---
 
-*Version 1.3 · March 2026*
+Compiled by **IntersectMCC** (Membership & Community Committee).
+
+*Version 1.4 · March 2026*
