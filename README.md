@@ -54,6 +54,4 @@ The MCC's 2026 budget proposal covers seven work packages totalling $300,000 USD
 
 ---
 
-Compiled by **IntersectMCC** (Membership & Community Committee).
-
 *Version 1.4 · March 2026*
