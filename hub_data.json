@@ -2,7 +2,7 @@
   "report_metadata": {
     "report_type": "Post-Mortem Report",
     "report_period": "May 2024 - June 2025",
-    "generated_date": "2026-03-03",
+    "generated_date": "2026-04-07",
     "author": "IntersectMCC (Membership & Community Committee)",
     "logo_url": "https://pbs.twimg.com/profile_banners/1829602530168295424/1754508462/1500x500",
     "total_hubs": 6,
@@ -11,7 +11,7 @@
     "total_x_links_extracted": 185,
     "development_updates_referenced": 37,
     "gov_tools_links": 17,
-    "luma_event_links": 8,
+    "luma_event_links": 30,
     "data_sources": [
       {
         "name": "Milestone Acceptance Forms (MAF)",
@@ -26,34 +26,146 @@
         "type": "KPI Data & Hub Launch Timeline",
         "url": "https://intersectmbo.org/news",
         "key_updates": [
-          {"update": "#13 (May 10, 2024)", "content": "Japan and LATAM hubs already operational; hub applications opening for expansion beyond these two regions", "url": "https://www.intersectmbo.org/news/intersect-development-update-13-may-10th"},
-          {"update": "#14 (May 17, 2024)", "content": "Japan first Town Hall held May 14; Brazil governance workshop May 20", "url": "https://www.intersectmbo.org/news/intersect-development-update-14-may-17th"},
-          {"update": "#15 (May 24, 2024)", "content": "Sri Lanka Hub officially launched; Japan at NexTech Week Tokyo; LATAM launching X account @IntersectLatam", "url": "https://www.intersectmbo.org/news/intersect-development-update-15-may-24th"},
-          {"update": "#16 (May 31, 2024)", "content": "WADA (Africa) announced as fourth hub; LATAM first Town Hall May 31", "url": "https://www.intersectmbo.org/news/intersect-development-update-16-may-31st"},
-          {"update": "#17 (June 7, 2024)", "content": "LATAM Town Hall had 30+ attendees with JJ Siler and Jack Briggs; Japan 2nd X Space 50+ members; Sri Lanka X Space scheduled June 8", "url": "https://www.intersectmbo.org/news/intersect-development-update-17-june-7th"},
-          {"update": "#18 (June 14, 2024)", "content": "Japan in-person launch June 14 Tokyo with 54+ registrations, COO Nigel Hemsley and Nick Cook attended; Sri Lanka X Space June 8 had 557 participants", "url": "https://www.intersectmbo.org/news/intersect-development-update-18-june-14th"},
-          {"update": "#20 (June 28, 2024)", "content": "Sri Lanka First Town Hall June 29; Japan LINE Live Talk June 24 with 28 participants; Discord surpassed 1,000 members", "url": "https://www.intersectmbo.org/news/intersect-development-update-20-june-28th"},
-          {"update": "#21 (July 5, 2024)", "content": "Sri Lanka First Town Hall had 69 attendees; Japan X Space July 1 had 298 participants; WADA First Town Hall July 4 had 25 attendees", "url": "https://www.intersectmbo.org/news/intersect-development-update-21-july-5th"},
-          {"update": "#22 (July 12, 2024)", "content": "WADA Central Africa (Goma) pre-launch scheduled July 13; LATAM at Blockchain.RIO July 24-25 and ADN Argentina July 31", "url": "https://www.intersectmbo.org/news/intersect-development-update-22-july-12th"},
-          {"update": "#25 (August 2, 2024)", "content": "Brazil sub-hub launched at Blockchain.rio (Manager: Otávio Lima); Argentina sub-hub launched at ADN (70 new members); Central Africa (Goma) launched with 80+ participants", "url": "https://www.intersectmbo.org/news/intersect-development-update-25-august-2nd"},
-          {"update": "#26 (August 9, 2024)", "content": "Japan constitutional workshops Aug 10 (Osaka) and Aug 31 (Tokyo); WADA West Africa launch Aug 10 Ghana", "url": "https://www.intersectmbo.org/news/intersect-development-update-26-august-9th"},
-          {"update": "#28 (August 23, 2024)", "content": "35% of all individual memberships attributed to hubs; Japan surpassed 170 individual members (highest of any country); Japan X Space Aug 16 had 206 participants", "url": "https://www.intersectmbo.org/news/intersect-development-update-28-august-23rd"},
-          {"update": "#31 (September 13, 2024)", "content": "Clay Nation (Europe Hub) launched in Portugal; LATAM at NFT.Brasil; Japan at Tech for Impact Summit with Charles Hoskinson; 1,000+ members in under 4 months; 40+ workshops delivered", "url": "https://www.intersectmbo.org/news/intersect-development-update-31-september-13th"},
-          {"update": "#32 (September 20, 2024)", "content": "USA Hub (AWEN) launched this week - first US-based hub; WADA East Africa (Nairobi) launch Sept 14; LATAM Colombia sub-hub launched Sept 14", "url": "https://www.intersectmbo.org/news/intersect-development-update-32-september-20th"},
-          {"update": "#33 (September 27, 2024)", "content": "AMM schedule announced: Tokyo Oct 3, Lisbon Oct 5, Ghana Oct 11, Colombo Oct 12, Mexico Oct 17, Austin Oct 19; Mexico hub launched at UNAM", "url": "https://www.intersectmbo.org/news/intersect-development-update-33-september-27th"},
-          {"update": "#34 (October 4, 2024)", "content": "Japan AMM Oct 3 had 69 attendees; AWEN first Town Hall Oct 2; 1,500+ paid members achieved", "url": "https://www.intersectmbo.org/news/intersect-development-update-34-october-4th"},
-          {"update": "#35 (October 11, 2024)", "content": "Europe AMM successful; Sri Lanka university workshop Oct 8 with University of Kelaniya", "url": "https://www.intersectmbo.org/news/intersect-development-update-35-october-11th"},
-          {"update": "#36 (October 18, 2024)", "content": "AMM events: Japan 34, Sri Lanka 141 (TV coverage, radio 150k listeners), Africa Accra 34; Sri Lanka Hub Manager on Lite 878 radio", "url": "https://www.intersectmbo.org/news/intersect-development-update-36-october-18"},
-          {"update": "#37 (October 25, 2024)", "content": "AMM launches: North America Austin ~30, LATAM Mexico; Japan X Space 44 attendees; Africa Town Hall Oct 24", "url": "https://www.intersectmbo.org/news/intersect-development-update-37-october-25"},
-          {"update": "#38 (November 1, 2024)", "content": "Sri Lanka Town Hall 48 attendees; Mexico Hub Launch at UNAM; Hyderabad 250+ attendees, 130 new members", "url": "https://www.intersectmbo.org/news/intersect-development-update-38-november-1"},
-          {"update": "#39 (November 8, 2024)", "content": "Town Halls: LATAM Spanish 84, Portuguese 124; Europe 155; North America 33; Africa 22", "url": "https://www.intersectmbo.org/news/intersect-development-update-39-november-8"},
-          {"update": "#41 (November 22, 2024)", "content": "Japan Blockchain Expo Chiba - 300 flyers distributed; Sri Lanka Town Hall Nov 23", "url": "https://www.intersectmbo.org/news/intersect-development-update-41-november-22"},
-          {"update": "#42 (November 29, 2024)", "content": "Sri Lanka Town Hall 102 attendees; Africa 18; Europe 52", "url": "https://www.intersectmbo.org/news/intersect-development-update-42-november-29"},
-          {"update": "#47 (January 31, 2025)", "content": "Sri Lanka 105 attendees; North America GM 2025 (44 in-person, 22 virtual, 3000 viewers); Uruguay Hub Launch", "url": "https://www.intersectmbo.org/news/intersect-development-update-47-january-31st"},
-          {"update": "#48 (February 7, 2025)", "content": "Uruguay launch Punta del Este; Africa 12; North America 42", "url": "https://www.intersectmbo.org/news/intersect-development-update-48-february-7th"},
-          {"update": "#52 (March 7, 2025)", "content": "First Inter-Regional Hub Town Hall 110 attendees; Africa WADA Forum 57; North America 248; Sri Lanka Kelaniya 81, Ruhuna 194 students", "url": "https://www.intersectmbo.org/news/intersect-development-update-52-march-7th"},
-          {"update": "#59 (April 25, 2025)", "content": "Budget workshops all hubs: Sri Lanka 21+41; Africa DRC 11, Cameroon, Nairobi; Europe 7; North America 8", "url": "https://www.intersectmbo.org/news/intersect-development-update-59-april-25"},
-          {"update": "#70 (July 11, 2025)", "content": "Community Hubs wrap-up: Japan 30% of memberships, 20+ meetups; North America 300+ X Space attendees; direct hub management concluded", "url": "https://intersectmbo.org/news/intersect-development-update-70-july-11"}
+          {
+            "update": "#13 (May 10, 2024)",
+            "content": "Japan and LATAM hubs already operational; hub applications opening for expansion beyond these two regions",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-13-may-10th"
+          },
+          {
+            "update": "#14 (May 17, 2024)",
+            "content": "Japan first Town Hall held May 14; Brazil governance workshop May 20",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-14-may-17th"
+          },
+          {
+            "update": "#15 (May 24, 2024)",
+            "content": "Sri Lanka Hub officially launched; Japan at NexTech Week Tokyo; LATAM launching X account @IntersectLatam",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-15-may-24th"
+          },
+          {
+            "update": "#16 (May 31, 2024)",
+            "content": "WADA (Africa) announced as fourth hub; LATAM first Town Hall May 31",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-16-may-31st"
+          },
+          {
+            "update": "#17 (June 7, 2024)",
+            "content": "LATAM Town Hall had 30+ attendees with JJ Siler and Jack Briggs; Japan 2nd X Space 50+ members; Sri Lanka X Space scheduled June 8",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-17-june-7th"
+          },
+          {
+            "update": "#18 (June 14, 2024)",
+            "content": "Japan in-person launch June 14 Tokyo with 54+ registrations, COO Nigel Hemsley and Nick Cook attended; Sri Lanka X Space June 8 had 557 participants",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-18-june-14th"
+          },
+          {
+            "update": "#20 (June 28, 2024)",
+            "content": "Sri Lanka First Town Hall June 29; Japan LINE Live Talk June 24 with 28 participants; Discord surpassed 1,000 members",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-20-june-28th"
+          },
+          {
+            "update": "#21 (July 5, 2024)",
+            "content": "Sri Lanka First Town Hall had 69 attendees; Japan X Space July 1 had 298 participants; WADA First Town Hall July 4 had 25 attendees",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-21-july-5th"
+          },
+          {
+            "update": "#22 (July 12, 2024)",
+            "content": "WADA Central Africa (Goma) pre-launch scheduled July 13; LATAM at Blockchain.RIO July 24-25 and ADN Argentina July 31",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-22-july-12th"
+          },
+          {
+            "update": "#25 (August 2, 2024)",
+            "content": "Brazil sub-hub launched at Blockchain.rio (Manager: Ot\u00c3\u00a1vio Lima); Argentina sub-hub launched at ADN (70 new members); Central Africa (Goma) launched with 80+ participants",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-25-august-2nd"
+          },
+          {
+            "update": "#26 (August 9, 2024)",
+            "content": "Japan constitutional workshops Aug 10 (Osaka) and Aug 31 (Tokyo); WADA West Africa launch Aug 10 Ghana",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-26-august-9th"
+          },
+          {
+            "update": "#28 (August 23, 2024)",
+            "content": "35% of all individual memberships attributed to hubs; Japan surpassed 170 individual members (highest of any country); Japan X Space Aug 16 had 206 participants",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-28-august-23rd"
+          },
+          {
+            "update": "#31 (September 13, 2024)",
+            "content": "Clay Nation (Europe Hub) launched in Portugal; LATAM at NFT.Brasil; Japan at Tech for Impact Summit with Charles Hoskinson; 1,000+ members in under 4 months; 40+ workshops delivered",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-31-september-13th"
+          },
+          {
+            "update": "#32 (September 20, 2024)",
+            "content": "USA Hub (AWEN) launched this week - first US-based hub; WADA East Africa (Nairobi) launch Sept 14; LATAM Colombia sub-hub launched Sept 14",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-32-september-20th"
+          },
+          {
+            "update": "#33 (September 27, 2024)",
+            "content": "AMM schedule announced: Tokyo Oct 3, Lisbon Oct 5, Ghana Oct 11, Colombo Oct 12, Mexico Oct 17, Austin Oct 19; Mexico hub launched at UNAM",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-33-september-27th"
+          },
+          {
+            "update": "#34 (October 4, 2024)",
+            "content": "Japan AMM Oct 3 had 69 attendees; AWEN first Town Hall Oct 2; 1,500+ paid members achieved",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-34-october-4th"
+          },
+          {
+            "update": "#35 (October 11, 2024)",
+            "content": "Europe AMM successful; Sri Lanka university workshop Oct 8 with University of Kelaniya",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-35-october-11th"
+          },
+          {
+            "update": "#36 (October 18, 2024)",
+            "content": "AMM events: Japan 34, Sri Lanka 141 (TV coverage, radio 150k listeners), Africa Accra 34; Sri Lanka Hub Manager on Lite 878 radio",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-36-october-18"
+          },
+          {
+            "update": "#37 (October 25, 2024)",
+            "content": "AMM launches: North America Austin ~30, LATAM Mexico; Japan X Space 44 attendees; Africa Town Hall Oct 24",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-37-october-25"
+          },
+          {
+            "update": "#38 (November 1, 2024)",
+            "content": "Sri Lanka Town Hall 48 attendees; Mexico Hub Launch at UNAM; Hyderabad 250+ attendees, 130 new members",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-38-november-1"
+          },
+          {
+            "update": "#39 (November 8, 2024)",
+            "content": "Town Halls: LATAM Spanish 84, Portuguese 124; Europe 155; North America 33; Africa 22",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-39-november-8"
+          },
+          {
+            "update": "#41 (November 22, 2024)",
+            "content": "Japan Blockchain Expo Chiba - 300 flyers distributed; Sri Lanka Town Hall Nov 23",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-41-november-22"
+          },
+          {
+            "update": "#42 (November 29, 2024)",
+            "content": "Sri Lanka Town Hall 102 attendees; Africa 18; Europe 52",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-42-november-29"
+          },
+          {
+            "update": "#47 (January 31, 2025)",
+            "content": "Sri Lanka 105 attendees; North America GM 2025 (44 in-person, 22 virtual, 3000 viewers); Uruguay Hub Launch",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-47-january-31st"
+          },
+          {
+            "update": "#48 (February 7, 2025)",
+            "content": "Uruguay launch Punta del Este; Africa 12; North America 42",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-48-february-7th"
+          },
+          {
+            "update": "#52 (March 7, 2025)",
+            "content": "First Inter-Regional Hub Town Hall 110 attendees; Africa WADA Forum 57; North America 248; Sri Lanka Kelaniya 81, Ruhuna 194 students",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-52-march-7th"
+          },
+          {
+            "update": "#59 (April 25, 2025)",
+            "content": "Budget workshops all hubs: Sri Lanka 21+41; Africa DRC 11, Cameroon, Nairobi; Europe 7; North America 8",
+            "url": "https://www.intersectmbo.org/news/intersect-development-update-59-april-25"
+          },
+          {
+            "update": "#70 (July 11, 2025)",
+            "content": "Community Hubs wrap-up: Japan 30% of memberships, 20+ meetups; North America 300+ X Space attendees; direct hub management concluded",
+            "url": "https://intersectmbo.org/news/intersect-development-update-70-july-11"
+          }
         ]
       },
       {
@@ -109,18 +221,49 @@
       }
     },
     "hub_launch_timeline": {
-      "note": "Japan and LATAM were operational before May 10, 2024 (Update #13). Hub applications opened for expansion in May 2024.",
+      "note": "Hub applications closed; program transitioned to community-led operations in 2025",
       "chronological_order": [
-        {"order": 1, "hub": "Japan Hub", "status_as_of": "Before May 10, 2024", "source": "Update #13 - already operational"},
-        {"order": 2, "hub": "LATAM Hub", "status_as_of": "Before May 10, 2024", "source": "Update #13 - already operational"},
-        {"order": 3, "hub": "Sri Lanka Hub (CoinCeylon)", "launched": "May 24, 2024", "source": "Update #15 - officially launched"},
-        {"order": 4, "hub": "WADA Hub (Africa)", "launched": "May 31, 2024", "source": "Update #16 - fourth hub launched"},
-        {"order": 5, "hub": "Europe Hub (Clay Nation)", "launched": "September 6, 2024", "source": "Update #31 - launched in Portugal"},
-        {"order": 6, "hub": "North American Hub", "launched": "September 17, 2024", "source": "Update #32"}
+        {
+          "order": 1,
+          "hub": "Japan Hub",
+          "status_as_of": "Before May 10, 2024",
+          "source": "Update #13 - already operational"
+        },
+        {
+          "order": 2,
+          "hub": "LATAM Hub",
+          "status_as_of": "Before May 10, 2024",
+          "source": "Update #13 - already operational"
+        },
+        {
+          "order": 3,
+          "hub": "Sri Lanka Hub (CoinCeylon)",
+          "launched": "May 24, 2024",
+          "source": "Update #15 - officially launched"
+        },
+        {
+          "order": 4,
+          "hub": "WADA Hub (Africa)",
+          "launched": "May 31, 2024",
+          "source": "Update #16 - fourth hub launched"
+        },
+        {
+          "order": 5,
+          "hub": "Europe Hub (Clay Nation)",
+          "launched": "September 6, 2024",
+          "source": "Update #31 - launched in Portugal"
+        },
+        {
+          "order": 6,
+          "hub": "North American Hub",
+          "launched": "September 17, 2024",
+          "source": "Update #32"
+        }
       ],
-      "hub_applications_opened": "May 2024 (Update #13)",
-      "note": "Hub applications closed; program transitioned to community-led operations in 2025"
-    }
+      "hub_applications_opened": "May 2024 (Update #13)"
+    },
+    "version": "1.5",
+    "video_recordings": 15
   },
   "summary": {
     "description": "Summary of all six regional community hubs with original contracts and interim extensions",
@@ -217,11 +360,26 @@
       "accounts": 5,
       "note": "Japan Hub (@IntersectJapan) has no dedicated X account",
       "by_account": {
-        "IntersectNA": {"followers": 384, "posts": 70},
-        "IntersectLatam": {"followers": 230, "posts": 120},
-        "IntersectWADA": {"followers": 205, "posts": 80},
-        "IntersectEurope": {"followers": 172, "posts": 40},
-        "IntersectSriL": {"followers": 150, "posts": 45}
+        "IntersectNA": {
+          "followers": 384,
+          "posts": 70
+        },
+        "IntersectLatam": {
+          "followers": 230,
+          "posts": 120
+        },
+        "IntersectWADA": {
+          "followers": 205,
+          "posts": 80
+        },
+        "IntersectEurope": {
+          "followers": 172,
+          "posts": 40
+        },
+        "IntersectSriL": {
+          "followers": 150,
+          "posts": 45
+        }
       }
     }
   },
@@ -231,8 +389,16 @@
       "region": "Latin America",
       "impact_summary": "Launched 5 sub-hubs across Latin America, hosted major events at Blockchain Rio (112 registrations) and ADN Argentina (500+ audience), and established monthly bilingual town halls in Spanish and Portuguese. Successfully transitioned leadership while maintaining momentum in regional growth.",
       "project_leaders": [
-        {"name": "Alex Pestchanker", "role": "Intersect Founding Member", "status": "Former (through M4)"},
-        {"name": "Mauro Andreoli", "role": "Project Leader", "status": "Current (M5 onwards)"}
+        {
+          "name": "Alex Pestchanker",
+          "role": "Intersect Founding Member",
+          "status": "Former (through M4)"
+        },
+        {
+          "name": "Mauro Andreoli",
+          "role": "Project Leader",
+          "status": "Current (M5 onwards)"
+        }
       ],
       "intersect_approver": "Hannah Williams",
       "contract": {
@@ -242,7 +408,9 @@
           "milestones": 7,
           "funding_source": "CDH",
           "funding_amount_ada": "n/a",
-          "source_document": "LATAM - Milestone 1-7 MAF.pdf"
+          "source_document": "LATAM - Milestone 1-7 MAF.pdf",
+          "funding_amount": 42000,
+          "funding_currency": "USD"
         },
         "interim": {
           "start_date": "2025-04-01",
@@ -259,7 +427,10 @@
               "name": "April 2025",
               "status": "completed",
               "date_signed": "2025-05-25",
-              "signed_by": ["Mauro Andreoli", "Hannah Williams"],
+              "signed_by": [
+                "Mauro Andreoli",
+                "Hannah Williams"
+              ],
               "deliverables": [
                 "Workshop #1 Argentina (Apr 12): Budget Proposal Discussion",
                 "Workshop #2 Brazil (Apr 19): Budget Proposal Discussion",
@@ -276,7 +447,10 @@
               "name": "May 2025",
               "status": "completed",
               "date_signed": "2025-06-09",
-              "signed_by": ["Mauro Andreoli", "Hannah Williams"],
+              "signed_by": [
+                "Mauro Andreoli",
+                "Hannah Williams"
+              ],
               "deliverables": [
                 "AZTECA Blockchain Summit Mexico (May 15-17): 200+ participants",
                 "Monthly Town Hall coordination",
@@ -294,6 +468,11 @@
               ]
             }
           ]
+        },
+        "amm": {
+          "amount": 29412,
+          "currency": "ADA",
+          "description": "Annual Members Meeting event delivery"
         }
       },
       "channels": {
@@ -334,17 +513,50 @@
         "currency": "USD"
       },
       "sub_hubs": [
-        {"name": "Brazil", "hub_manager": "Otavio Lima", "status": "Active", "launched_at": "Blockchain Rio", "date": "2024-07"},
-        {"name": "Argentina", "hub_manager": null, "status": "Active", "launched_at": "ADN Event", "date": "2024-08"},
-        {"name": "Colombia", "hub_manager": null, "status": "Active", "launched_at": "CESA University", "date": "2024-09-14"},
-        {"name": "Mexico", "hub_manager": null, "status": "Active", "launched_at": "UNAM Event", "date": "2024-09"},
-        {"name": "Uruguay", "hub_manager": null, "status": "Active", "date": "2024"}
+        {
+          "name": "Brazil",
+          "hub_manager": "Otavio Lima",
+          "status": "Active",
+          "launched_at": "Blockchain Rio",
+          "date": "2024-07"
+        },
+        {
+          "name": "Argentina",
+          "hub_manager": null,
+          "status": "Active",
+          "launched_at": "ADN Event",
+          "date": "2024-08"
+        },
+        {
+          "name": "Colombia",
+          "hub_manager": null,
+          "status": "Active",
+          "launched_at": "CESA University",
+          "date": "2024-09-14"
+        },
+        {
+          "name": "Mexico",
+          "hub_manager": null,
+          "status": "Active",
+          "launched_at": "UNAM Event",
+          "date": "2024-09"
+        },
+        {
+          "name": "Uruguay",
+          "hub_manager": null,
+          "status": "Active",
+          "date": "2024"
+        }
       ],
       "milestones": {
         "total": 7,
         "completed": 7,
         "details": [
-          {"number": 1, "name": "Initial Kickoff", "status": "completed"},
+          {
+            "number": 1,
+            "name": "Initial Kickoff",
+            "status": "completed"
+          },
           {
             "number": 2,
             "name": "Hub Setup & Bootstrap",
@@ -358,13 +570,20 @@
             ],
             "source": "LATAM - Milestone 1 MAF.pdf"
           },
-          {"number": 3, "name": "Sub-hub Launches", "status": "completed"},
+          {
+            "number": 3,
+            "name": "Sub-hub Launches",
+            "status": "completed"
+          },
           {
             "number": 4,
             "name": "Major Events & Enterprise Outreach",
             "status": "completed",
             "date_approved": "2024-08-09",
-            "signed_by": ["Alex Pestchanker", "Hannah Williams"],
+            "signed_by": [
+              "Alex Pestchanker",
+              "Hannah Williams"
+            ],
             "deliverables": [
               "Quarterly meeting with Intersect leadership",
               "Second monthly LATAM Town Hall",
@@ -374,39 +593,121 @@
               "Management transfer from Alex Pestchanker to Mauro Andreoli"
             ]
           },
-          {"number": 5, "name": "Governance", "status": "completed"},
-          {"number": 6, "name": "Continued Growth", "status": "completed"},
+          {
+            "number": 5,
+            "name": "Governance",
+            "status": "completed"
+          },
+          {
+            "number": 6,
+            "name": "Continued Growth",
+            "status": "completed"
+          },
           {
             "number": 7,
             "name": "Final",
             "status": "completed",
             "date_approved": "2024-12-17",
-            "signed_by": ["Mauro Andreoli", "Hannah Williams"],
+            "signed_by": [
+              "Mauro Andreoli",
+              "Hannah Williams"
+            ],
             "source": "LATAM - Milestone 7 MAF.pdf"
           }
         ]
       },
       "distinguished_guests": [
-        {"name": "Jack Briggs", "role": "Intersect Head of Marketing", "event": "Hub Launch", "date": "2024-05-31"},
-        {"name": "JJ Siller", "role": "IOG Chief of Staff", "event": "Hub Launch", "date": "2024-05-31"}
+        {
+          "name": "Jack Briggs",
+          "role": "Intersect Head of Marketing",
+          "event": "Hub Launch",
+          "date": "2024-05-31"
+        },
+        {
+          "name": "JJ Siller",
+          "role": "IOG Chief of Staff",
+          "event": "Hub Launch",
+          "date": "2024-05-31"
+        }
       ],
       "events": [
-        {"name": "Hub Launch", "date": "2024-05-31", "guests": ["Jack Briggs", "JJ Siller"]},
-        {"name": "Blockchain Rio", "date": "2024-07", "booth_days": 2, "registrations": 112, "panel": "Blockchain Mass Adoption", "keynote": "Main stage (Portuguese)", "sub_hub_launched": "Brazil"},
-        {"name": "ADN Argentina", "date": "2024-08", "audience": 500, "registrations": 80, "sub_hub_launched": "Argentina"},
-        {"name": "Colombia Constitutional Workshop", "date": "2024-09-14", "attendees": 20, "sub_hub_launched": "Colombia"},
-        {"name": "CoinEx Argentina Introduction", "date": "2024-08-28", "attendees": 50},
-        {"name": "Portuguese Town Hall", "date": "2024-08-30", "attendees": 5},
-        {"name": "BitSampa Brazil", "date": "2024-10", "type": "Conference attendance"},
-        {"name": "Spanish Town Hall", "date": "2024-11-05", "attendees": 84},
-        {"name": "Portuguese Town Hall", "date": "2024-11-06", "attendees": 124}
+        {
+          "name": "Hub Launch",
+          "date": "2024-05-31",
+          "guests": [
+            "Jack Briggs",
+            "JJ Siller"
+          ]
+        },
+        {
+          "name": "Blockchain Rio",
+          "date": "2024-07",
+          "booth_days": 2,
+          "registrations": 112,
+          "panel": "Blockchain Mass Adoption",
+          "keynote": "Main stage (Portuguese)",
+          "sub_hub_launched": "Brazil"
+        },
+        {
+          "name": "ADN Argentina",
+          "date": "2024-08",
+          "audience": 500,
+          "registrations": 80,
+          "sub_hub_launched": "Argentina"
+        },
+        {
+          "name": "Colombia Constitutional Workshop",
+          "date": "2024-09-14",
+          "attendees": 20,
+          "sub_hub_launched": "Colombia"
+        },
+        {
+          "name": "CoinEx Argentina Introduction",
+          "date": "2024-08-28",
+          "attendees": 50
+        },
+        {
+          "name": "Portuguese Town Hall",
+          "date": "2024-08-30",
+          "attendees": 5
+        },
+        {
+          "name": "BitSampa Brazil",
+          "date": "2024-10",
+          "type": "Conference attendance"
+        },
+        {
+          "name": "Spanish Town Hall",
+          "date": "2024-11-05",
+          "attendees": 84
+        },
+        {
+          "name": "Portuguese Town Hall",
+          "date": "2024-11-06",
+          "attendees": 124
+        }
       ],
       "kpis": {
         "sub_hubs_launched": 5,
-        "sub_hub_countries": ["Brazil", "Argentina", "Colombia", "Mexico", "Uruguay"],
+        "sub_hub_countries": [
+          "Brazil",
+          "Argentina",
+          "Colombia",
+          "Mexico",
+          "Uruguay"
+        ],
         "monthly_town_halls": true,
-        "enterprise_prospects": ["TXPipe", "TokenAllies", "Cardano Newsletter", "Cardano Feed", "Metera"],
-        "languages": ["Spanish", "Portuguese"],
+        "enterprise_prospects": [
+          "TXPipe",
+          "TokenAllies",
+          "Cardano Newsletter",
+          "Cardano Feed",
+          "Metera"
+        ],
+        "languages": [
+          "Spanish",
+          "Portuguese"
+        ],
         "notable_achievements": [
           "Launched sub-hubs in Brazil, Argentina, Colombia, Mexico, and Uruguay",
           "Blockchain Rio: 2-day booth, keynote on main stage, panel on mass adoption",
@@ -421,9 +722,15 @@
       "hub_name": "Japan Hub",
       "region": "Asia",
       "impact_summary": "Achieved ~30% of all Intersect individual memberships (492 members) from Japan alone. Hosted 20+ local meetups across 6 cities, comprehensive Japanese translations of governance documents, and weekly X Spaces. Successfully hosted Charles Hoskinson for Tech for Impact Summit and Tokyo Tech Lecture.",
-      "hub_managers": ["Yuki Koriyama", "Yuta Oishi"],
+      "hub_managers": [
+        "Yuki Koriyama",
+        "Yuta Oishi"
+      ],
       "intersect_approver": "Hannah Williams",
-      "social_media_handles": ["@BLUSTYURI1", "@yuta_cryptox"],
+      "social_media_handles": [
+        "@BLUSTYURI1",
+        "@yuta_cryptox"
+      ],
       "contract": {
         "original": {
           "start_date": "2024-06-14",
@@ -432,7 +739,9 @@
           "payment_window_days": 14,
           "funding_source": "CDH",
           "funding_amount_ada": "n/a",
-          "source_document": "Japan Hub Milestone 1-7 MAF.pdf"
+          "source_document": "Japan Hub Milestone 1-7 MAF.pdf",
+          "funding_amount": 28000,
+          "funding_currency": "USD"
         },
         "interim": {
           "start_date": "2025-04-01",
@@ -450,7 +759,10 @@
               "name": "April 2025",
               "status": "completed",
               "date_signed": "2025-05-08",
-              "signed_by": ["Kyosuke Takatsuki", "Hannah Williams"],
+              "signed_by": [
+                "Kyosuke Takatsuki",
+                "Hannah Williams"
+              ],
               "deliverables": [
                 "Budget workshops Apr 11 & 17 (29 & 36 participants)",
                 "19 proposals reviewed with feedback via GovTool",
@@ -476,7 +788,10 @@
               "name": "May 2025",
               "status": "completed",
               "date_signed": "2025-06-11",
-              "signed_by": ["Kyosuke Takatsuki", "Hannah Williams"],
+              "signed_by": [
+                "Kyosuke Takatsuki",
+                "Hannah Williams"
+              ],
               "deliverables": [
                 "Town Halls online May 16, 23, 30",
                 "SPO JAPAN GUILD event (May 10): 36 participants",
@@ -503,7 +818,10 @@
               "name": "June 2025",
               "status": "completed",
               "date_signed": "2025-07-07",
-              "signed_by": ["Kyosuke Takatsuki", "Hannah Williams"],
+              "signed_by": [
+                "Kyosuke Takatsuki",
+                "Hannah Williams"
+              ],
               "deliverables": [
                 "Town Halls online Jun 6, 20, 27",
                 "Brave Software Asia event (Jun 18): 20 participants",
@@ -525,6 +843,11 @@
               ]
             }
           ]
+        },
+        "amm": {
+          "amount": 28571,
+          "currency": "ADA",
+          "description": "Annual Members Meeting event delivery"
         }
       },
       "channels": {
@@ -564,7 +887,10 @@
             "number": 2,
             "name": "Report, Translation, Event Planning, Twitter Space",
             "status": "completed",
-            "approvers": ["Hannah Williams", "Duncan Soutar"],
+            "approvers": [
+              "Hannah Williams",
+              "Duncan Soutar"
+            ],
             "deliverables": [
               "Japan Hub Report v0.3 released",
               "Intersect document translation overview (videos and articles)",
@@ -572,10 +898,26 @@
               "Launch event June 14th scheduled with Nigel (COO) and Nick Cook"
             ]
           },
-          {"number": 3, "name": "Launch", "status": "completed"},
-          {"number": 4, "name": "Governance", "status": "completed"},
-          {"number": 5, "name": "Workshops", "status": "completed"},
-          {"number": 6, "name": "Expansion", "status": "completed"},
+          {
+            "number": 3,
+            "name": "Launch",
+            "status": "completed"
+          },
+          {
+            "number": 4,
+            "name": "Governance",
+            "status": "completed"
+          },
+          {
+            "number": 5,
+            "name": "Workshops",
+            "status": "completed"
+          },
+          {
+            "number": 6,
+            "name": "Expansion",
+            "status": "completed"
+          },
           {
             "number": 7,
             "name": "Final",
@@ -587,33 +929,125 @@
         ]
       },
       "distinguished_guests": [
-        {"name": "Nigel Hemsley", "role": "Intersect COO", "event": "Tokyo Launch Event", "date": "2024-06-14"},
-        {"name": "Nick Cook", "role": "Head of Membership & Community", "event": "Tokyo Launch Event", "date": "2024-06-14"},
-        {"name": "Charles Hoskinson", "role": "Cardano Founder", "event": "Tokyo Tech Lecture", "date": "2024-09-11"}
+        {
+          "name": "Nigel Hemsley",
+          "role": "Intersect COO",
+          "event": "Tokyo Launch Event",
+          "date": "2024-06-14"
+        },
+        {
+          "name": "Nick Cook",
+          "role": "Head of Membership & Community",
+          "event": "Tokyo Launch Event",
+          "date": "2024-06-14"
+        },
+        {
+          "name": "Charles Hoskinson",
+          "role": "Cardano Founder",
+          "event": "Tokyo Tech Lecture",
+          "date": "2024-09-11"
+        }
       ],
       "events": [
-        {"name": "Tokyo Launch Event", "date": "2024-06-14", "registrations": 54, "guests": ["Nigel Hemsley (COO)", "Nick Cook (Head of Membership)"], "link": "https://lu.ma/ksbqx70r"},
-        {"name": "Okinawa Meetup", "date": "2024-06-21", "type": "In-person"},
-        {"name": "Second Town Hall", "date": "2024-06-10", "attendees": 14},
-        {"name": "LINE LIVE Talk", "date": "2024-07-12", "attendees": 14},
-        {"name": "X Space", "date": "2024-08", "attendees": 36},
-        {"name": "X Space", "date": "2024-08-16", "attendees": 206},
-        {"name": "Constitutional Workshop Osaka", "date": "2024-08-10", "type": "Governance"},
-        {"name": "Okayama Meetup", "date": "2024-08-24", "attendees": 16},
-        {"name": "Fukuoka Meetup", "date": "2024-08-25", "attendees": 11},
-        {"name": "Constitutional Workshop Tokyo", "date": "2024-08-31", "type": "Governance"},
-        {"name": "Tech for Impact Summit", "date": "2024-09-10", "type": "Community Partner", "note": "Charles Hoskinson attended"},
-        {"name": "Tokyo Tech Lecture", "date": "2024-09-11", "guest": "Charles Hoskinson"},
-        {"name": "Tokushima Meetup", "date": "2024-09-12", "attendees": 33},
-        {"name": "Osaka Meetup", "date": "2024-09", "attendees": 70},
-        {"name": "Annual Members Meeting Tokyo", "date": "2024-10-03", "type": "AMM"},
-        {"name": "Fukuoka Meetup (co-host BTBF)", "date": "2024-10-12", "type": "Conference"}
+        {
+          "name": "Tokyo Launch Event",
+          "date": "2024-06-14",
+          "registrations": 54,
+          "guests": [
+            "Nigel Hemsley (COO)",
+            "Nick Cook (Head of Membership)"
+          ],
+          "link": "https://lu.ma/ksbqx70r"
+        },
+        {
+          "name": "Okinawa Meetup",
+          "date": "2024-06-21",
+          "type": "In-person"
+        },
+        {
+          "name": "Second Town Hall",
+          "date": "2024-06-10",
+          "attendees": 14
+        },
+        {
+          "name": "LINE LIVE Talk",
+          "date": "2024-07-12",
+          "attendees": 14
+        },
+        {
+          "name": "X Space",
+          "date": "2024-08",
+          "attendees": 36
+        },
+        {
+          "name": "X Space",
+          "date": "2024-08-16",
+          "attendees": 206
+        },
+        {
+          "name": "Constitutional Workshop Osaka",
+          "date": "2024-08-10",
+          "type": "Governance"
+        },
+        {
+          "name": "Okayama Meetup",
+          "date": "2024-08-24",
+          "attendees": 16
+        },
+        {
+          "name": "Fukuoka Meetup",
+          "date": "2024-08-25",
+          "attendees": 11
+        },
+        {
+          "name": "Constitutional Workshop Tokyo",
+          "date": "2024-08-31",
+          "type": "Governance"
+        },
+        {
+          "name": "Tech for Impact Summit",
+          "date": "2024-09-10",
+          "type": "Community Partner",
+          "note": "Charles Hoskinson attended"
+        },
+        {
+          "name": "Tokyo Tech Lecture",
+          "date": "2024-09-11",
+          "guest": "Charles Hoskinson"
+        },
+        {
+          "name": "Tokushima Meetup",
+          "date": "2024-09-12",
+          "attendees": 33
+        },
+        {
+          "name": "Osaka Meetup",
+          "date": "2024-09",
+          "attendees": 70
+        },
+        {
+          "name": "Annual Members Meeting Tokyo",
+          "date": "2024-10-03",
+          "type": "AMM"
+        },
+        {
+          "name": "Fukuoka Meetup (co-host BTBF)",
+          "date": "2024-10-12",
+          "type": "Conference"
+        }
       ],
       "kpis": {
         "membership_share": "~30% of Intersect individual memberships",
         "individual_members": 492,
         "total_local_meetups": 20,
-        "meetup_cities": ["Tokyo", "Okinawa", "Fukuoka", "Osaka", "Okayama", "Tokushima"],
+        "meetup_cities": [
+          "Tokyo",
+          "Okinawa",
+          "Fukuoka",
+          "Osaka",
+          "Okayama",
+          "Tokushima"
+        ],
         "weekly_events_schedule": {
           "town_hall": "2nd Monday of every month",
           "openchat_live_talk": "4th Monday of every month",
@@ -653,7 +1087,9 @@
           "payment_window_days": 7,
           "funding_source": "CDH",
           "funding_amount_ada": "n/a",
-          "source_document": "Sri Lanka - Milestone 1-7 MAF.pdf"
+          "source_document": "Sri Lanka - Milestone 1-7 MAF.pdf",
+          "funding_amount": 36000,
+          "funding_currency": "USD"
         },
         "interim": {
           "start_date": "2025-04-01",
@@ -671,7 +1107,10 @@
               "name": "April 2025",
               "status": "completed",
               "date_signed": "2025-05-12",
-              "signed_by": ["Kavinda Kariyapperuma", "Hannah Williams"],
+              "signed_by": [
+                "Kavinda Kariyapperuma",
+                "Hannah Williams"
+              ],
               "deliverables": [
                 "Physical Budget Ratification Workshop (Apr 19): 21 participants",
                 "Virtual Budget Ratification Workshop (Apr 20): 41 participants",
@@ -705,7 +1144,10 @@
               "name": "May 2025",
               "status": "completed",
               "date_signed": "2025-07-07",
-              "signed_by": ["Kavinda Kariyapperuma", "Hannah Williams"],
+              "signed_by": [
+                "Kavinda Kariyapperuma",
+                "Hannah Williams"
+              ],
               "deliverables": [
                 "Town Hall (May 30): 90 attendees with Daniel Friedman (zenGate) & Sebastien Guillemot (dcSpark/Paima)",
                 "University of Kelaniya Final Session (May 20): 108 students certified",
@@ -716,11 +1158,23 @@
               "town_hall": {
                 "date": "2025-05-30",
                 "attendees": 90,
-                "speakers": ["Daniel Friedman (zenGate Global)", "Sebastien Guillemot (dcSpark/Paima Studios)"]
+                "speakers": [
+                  "Daniel Friedman (zenGate Global)",
+                  "Sebastien Guillemot (dcSpark/Paima Studios)"
+                ]
               },
               "university_workshops": [
-                {"name": "University of Kelaniya Final Session", "date": "2025-05-20", "students": 108, "certified": true},
-                {"name": "University of Ruhuna 1st Session", "date": "2025-05-28", "students": 168}
+                {
+                  "name": "University of Kelaniya Final Session",
+                  "date": "2025-05-20",
+                  "students": 108,
+                  "certified": true
+                },
+                {
+                  "name": "University of Ruhuna 1st Session",
+                  "date": "2025-05-28",
+                  "students": 168
+                }
               ],
               "presidential_meeting": true
             },
@@ -729,7 +1183,10 @@
               "name": "June 2025",
               "status": "completed",
               "date_signed": "2025-07-18",
-              "signed_by": ["Kavinda Kariyapperuma", "Hannah Williams"],
+              "signed_by": [
+                "Kavinda Kariyapperuma",
+                "Hannah Williams"
+              ],
               "deliverables": [
                 "Town Hall (Jun 27): virtual with UniHack launch announcement",
                 "UniHack 2025: 225 students, 61 teams, 18 universities - Sri Lanka's first inter-university blockchain hackathon",
@@ -743,11 +1200,29 @@
                 "video": "https://youtu.be/zQuA67sxU8I"
               },
               "events": [
-                {"name": "UniHack 2025", "date": "2025-06-29", "students": 225, "teams": 61, "universities": 18, "note": "Sri Lanka's first inter-university blockchain hackathon"},
-                {"name": "Red Cypher 2.0", "date": "2025-06-14", "participants": 200, "teams": 35, "type": "Cybersecurity CTF"}
+                {
+                  "name": "UniHack 2025",
+                  "date": "2025-06-29",
+                  "students": 225,
+                  "teams": 61,
+                  "universities": 18,
+                  "note": "Sri Lanka's first inter-university blockchain hackathon"
+                },
+                {
+                  "name": "Red Cypher 2.0",
+                  "date": "2025-06-14",
+                  "participants": 200,
+                  "teams": 35,
+                  "type": "Cybersecurity CTF"
+                }
               ]
             }
           ]
+        },
+        "amm": {
+          "amount": 28571,
+          "currency": "ADA",
+          "description": "Annual Members Meeting event delivery"
         }
       },
       "channels": {
@@ -769,7 +1244,10 @@
               "notes": "Education/workshops in Sri Lanka; bilingual (English/Sinhala); higher views on disaster relief posts"
             }
           },
-          {"handle": "@Coin_Ceylon", "url": "https://x.com/Coin_Ceylon"}
+          {
+            "handle": "@Coin_Ceylon",
+            "url": "https://x.com/Coin_Ceylon"
+          }
         ],
         "linkedin": {
           "name": "CoinCeylon x Intersect Sri Lanka Hub",
@@ -784,7 +1262,11 @@
           "url": "https://www.instagram.com/CoinCeylon"
         }
       },
-      "languages": ["English", "Sinhala", "Tamil"],
+      "languages": [
+        "English",
+        "Sinhala",
+        "Tamil"
+      ],
       "milestones": {
         "total": 7,
         "completed": 7,
@@ -796,11 +1278,31 @@
             "notes": "7-day payment window per SoW",
             "source": "Sri Lanka - Milestone 1 MAF.pdf"
           },
-          {"number": 2, "name": "Hub Setup", "status": "completed"},
-          {"number": 3, "name": "Launch", "status": "completed"},
-          {"number": 4, "name": "Events", "status": "completed"},
-          {"number": 5, "name": "Governance", "status": "completed"},
-          {"number": 6, "name": "Expansion", "status": "completed"},
+          {
+            "number": 2,
+            "name": "Hub Setup",
+            "status": "completed"
+          },
+          {
+            "number": 3,
+            "name": "Launch",
+            "status": "completed"
+          },
+          {
+            "number": 4,
+            "name": "Events",
+            "status": "completed"
+          },
+          {
+            "number": 5,
+            "name": "Governance",
+            "status": "completed"
+          },
+          {
+            "number": 6,
+            "name": "Expansion",
+            "status": "completed"
+          },
           {
             "number": 7,
             "name": "Final",
@@ -817,48 +1319,214 @@
         ]
       },
       "distinguished_guests": [
-        {"name": "Dr. Nandalal Weerasinghe", "role": "Governor of Central Bank of Sri Lanka", "event": "International Industry Expo 2024", "date": "2024-06-19/23"},
-        {"name": "Deputy Ambassador of Japan", "event": "Hub events"},
-        {"name": "Sheldon Hunt", "role": "Head of Cardano Ecosystem, EMURGO", "event": "November Special Town Hall", "date": "2024-11"},
-        {"name": "Seira Yun", "role": "Founder & CEO, Socious", "event": "November Special Town Hall", "date": "2024-11"},
-        {"name": "Lloyd Duhon", "role": "Subject Matter Expert, Intersect", "event": "November Special Town Hall", "date": "2024-11"},
-        {"name": "Lawrence Clark", "role": "Head of Business Operations, Intersect MBO", "event": "November Special Town Hall", "date": "2024-11"},
-        {"name": "Abhik Nag", "role": "Community Manager, Intersect", "event": "November Special Town Hall", "date": "2024-11"},
-        {"name": "Yuri Hayashi Kuriyama", "role": "JPG Store", "event": "University Workshop", "date": "2025-04"},
-        {"name": "Patrick Tobler", "role": "NMKR", "event": "University Workshop", "date": "2025-04"},
-        {"name": "Nathan Kanapi", "role": "Discover Cardano", "event": "University Workshop", "date": "2025-04"}
+        {
+          "name": "Dr. Nandalal Weerasinghe",
+          "role": "Governor of Central Bank of Sri Lanka",
+          "event": "International Industry Expo 2024",
+          "date": "2024-06-19/23"
+        },
+        {
+          "name": "Deputy Ambassador of Japan",
+          "event": "Hub events"
+        },
+        {
+          "name": "Sheldon Hunt",
+          "role": "Head of Cardano Ecosystem, EMURGO",
+          "event": "November Special Town Hall",
+          "date": "2024-11"
+        },
+        {
+          "name": "Seira Yun",
+          "role": "Founder & CEO, Socious",
+          "event": "November Special Town Hall",
+          "date": "2024-11"
+        },
+        {
+          "name": "Lloyd Duhon",
+          "role": "Subject Matter Expert, Intersect",
+          "event": "November Special Town Hall",
+          "date": "2024-11"
+        },
+        {
+          "name": "Lawrence Clark",
+          "role": "Head of Business Operations, Intersect MBO",
+          "event": "November Special Town Hall",
+          "date": "2024-11"
+        },
+        {
+          "name": "Abhik Nag",
+          "role": "Community Manager, Intersect",
+          "event": "November Special Town Hall",
+          "date": "2024-11"
+        },
+        {
+          "name": "Yuri Hayashi Kuriyama",
+          "role": "JPG Store",
+          "event": "University Workshop",
+          "date": "2025-04"
+        },
+        {
+          "name": "Patrick Tobler",
+          "role": "NMKR",
+          "event": "University Workshop",
+          "date": "2025-04"
+        },
+        {
+          "name": "Nathan Kanapi",
+          "role": "Discover Cardano",
+          "event": "University Workshop",
+          "date": "2025-04"
+        }
       ],
       "events": [
-        {"name": "X Space Event", "date": "2024-06-08", "attendees": 557},
-        {"name": "International Industry Expo 2024", "date": "2024-06-19/23", "location": "BMICH Colombo", "total_expo_attendees": 200000, "exhibitors": 1000, "countries": 20, "flyers_distributed": 2000, "member_signups": 125, "vip_visit": "Governor of Central Bank of Sri Lanka"},
-        {"name": "Royal Colombo Golf Club Launch", "date": "2024-06-24", "attendees": 71, "note": "First Intersect Hub in South Asia"},
-        {"name": "First Town Hall", "date": "2024-06-29", "attendees": 69},
-        {"name": "Constitutional Workshop Colombo", "date": "2024-08-31", "type": "Governance"},
-        {"name": "Town Hall", "date": "2024-08-31", "attendees": 90},
-        {"name": "University of Kelaniya Workshop", "date": "2024-10-08", "attendees": 81, "partner": "Centre for AI and Data Science", "topic": "Mastering Blockchain Technology and Building on Cardano"},
-        {"name": "AMM Colombo", "date": "2024-10-12", "type": "Annual Members Meeting"},
-        {"name": "AMM Networking Soiree", "date": "2024-10", "note": "Alongside AMM evening"},
-        {"name": "November Special Town Hall", "date": "2024-11", "attendees": 102, "speakers": ["Sheldon Hunt (EMURGO)", "Seira Yun (Socious)", "Lloyd Duhon (Intersect)"]},
-        {"name": "New Year Networking Town Hall Soiree", "date": "2025-01", "attendees": 71, "printed_reports_distributed": true},
-        {"name": "University of Kelaniya Workshop", "date": "2025-03", "attendees": 81},
-        {"name": "University of Kelaniya Intro Workshop", "date": "2025", "attendees": 70},
-        {"name": "University of Ruhuna Workshop", "date": "2025-03", "attendees": 194, "partner": "IEEE Computer Society"},
-        {"name": "University of Ruhuna Final Session", "date": "2025-06", "attendees": 147, "month_long_engagement": 168, "certifications_awarded": true},
-        {"name": "Inter-Regional Hub Town Hall", "date": "2025-02-28", "attendees": 110, "note": "First inter-regional town hall bringing together all 6 hubs", "hosted_by": "CoinCeylon", "link": "https://x.com/IntersectSriL/status/1894287971311878323"},
-        {"name": "Monthly Town Hall", "date": "2025-04", "attendees": 92},
-        {"name": "Red Cypher 2.0 Event", "date": "2025-06-14", "students": 140, "teams": 35, "total_participants": 200, "tools_covered": ["MeshJS", "Aiken"]}
+        {
+          "name": "X Space Event",
+          "date": "2024-06-08",
+          "attendees": 557
+        },
+        {
+          "name": "International Industry Expo 2024",
+          "date": "2024-06-19/23",
+          "location": "BMICH Colombo",
+          "total_expo_attendees": 200000,
+          "exhibitors": 1000,
+          "countries": 20,
+          "flyers_distributed": 2000,
+          "member_signups": 125,
+          "vip_visit": "Governor of Central Bank of Sri Lanka"
+        },
+        {
+          "name": "Royal Colombo Golf Club Launch",
+          "date": "2024-06-24",
+          "attendees": 71,
+          "note": "First Intersect Hub in South Asia"
+        },
+        {
+          "name": "First Town Hall",
+          "date": "2024-06-29",
+          "attendees": 69
+        },
+        {
+          "name": "Constitutional Workshop Colombo",
+          "date": "2024-08-31",
+          "type": "Governance"
+        },
+        {
+          "name": "Town Hall",
+          "date": "2024-08-31",
+          "attendees": 90
+        },
+        {
+          "name": "University of Kelaniya Workshop",
+          "date": "2024-10-08",
+          "attendees": 81,
+          "partner": "Centre for AI and Data Science",
+          "topic": "Mastering Blockchain Technology and Building on Cardano"
+        },
+        {
+          "name": "AMM Colombo",
+          "date": "2024-10-12",
+          "type": "Annual Members Meeting"
+        },
+        {
+          "name": "AMM Networking Soiree",
+          "date": "2024-10",
+          "note": "Alongside AMM evening"
+        },
+        {
+          "name": "November Special Town Hall",
+          "date": "2024-11",
+          "attendees": 102,
+          "speakers": [
+            "Sheldon Hunt (EMURGO)",
+            "Seira Yun (Socious)",
+            "Lloyd Duhon (Intersect)"
+          ]
+        },
+        {
+          "name": "New Year Networking Town Hall Soiree",
+          "date": "2025-01",
+          "attendees": 71,
+          "printed_reports_distributed": true
+        },
+        {
+          "name": "University of Kelaniya Workshop",
+          "date": "2025-03",
+          "attendees": 81
+        },
+        {
+          "name": "University of Kelaniya Intro Workshop",
+          "date": "2025",
+          "attendees": 70
+        },
+        {
+          "name": "University of Ruhuna Workshop",
+          "date": "2025-03",
+          "attendees": 194,
+          "partner": "IEEE Computer Society"
+        },
+        {
+          "name": "University of Ruhuna Final Session",
+          "date": "2025-06",
+          "attendees": 147,
+          "month_long_engagement": 168,
+          "certifications_awarded": true
+        },
+        {
+          "name": "Inter-Regional Hub Town Hall",
+          "date": "2025-02-28",
+          "attendees": 110,
+          "note": "First inter-regional town hall bringing together all 6 hubs",
+          "hosted_by": "CoinCeylon",
+          "link": "https://x.com/IntersectSriL/status/1894287971311878323"
+        },
+        {
+          "name": "Monthly Town Hall",
+          "date": "2025-04",
+          "attendees": 92
+        },
+        {
+          "name": "Red Cypher 2.0 Event",
+          "date": "2025-06-14",
+          "students": 140,
+          "teams": 35,
+          "total_participants": 200,
+          "tools_covered": [
+            "MeshJS",
+            "Aiken"
+          ]
+        }
       ],
       "hackathons": [
-        {"name": "UniHack 2025", "developers": 225, "universities": 18, "note": "Sri Lanka's first Cardano exclusive inter-university hackathon"}
+        {
+          "name": "UniHack 2025",
+          "developers": 225,
+          "universities": 18,
+          "note": "Sri Lanka's first Cardano exclusive inter-university hackathon"
+        }
       ],
       "kpis": {
         "distinction": "First Intersect Hub in South Asia",
         "launch_date": "2024-06-24",
         "x_space_max_attendance": 557,
-        "town_hall_attendance": [69, 90, 32, 102, 71, 92],
-        "inter_regional_town_hall": {"attendees": 110, "note": "First inter-regional hub town hall bringing together all 6 hubs"},
+        "town_hall_attendance": [
+          69,
+          90,
+          32,
+          102,
+          71,
+          92
+        ],
+        "inter_regional_town_hall": {
+          "attendees": 110,
+          "note": "First inter-regional hub town hall bringing together all 6 hubs"
+        },
         "university_students_reached": 400,
-        "media_coverage": ["Siyatha News TV features", "DailyFT press", "Sunday Times"],
+        "media_coverage": [
+          "Siyatha News TV features",
+          "DailyFT press",
+          "Sunday Times"
+        ],
         "notable_achievements": [
           "First Intersect Hub in South Asia",
           "557 participants in single X Space event",
@@ -875,7 +1543,11 @@
     {
       "hub_name": "WADA Hub",
       "region": "Africa",
-      "sub_regions": ["Central Africa", "West Africa", "East Africa"],
+      "sub_regions": [
+        "Central Africa",
+        "West Africa",
+        "East Africa"
+      ],
       "impact_summary": "Launched localized hubs in Ghana, Kenya, and DRC with 584+ total attendees. Facilitated multi-language support (English, French, Swahili) and active DRep engagement discussions. 96 attendees at CC Elections X Space and 124 at African DReps governance panel.",
       "project_lead": "Josh Fielding",
       "intersect_approver": "Hannah Williams",
@@ -888,7 +1560,9 @@
           "payment_window_days": 14,
           "funding_source": "CDH",
           "funding_amount_ada": "n/a",
-          "source_document": "WADA Milestone 1-5 MAF.pdf"
+          "source_document": "WADA Milestone 1-5 MAF.pdf",
+          "funding_amount": 30000,
+          "funding_currency": "USD"
         },
         "interim": {
           "start_date": "2025-04-01",
@@ -907,7 +1581,10 @@
               "name": "April 2025",
               "status": "completed",
               "date_signed": "2025-05-07",
-              "signed_by": ["Josh Fielding", "Hannah Williams"],
+              "signed_by": [
+                "Josh Fielding",
+                "Hannah Williams"
+              ],
               "deliverables": [
                 "Budget Workshop Kenya (Apr 22): Budget proposal review session",
                 "Budget Workshop DRC (Apr 23): Budget proposal review session",
@@ -936,14 +1613,21 @@
                   "region": "West Africa"
                 }
               ],
-              "regions_covered": ["Kenya", "DRC", "Cameroon"]
+              "regions_covered": [
+                "Kenya",
+                "DRC",
+                "Cameroon"
+              ]
             },
             {
               "number": 2,
               "name": "May 2025",
               "status": "completed",
               "date_signed": "2025-06-03",
-              "signed_by": ["Josh Fielding", "Hannah Williams"],
+              "signed_by": [
+                "Josh Fielding",
+                "Hannah Williams"
+              ],
               "deliverables": [
                 "Town Hall X Space (May 5): 100 attendees",
                 "Focus: Cardano's 2025 budget process",
@@ -962,7 +1646,10 @@
               "name": "June 2025",
               "status": "completed",
               "date_signed": "2025-07-07",
-              "signed_by": ["Josh Fielding", "Hannah Williams"],
+              "signed_by": [
+                "Josh Fielding",
+                "Hannah Williams"
+              ],
               "deliverables": [
                 "CC Elections X Space (Jun 18): 96 attendees",
                 "African DReps Panel (Apr 3): 124 attendees",
@@ -971,6 +1658,11 @@
               ]
             }
           ]
+        },
+        "amm": {
+          "amount": 10000,
+          "currency": "USD",
+          "description": "Annual Members Meeting event delivery"
         }
       },
       "channels": {
@@ -997,70 +1689,238 @@
         },
         "wada_community": true
       },
-      "languages": ["English", "French", "Swahili"],
+      "languages": [
+        "English",
+        "French",
+        "Swahili"
+      ],
       "milestones": {
         "total": 5,
         "completed": 5,
         "details": [
-          {"number": 1, "name": "Initial Kickoff", "status": "completed", "approvers": ["Hannah Williams", "Duncan Soutar"], "notes": "14-day payment window per SoW", "source": "WADA Milestone 1 MAF.pdf"},
-          {"number": 2, "name": "Hub Setup", "status": "completed", "date_approved": "2024-07-05", "approver": "Abbie Yeates"},
-          {"number": 3, "name": "Central Africa Launch", "status": "completed", "date_approved": "2024-08-07", "approver": "Abbie Yeates"},
-          {"number": 4, "name": "West Africa Launch", "status": "completed", "date_approved": "2024-09-04", "approver": "Hannah Williams"},
-          {"number": 5, "name": "East Africa Launch", "status": "completed", "date_approved": "2024-10-02", "approver": "Hannah Williams", "source": "WADA Milestone 5 MAF.pdf"}
+          {
+            "number": 1,
+            "name": "Initial Kickoff",
+            "status": "completed",
+            "approvers": [
+              "Hannah Williams",
+              "Duncan Soutar"
+            ],
+            "notes": "14-day payment window per SoW",
+            "source": "WADA Milestone 1 MAF.pdf"
+          },
+          {
+            "number": 2,
+            "name": "Hub Setup",
+            "status": "completed",
+            "date_approved": "2024-07-05",
+            "approver": "Abbie Yeates"
+          },
+          {
+            "number": 3,
+            "name": "Central Africa Launch",
+            "status": "completed",
+            "date_approved": "2024-08-07",
+            "approver": "Abbie Yeates"
+          },
+          {
+            "number": 4,
+            "name": "West Africa Launch",
+            "status": "completed",
+            "date_approved": "2024-09-04",
+            "approver": "Hannah Williams"
+          },
+          {
+            "number": 5,
+            "name": "East Africa Launch",
+            "status": "completed",
+            "date_approved": "2024-10-02",
+            "approver": "Hannah Williams",
+            "source": "WADA Milestone 5 MAF.pdf"
+          }
         ]
       },
       "distinguished_guests": [
-        {"name": "Nick Cook", "role": "Head of Membership & Community", "event": "Nairobi Launch", "date": "2024-09-14"},
-        {"name": "Mercy Fordwoo", "role": "Africa Hub Member", "event": "Inter-Hub Town Hall", "date": "2025-02-28"}
+        {
+          "name": "Nick Cook",
+          "role": "Head of Membership & Community",
+          "event": "Nairobi Launch",
+          "date": "2024-09-14"
+        },
+        {
+          "name": "Mercy Fordwoo",
+          "role": "Africa Hub Member",
+          "event": "Inter-Hub Town Hall",
+          "date": "2025-02-28"
+        }
       ],
-      "partnerships": ["Cardano Kenya Community", "Cardano Africa Academy", "Lido Nation", "Cteil"],
+      "partnerships": [
+        "Cardano Kenya Community",
+        "Cardano Africa Academy",
+        "Lido Nation",
+        "Cteil"
+      ],
       "regional_events": {
         "central_africa": {
           "location": "Goma, DRC",
           "events": [
-            {"name": "Inaugural Townhall", "date": "2024-07-13", "attendees": 28, "format": "Zoom"},
-            {"name": "Main Launch", "date": "2024-07-27", "attendees": 80, "format": "Hybrid"},
-            {"name": "In-person Town Hall", "date": "2024-08-17", "attendees": 38, "format": "In-person"},
-            {"name": "Post-launch Workshop", "date": null, "attendees": 33, "format": "In-person"}
+            {
+              "name": "Inaugural Townhall",
+              "date": "2024-07-13",
+              "attendees": 28,
+              "format": "Zoom"
+            },
+            {
+              "name": "Main Launch",
+              "date": "2024-07-27",
+              "attendees": 80,
+              "format": "Hybrid"
+            },
+            {
+              "name": "In-person Town Hall",
+              "date": "2024-08-17",
+              "attendees": 38,
+              "format": "In-person"
+            },
+            {
+              "name": "Post-launch Workshop",
+              "date": null,
+              "attendees": 33,
+              "format": "In-person"
+            }
           ],
           "total_attendees": 179
         },
         "west_africa": {
-          "locations": ["Accra, Ghana", "Tamale, Ghana"],
+          "locations": [
+            "Accra, Ghana",
+            "Tamale, Ghana"
+          ],
           "events": [
-            {"name": "First West Africa Town Hall", "date": "2024-08-03", "attendees": 35, "format": "Online"},
-            {"name": "Pre-event Townhall", "date": "2024-08-03", "attendees": 40, "format": "Online"},
-            {"name": "Main Event", "date": "2024-08-10", "attendees": 60, "format": "In-person (2 locations)"},
-            {"name": "Follow-up Townhall", "date": "2024-08-14", "attendees": 22, "format": "Online", "memberships_confirmed": 5}
+            {
+              "name": "First West Africa Town Hall",
+              "date": "2024-08-03",
+              "attendees": 35,
+              "format": "Online"
+            },
+            {
+              "name": "Pre-event Townhall",
+              "date": "2024-08-03",
+              "attendees": 40,
+              "format": "Online"
+            },
+            {
+              "name": "Main Event",
+              "date": "2024-08-10",
+              "attendees": 60,
+              "format": "In-person (2 locations)"
+            },
+            {
+              "name": "Follow-up Townhall",
+              "date": "2024-08-14",
+              "attendees": 22,
+              "format": "Online",
+              "memberships_confirmed": 5
+            }
           ],
           "total_attendees": 157
         },
         "east_africa": {
           "location": "Nairobi, Kenya",
           "events": [
-            {"name": "Pre-event Townhall", "date": "2024-09-08", "attendees": 40, "format": "Virtual"},
-            {"name": "Nairobi Launch Event", "date": "2024-09-14", "attendees": 84, "format": "Hybrid", "live": 70, "virtual": 14, "guest_speaker": "Nick Cook"},
-            {"name": "Follow-up Townhall", "date": "2024-09-21", "attendees": 34, "format": "Online"},
-            {"name": "Westpark Towers Launch", "date": "2024-09-25", "attendees": 90, "format": "Hybrid", "guest": "Nick Cook (Head of Membership)"}
+            {
+              "name": "Pre-event Townhall",
+              "date": "2024-09-08",
+              "attendees": 40,
+              "format": "Virtual"
+            },
+            {
+              "name": "Nairobi Launch Event",
+              "date": "2024-09-14",
+              "attendees": 84,
+              "format": "Hybrid",
+              "live": 70,
+              "virtual": 14,
+              "guest_speaker": "Nick Cook"
+            },
+            {
+              "name": "Follow-up Townhall",
+              "date": "2024-09-21",
+              "attendees": 34,
+              "format": "Online"
+            },
+            {
+              "name": "Westpark Towers Launch",
+              "date": "2024-09-25",
+              "attendees": 90,
+              "format": "Hybrid",
+              "guest": "Nick Cook (Head of Membership)"
+            }
           ],
           "total_attendees": 248
         }
       },
       "additional_events": [
-        {"event": "Town Hall", "date": "2024-07-11", "attendees": 21},
-        {"event": "Town Hall", "date": "2024-09-19", "attendees": 16},
-        {"event": "Town Hall", "date": "2024-10-01", "recording_available": true},
-        {"event": "Town Hall", "date": "2024-11-07", "attendees": 22},
-        {"event": "Constitutional Workshop Burkina Faso", "date": "2024-09-21", "type": "Governance"},
-        {"event": "X Space (CC Elections & Treasury Withdrawals)", "date": "2025-06-18", "attendees": 96},
-        {"event": "Relevance of African DReps Participation", "date": "2025-04-03", "attendees": 124, "format": "Panel with 8 active African DReps"},
-        {"event": "WADA Forum Monthly Meeting", "date": "2025-03-06", "attendees": 57, "topic": "Budget approval process with community input"},
-        {"event": "Internal Meeting", "date": "2025-06-12", "attendees": 11, "topic": "Cardano Budget Withdrawal process"},
-        {"event": "Introduction to Cardano Enugu Nigeria", "attendees": 25}
+        {
+          "event": "Town Hall",
+          "date": "2024-07-11",
+          "attendees": 21
+        },
+        {
+          "event": "Town Hall",
+          "date": "2024-09-19",
+          "attendees": 16
+        },
+        {
+          "event": "Town Hall",
+          "date": "2024-10-01",
+          "recording_available": true
+        },
+        {
+          "event": "Town Hall",
+          "date": "2024-11-07",
+          "attendees": 22
+        },
+        {
+          "event": "Constitutional Workshop Burkina Faso",
+          "date": "2024-09-21",
+          "type": "Governance"
+        },
+        {
+          "event": "X Space (CC Elections & Treasury Withdrawals)",
+          "date": "2025-06-18",
+          "attendees": 96
+        },
+        {
+          "event": "Relevance of African DReps Participation",
+          "date": "2025-04-03",
+          "attendees": 124,
+          "format": "Panel with 8 active African DReps"
+        },
+        {
+          "event": "WADA Forum Monthly Meeting",
+          "date": "2025-03-06",
+          "attendees": 57,
+          "topic": "Budget approval process with community input"
+        },
+        {
+          "event": "Internal Meeting",
+          "date": "2025-06-12",
+          "attendees": 11,
+          "topic": "Cardano Budget Withdrawal process"
+        },
+        {
+          "event": "Introduction to Cardano Enugu Nigeria",
+          "attendees": 25
+        }
       ],
       "kpis": {
         "total_attendees_all_regions": 584,
-        "localized_hubs": ["Ghana", "Kenya", "Democratic Republic of Congo"],
+        "localized_hubs": [
+          "Ghana",
+          "Kenya",
+          "Democratic Republic of Congo"
+        ],
         "weekly_virtual_meetings": true,
         "drep_engagement": "DRep discussions with African DReps exploring current landscape and key challenges",
         "infrastructure": [
@@ -1095,9 +1955,11 @@
           "end_date": "2025-02-10",
           "milestones": 3,
           "payment_window_days": 7,
-          "funding_source": "CDH",
+          "funding_source": "Intersect",
           "funding_amount_ada": "n/a",
-          "source_document": "Europe - Milestone 1-3.pdf"
+          "source_document": "Europe - Milestone 1-3.pdf",
+          "funding_amount": 75758,
+          "funding_currency": "ADA"
         },
         "interim": {
           "start_date": "2025-04-01",
@@ -1106,6 +1968,11 @@
           "sows": 0,
           "maf_required": false,
           "note": "Europe Hub did not require Milestone Acceptance Forms for interim contract"
+        },
+        "amm": {
+          "amount": 14286,
+          "currency": "ADA",
+          "description": "Annual Members Meeting event delivery"
         }
       },
       "channels": {
@@ -1135,7 +2002,14 @@
         "total": 3,
         "completed": 3,
         "details": [
-          {"number": 1, "name": "Initial Kickoff", "status": "completed", "date_signed": "2024-09-09", "approver": "Hannah Williams", "source": "Europe - Milestone 1.pdf"},
+          {
+            "number": 1,
+            "name": "Initial Kickoff",
+            "status": "completed",
+            "date_signed": "2024-09-09",
+            "approver": "Hannah Williams",
+            "source": "Europe - Milestone 1.pdf"
+          },
           {
             "number": 2,
             "name": "Hub Setup & Town Hall",
@@ -1148,27 +2022,79 @@
             ],
             "source": "Europe - Milestone 3.pdf"
           },
-          {"number": 3, "name": "Launch Events", "status": "completed", "date_signed": "2025-02-10", "approver": "Hannah Williams"}
+          {
+            "number": 3,
+            "name": "Launch Events",
+            "status": "completed",
+            "date_signed": "2025-02-10",
+            "approver": "Hannah Williams"
+          }
         ]
       },
       "distinguished_guests": [
-        {"name": "Lenna Onto", "role": "Hub Manager / Clay Nation CEO & Cofounder", "note": "Previously worked at IOHK"}
+        {
+          "name": "Lenna Onto",
+          "role": "Hub Manager / Clay Nation CEO & Cofounder",
+          "note": "Previously worked at IOHK"
+        }
       ],
       "events": [
-        {"name": "Hub Launch Announcement", "date": "2024-09-06", "location": "Lisbon, Portugal"},
-        {"name": "Annual Members Meeting Lisbon", "date": "2024-10-05", "type": "AMM"},
-        {"name": "Town Hall", "date": "2024-11-06", "attendees": 155},
-        {"name": "Web Summit Lisbon", "type": "Conference"},
-        {"name": "Cardano Summit", "type": "Conference"},
-        {"name": "Amsterdam Governance Workshop", "date": "2025-01-10", "type": "Workshop", "registrations": 15, "attended": 8, "memberships": 7},
-        {"name": "Amsterdam Evening Social", "registrations": 23, "attended": 21},
-        {"name": "NFT Paris", "date": "2025-02", "type": "Conference"},
-        {"name": "Hosky Summit", "date": "2025-05/06", "location": "Gdansk, Poland", "type": "Event"}
+        {
+          "name": "Hub Launch Announcement",
+          "date": "2024-09-06",
+          "location": "Lisbon, Portugal"
+        },
+        {
+          "name": "Annual Members Meeting Lisbon",
+          "date": "2024-10-05",
+          "type": "AMM"
+        },
+        {
+          "name": "Town Hall",
+          "date": "2024-11-06",
+          "attendees": 155
+        },
+        {
+          "name": "Web Summit Lisbon",
+          "type": "Conference"
+        },
+        {
+          "name": "Cardano Summit",
+          "type": "Conference"
+        },
+        {
+          "name": "Amsterdam Governance Workshop",
+          "date": "2025-01-10",
+          "type": "Workshop",
+          "registrations": 15,
+          "attended": 8,
+          "memberships": 7
+        },
+        {
+          "name": "Amsterdam Evening Social",
+          "registrations": 23,
+          "attended": 21
+        },
+        {
+          "name": "NFT Paris",
+          "date": "2025-02",
+          "type": "Conference"
+        },
+        {
+          "name": "Hosky Summit",
+          "date": "2025-05/06",
+          "location": "Gdansk, Poland",
+          "type": "Event"
+        }
       ],
       "kpis": {
         "initial_x_space_listeners": 200,
         "monthly_town_halls": true,
-        "in_person_meetup_locations": ["Lisbon", "Paris", "Amsterdam"],
+        "in_person_meetup_locations": [
+          "Lisbon",
+          "Paris",
+          "Amsterdam"
+        ],
         "amsterdam_event_metrics": {
           "new_member_signups": 7,
           "governance_workshop_registrations": 15,
@@ -1199,9 +2125,11 @@
           "end_date": "2025-03-07",
           "milestones": 6,
           "payment_window_days": 7,
-          "funding_source": "CDH",
+          "funding_source": "Intersect",
           "funding_amount_ada": "n/a",
-          "source_document": "AWEN - Milestone 1-6 payment.pdf"
+          "source_document": "AWEN - Milestone 1-6 payment.pdf",
+          "funding_amount": 25000,
+          "funding_currency": "USD"
         },
         "interim": {
           "start_date": "2025-04-01",
@@ -1220,7 +2148,10 @@
               "name": "April 2025",
               "status": "completed",
               "date_signed": "2025-05-03",
-              "signed_by": ["Ian McCullough", "Hannah Williams"],
+              "signed_by": [
+                "Ian McCullough",
+                "Hannah Williams"
+              ],
               "deliverables": [
                 "Budget Proposal Workshop #1 (Apr 23): 29 RSVPs, 8 attendees",
                 "Budget Proposal Workshop #2 (Apr 24): 18 RSVPs, 7 attendees",
@@ -1242,14 +2173,19 @@
                 "https://gov.tools/budget_discussion/205",
                 "https://gov.tools/budget_discussion/685"
               ],
-              "speakers": ["Beatrice Anihiri (Cardano Atlantic Council)"]
+              "speakers": [
+                "Beatrice Anihiri (Cardano Atlantic Council)"
+              ]
             },
             {
               "number": 2,
               "name": "May 2025",
               "status": "completed",
               "date_signed": "2025-06-07",
-              "signed_by": ["Ian McCullough", "Hannah Williams"],
+              "signed_by": [
+                "Ian McCullough",
+                "Hannah Williams"
+              ],
               "deliverables": [
                 "Cardano x Consensus Toronto (May 16): 621 signups, 143 confirmed attended",
                 "X Space Town Hall with Civics Committee member KenErik",
@@ -1261,7 +2197,12 @@
                   "date": "2025-05-16",
                   "signups": 621,
                   "confirmed_attended": 143,
-                  "partners": ["Rare Network", "Clay Nation", "Sundial Protocol", "Draper University"]
+                  "partners": [
+                    "Rare Network",
+                    "Clay Nation",
+                    "Sundial Protocol",
+                    "Draper University"
+                  ]
                 }
               ]
             },
@@ -1270,7 +2211,10 @@
               "name": "June 2025",
               "status": "completed",
               "date_signed": "2025-07-10",
-              "signed_by": ["Ian McCullough", "Hannah Williams"],
+              "signed_by": [
+                "Ian McCullough",
+                "Hannah Williams"
+              ],
               "deliverables": [
                 "Final X Space Town Hall with 24 attendees",
                 "Discussion on future of North American community building",
@@ -1280,6 +2224,11 @@
               "note": "Final milestone - Hub concluded operations"
             }
           ]
+        },
+        "amm": {
+          "amount": 5000,
+          "currency": "USD",
+          "description": "Annual Members Meeting event delivery"
         }
       },
       "channels": {
@@ -1318,7 +2267,14 @@
         "total": 6,
         "completed": 6,
         "details": [
-          {"number": 1, "name": "Initial Kickoff", "status": "completed", "date_signed": "2024-09-17", "approver": "Hannah Williams", "source": "AWEN - Milestone 1 payment.pdf"},
+          {
+            "number": 1,
+            "name": "Initial Kickoff",
+            "status": "completed",
+            "date_signed": "2024-09-17",
+            "approver": "Hannah Williams",
+            "source": "AWEN - Milestone 1 payment.pdf"
+          },
           {
             "number": 2,
             "name": "Hub Setup & Town Halls",
@@ -1344,7 +2300,11 @@
             ],
             "source": "AWEN - Milestone 4 payment.pdf"
           },
-          {"number": 4, "name": "Governance Activities", "status": "completed"},
+          {
+            "number": 4,
+            "name": "Governance Activities",
+            "status": "completed"
+          },
           {
             "number": 5,
             "name": "Continued Engagement",
@@ -1360,50 +2320,220 @@
             ],
             "source": "AWEN - Milestone 6 payment.pdf"
           },
-          {"number": 6, "name": "Expansion", "status": "completed"}
+          {
+            "number": 6,
+            "name": "Expansion",
+            "status": "completed"
+          }
         ]
       },
       "distinguished_guests": [
-        {"name": "Tamara Haasen", "role": "Ecosystem Mapping Project / Keynote Fireside Chat", "event": "GM2025", "date": "2025-01-25"},
-        {"name": "Lloyd Duhon", "role": "Subject Matter Expert / Cardano Constitutional Convention Chair / Keynote Fireside Chat", "event": "GM2025", "date": "2025-01-25"},
-        {"name": "Samuel Leathers", "role": "Opening Remarks on Governance Evolution", "event": "GM2025", "date": "2025-01-25"},
-        {"name": "Jack Briggs", "role": "Intersect Ecosystem Director / Budget Priorities Keynote", "event": "GM2025 & Austin AMM", "date": "2025-01-25"},
-        {"name": "Logan Panchot", "role": "ClarityDAO Presentation", "event": "GM2025", "date": "2025-01-25"},
-        {"name": "Ken Ladd", "role": "Vice Chairman, Cardano Constitutional Delegate Committee / DRep Panelist", "event": "GM2025 DRep Debate", "date": "2025-01-25"},
-        {"name": "Kendrick L.", "role": "Cardano Constitutional Definitions", "event": "GM2025", "date": "2025-01-25"},
-        {"name": "Wes Parkinson", "role": "Marketing & Growth Committee", "event": "GM2025", "date": "2025-01-25"},
-        {"name": "Rand McHenry", "role": "Marketing & Growth Committee", "event": "GM2025", "date": "2025-01-25"},
-        {"name": "Dr. Adam Rusch", "role": "DRep Debate Moderator / Founder of Awen (servicer)", "event": "GM2025 DRep Debate", "date": "2025-01-25"},
-        {"name": "Jenny Brito", "role": "DRep Debate Moderator", "event": "GM2025 DRep Debate", "date": "2025-01-25"},
-        {"name": "Joshua Stone", "role": "Book.io/Stuff.io Founder / Closing Keynote on Digital Media", "event": "Austin AMM", "date": "2024-10-19", "source": "https://www.intersectmbo.org/news/intersect-development-update-37-october-25"},
-        {"name": "Nicodemus Rodriguez", "role": "ICC Member / DAO Governance", "event": "Austin AMM", "date": "2024-10-19"},
-        {"name": "Terence 'Tex' McCutcheon", "role": "Open Source Review", "event": "Austin AMM", "date": "2024-10-19"},
-        {"name": "Pi", "role": "SundaeSwap / Stableswap Contracts Update", "event": "Town Hall #5", "date": "2025-03-06"},
-        {"name": "Charles Hoskinson", "role": "Cardano Founder", "event": "ETHDenver", "date": "2025-02/03"}
+        {
+          "name": "Tamara Haasen",
+          "role": "Ecosystem Mapping Project / Keynote Fireside Chat",
+          "event": "GM2025",
+          "date": "2025-01-25"
+        },
+        {
+          "name": "Lloyd Duhon",
+          "role": "Subject Matter Expert / Cardano Constitutional Convention Chair / Keynote Fireside Chat",
+          "event": "GM2025",
+          "date": "2025-01-25"
+        },
+        {
+          "name": "Samuel Leathers",
+          "role": "Opening Remarks on Governance Evolution",
+          "event": "GM2025",
+          "date": "2025-01-25"
+        },
+        {
+          "name": "Jack Briggs",
+          "role": "Intersect Ecosystem Director / Budget Priorities Keynote",
+          "event": "GM2025 & Austin AMM",
+          "date": "2025-01-25"
+        },
+        {
+          "name": "Logan Panchot",
+          "role": "ClarityDAO Presentation",
+          "event": "GM2025",
+          "date": "2025-01-25"
+        },
+        {
+          "name": "Ken Ladd",
+          "role": "Vice Chairman, Cardano Constitutional Delegate Committee / DRep Panelist",
+          "event": "GM2025 DRep Debate",
+          "date": "2025-01-25"
+        },
+        {
+          "name": "Kendrick L.",
+          "role": "Cardano Constitutional Definitions",
+          "event": "GM2025",
+          "date": "2025-01-25"
+        },
+        {
+          "name": "Wes Parkinson",
+          "role": "Marketing & Growth Committee",
+          "event": "GM2025",
+          "date": "2025-01-25"
+        },
+        {
+          "name": "Rand McHenry",
+          "role": "Marketing & Growth Committee",
+          "event": "GM2025",
+          "date": "2025-01-25"
+        },
+        {
+          "name": "Dr. Adam Rusch",
+          "role": "DRep Debate Moderator / Founder of Awen (servicer)",
+          "event": "GM2025 DRep Debate",
+          "date": "2025-01-25"
+        },
+        {
+          "name": "Jenny Brito",
+          "role": "DRep Debate Moderator",
+          "event": "GM2025 DRep Debate",
+          "date": "2025-01-25"
+        },
+        {
+          "name": "Joshua Stone",
+          "role": "Book.io/Stuff.io Founder / Closing Keynote on Digital Media",
+          "event": "Austin AMM",
+          "date": "2024-10-19",
+          "source": "https://www.intersectmbo.org/news/intersect-development-update-37-october-25"
+        },
+        {
+          "name": "Nicodemus Rodriguez",
+          "role": "ICC Member / DAO Governance",
+          "event": "Austin AMM",
+          "date": "2024-10-19"
+        },
+        {
+          "name": "Terence 'Tex' McCutcheon",
+          "role": "Open Source Review",
+          "event": "Austin AMM",
+          "date": "2024-10-19"
+        },
+        {
+          "name": "Pi",
+          "role": "SundaeSwap / Stableswap Contracts Update",
+          "event": "Town Hall #5",
+          "date": "2025-03-06"
+        },
+        {
+          "name": "Charles Hoskinson",
+          "role": "Cardano Founder",
+          "event": "ETHDenver",
+          "date": "2025-02/03"
+        }
       ],
       "drep_debate_participants": [
-        {"name": "Crypto Crow", "role": "DRep", "event": "GM2025 DRep Debate", "date": "2025-01-25"},
-        {"name": "Gerson Gomes", "role": "DRep", "event": "GM2025 DRep Debate", "date": "2025-01-25"},
-        {"name": "Lloyd Duhon", "role": "DRep", "event": "GM2025 DRep Debate", "date": "2025-01-25"},
-        {"name": "Ken Ladd", "role": "DRep / Vice Chairman, Cardano Constitutional Delegate Committee", "event": "GM2025 DRep Debate", "date": "2025-01-25"},
-        {"name": "Jose Martinez", "role": "DRep", "event": "GM2025 DRep Debate", "date": "2025-01-25"}
+        {
+          "name": "Crypto Crow",
+          "role": "DRep",
+          "event": "GM2025 DRep Debate",
+          "date": "2025-01-25"
+        },
+        {
+          "name": "Gerson Gomes",
+          "role": "DRep",
+          "event": "GM2025 DRep Debate",
+          "date": "2025-01-25"
+        },
+        {
+          "name": "Lloyd Duhon",
+          "role": "DRep",
+          "event": "GM2025 DRep Debate",
+          "date": "2025-01-25"
+        },
+        {
+          "name": "Ken Ladd",
+          "role": "DRep / Vice Chairman, Cardano Constitutional Delegate Committee",
+          "event": "GM2025 DRep Debate",
+          "date": "2025-01-25"
+        },
+        {
+          "name": "Jose Martinez",
+          "role": "DRep",
+          "event": "GM2025 DRep Debate",
+          "date": "2025-01-25"
+        }
       ],
       "enterprise_members_featured": [
-        {"name": "Book.io/Stuff.io", "representative": "Joshua Stone", "event": "Austin AMM Keynote", "date": "2024-10-19"},
-        {"name": "Rare Network", "event": "X Space Town Hall & Consensus Toronto Partner", "source": "AWEN Milestone 4"},
-        {"name": "ClarityDAO", "representative": "Logan Panchot, Ken Ladd", "event": "GM2025 Presentation & DRep Debate"},
-        {"name": "SundaeSwap", "representative": "Pi", "event": "Town Hall #5", "date": "2025-03-06"},
-        {"name": "Optim Finance", "event": "Town Hall #5", "date": "2025-03-06"},
-        {"name": "Storm Partners", "event": "February X Space", "date": "2025-02"},
-        {"name": "Draper University", "event": "Consensus Toronto Partner", "date": "2025-05-16"},
-        {"name": "Sundial Protocol", "event": "Consensus Toronto Partner", "date": "2025-05-16"},
-        {"name": "Clay Nation", "event": "Consensus Toronto Partner", "date": "2025-05-16"}
+        {
+          "name": "Book.io/Stuff.io",
+          "representative": "Joshua Stone",
+          "event": "Austin AMM Keynote",
+          "date": "2024-10-19"
+        },
+        {
+          "name": "Rare Network",
+          "event": "X Space Town Hall & Consensus Toronto Partner",
+          "source": "AWEN Milestone 4"
+        },
+        {
+          "name": "ClarityDAO",
+          "representative": "Logan Panchot, Ken Ladd",
+          "event": "GM2025 Presentation & DRep Debate"
+        },
+        {
+          "name": "SundaeSwap",
+          "representative": "Pi",
+          "event": "Town Hall #5",
+          "date": "2025-03-06"
+        },
+        {
+          "name": "Optim Finance",
+          "event": "Town Hall #5",
+          "date": "2025-03-06"
+        },
+        {
+          "name": "Storm Partners",
+          "event": "February X Space",
+          "date": "2025-02"
+        },
+        {
+          "name": "Draper University",
+          "event": "Consensus Toronto Partner",
+          "date": "2025-05-16"
+        },
+        {
+          "name": "Sundial Protocol",
+          "event": "Consensus Toronto Partner",
+          "date": "2025-05-16"
+        },
+        {
+          "name": "Clay Nation",
+          "event": "Consensus Toronto Partner",
+          "date": "2025-05-16"
+        }
       ],
-      "partnerships": ["Stand with Crypto", "Project Catalyst", "ETH Chicago", "Rare Network", "Midnight", "HBAR Foundation", "Stuff.io", "Book.io", "ClarityDAO", "SundaeSwap", "Optim Finance", "Draper University", "Sundial Protocol", "Clay Nation"],
+      "partnerships": [
+        "Stand with Crypto",
+        "Project Catalyst",
+        "ETH Chicago",
+        "Rare Network",
+        "Midnight",
+        "HBAR Foundation",
+        "Stuff.io",
+        "Book.io",
+        "ClarityDAO",
+        "SundaeSwap",
+        "Optim Finance",
+        "Draper University",
+        "Sundial Protocol",
+        "Clay Nation"
+      ],
       "ethdenver_contacts": {
         "date": "2025-02/03",
         "location": "Denver, Colorado",
-        "contacts_made": ["Charles Hoskinson", "Stand With Crypto", "Stuff.io", "Midnight", "Rare Network", "HBAR Foundation"],
+        "contacts_made": [
+          "Charles Hoskinson",
+          "Stand With Crypto",
+          "Stuff.io",
+          "Midnight",
+          "Rare Network",
+          "HBAR Foundation"
+        ],
         "source": "AWEN - Milestone 6 payment.pdf"
       },
       "events": {
@@ -1414,8 +2544,15 @@
             "type": "Annual Members Meeting",
             "attendees": 30,
             "description": "Joint AMM event with five other community hubs. Inaugural North American hub launch.",
-            "keynote_speakers": ["Jack Briggs (Intersect Ecosystem Director)", "Joshua Stone (Book.io/Stuff.io - Closing Keynote)"],
-            "other_speakers": ["Nicodemus Rodriguez (ICC Member)", "Terence 'Tex' McCutcheon (Open Source)", "Adam Rusch (Board Member)"],
+            "keynote_speakers": [
+              "Jack Briggs (Intersect Ecosystem Director)",
+              "Joshua Stone (Book.io/Stuff.io - Closing Keynote)"
+            ],
+            "other_speakers": [
+              "Nicodemus Rodriguez (ICC Member)",
+              "Terence 'Tex' McCutcheon (Open Source)",
+              "Adam Rusch (Board Member)"
+            ],
             "link": "https://luma.com/67wrmo10",
             "x_posts": {
               "featured_keynote_joshua_stone": "https://x.com/IntersectNA/status/1843733721918386469",
@@ -1428,13 +2565,89 @@
           }
         ],
         "town_halls": [
-          {"name": "Town Hall #1", "date": "2024-10-02", "type": "X Space", "description": "First monthly hub town hall", "x_space": "https://x.com/i/spaces/1zqKVYzXLzdxB", "announcement": "https://x.com/IntersectNA/status/1841523626199355837", "source": "Update #34"},
-          {"name": "Town Hall #2", "date": "2024-11-06", "attendees": 33, "type": "X Space", "x_space": "https://x.com/i/spaces/1djxXrLzjwdGZ", "announcement": "https://x.com/IntersectNA/status/1853577816048017742"},
-          {"name": "Town Hall #3", "date": "2024-12-04", "type": "X Space", "description": "Town Hall with Rare Network discussing Cardano Events Council", "x_space": "https://x.com/i/spaces/1lPKqOdDrdLJb", "announcement": "https://x.com/IntersectNA/status/1865681294610346449"},
-          {"name": "Town Hall #4 - Starting the Year Strong", "date": "2025-01-14", "attendees": 326, "type": "X Space", "topics": ["Cardano governance", "Plomin hard fork", "community hubs", "Cardano Constitution"], "x_space": "https://x.com/i/spaces/1kvJpbMDjkkKE", "announcement": "https://x.com/IntersectNA/status/1884957774641004581", "source": "https://www.intersectmbo.org/news/intersect-development-update-45-january-17th"},
-          {"name": "Town Hall - GM2025 Recap", "date": "2025-02-05", "attendees": 42, "type": "X Space", "topics": ["GM2025 Fort Myers recap", "recent Cardano developments"], "source": "https://www.intersectmbo.org/news/intersect-development-update-48-february-7th"},
-          {"name": "Town Hall #5 - DeFi Focus", "date": "2025-03-06", "attendees": 248, "type": "X Space", "topics": ["DeFi expansion", "stablecoins", "liquidity initiatives"], "speakers": ["Pi (SundaeSwap)", "Optim Finance", "ESCO"], "x_space": "https://x.com/i/spaces/1BRJjmDoNYwGw", "announcement": "https://x.com/IntersectNA/status/1895920603351404814", "source": "https://www.intersectmbo.org/news/intersect-development-update-52-march-7th"},
-          {"name": "Town Hall #6 - Elections", "date": "2025-03-31", "attendees": 80, "type": "X Space", "topics": ["Intersect elections", "committee candidates", "Phil from Anastasia Labs"], "x_space": "https://x.com/i/spaces/1MnxnwOpogdKO", "announcement": "https://x.com/IntersectNA/status/1905635867013591537"}
+          {
+            "name": "Town Hall #1",
+            "date": "2024-10-02",
+            "type": "X Space",
+            "description": "First monthly hub town hall",
+            "x_space": "https://x.com/i/spaces/1zqKVYzXLzdxB",
+            "announcement": "https://x.com/IntersectNA/status/1841523626199355837",
+            "source": "Update #34"
+          },
+          {
+            "name": "Town Hall #2",
+            "date": "2024-11-06",
+            "attendees": 33,
+            "type": "X Space",
+            "x_space": "https://x.com/i/spaces/1djxXrLzjwdGZ",
+            "announcement": "https://x.com/IntersectNA/status/1853577816048017742"
+          },
+          {
+            "name": "Town Hall #3",
+            "date": "2024-12-04",
+            "type": "X Space",
+            "description": "Town Hall with Rare Network discussing Cardano Events Council",
+            "x_space": "https://x.com/i/spaces/1lPKqOdDrdLJb",
+            "announcement": "https://x.com/IntersectNA/status/1865681294610346449"
+          },
+          {
+            "name": "Town Hall #4 - Starting the Year Strong",
+            "date": "2025-01-14",
+            "attendees": 326,
+            "type": "X Space",
+            "topics": [
+              "Cardano governance",
+              "Plomin hard fork",
+              "community hubs",
+              "Cardano Constitution"
+            ],
+            "x_space": "https://x.com/i/spaces/1kvJpbMDjkkKE",
+            "announcement": "https://x.com/IntersectNA/status/1884957774641004581",
+            "source": "https://www.intersectmbo.org/news/intersect-development-update-45-january-17th"
+          },
+          {
+            "name": "Town Hall - GM2025 Recap",
+            "date": "2025-02-05",
+            "attendees": 42,
+            "type": "X Space",
+            "topics": [
+              "GM2025 Fort Myers recap",
+              "recent Cardano developments"
+            ],
+            "source": "https://www.intersectmbo.org/news/intersect-development-update-48-february-7th"
+          },
+          {
+            "name": "Town Hall #5 - DeFi Focus",
+            "date": "2025-03-06",
+            "attendees": 248,
+            "type": "X Space",
+            "topics": [
+              "DeFi expansion",
+              "stablecoins",
+              "liquidity initiatives"
+            ],
+            "speakers": [
+              "Pi (SundaeSwap)",
+              "Optim Finance",
+              "ESCO"
+            ],
+            "x_space": "https://x.com/i/spaces/1BRJjmDoNYwGw",
+            "announcement": "https://x.com/IntersectNA/status/1895920603351404814",
+            "source": "https://www.intersectmbo.org/news/intersect-development-update-52-march-7th"
+          },
+          {
+            "name": "Town Hall #6 - Elections",
+            "date": "2025-03-31",
+            "attendees": 80,
+            "type": "X Space",
+            "topics": [
+              "Intersect elections",
+              "committee candidates",
+              "Phil from Anastasia Labs"
+            ],
+            "x_space": "https://x.com/i/spaces/1MnxnwOpogdKO",
+            "announcement": "https://x.com/IntersectNA/status/1905635867013591537"
+          }
         ],
         "drep_debate": [
           {
@@ -1445,8 +2658,17 @@
             "in_person_attendees": 44,
             "virtual_attendees": 22,
             "livestream_viewers": 3000,
-            "moderators": ["Dr. Adam Rusch", "Jenny Brito"],
-            "drep_panelists": ["Crypto Crow", "Gerson Gomes", "Lloyd Duhon", "Ken Ladd", "Jose Martinez"],
+            "moderators": [
+              "Dr. Adam Rusch",
+              "Jenny Brito"
+            ],
+            "drep_panelists": [
+              "Crypto Crow",
+              "Gerson Gomes",
+              "Lloyd Duhon",
+              "Ken Ladd",
+              "Jose Martinez"
+            ],
             "description": "First DRep debate of the year, featuring six prominent DReps discussing governance within the Cardano ecosystem",
             "source": "https://www.intersectmbo.org/news/intersect-development-update-47-january-31st"
           }
@@ -1462,17 +2684,73 @@
             "virtual_attendees": 22,
             "livestream_viewers": 3000,
             "agenda": [
-              {"time": "9:00 AM", "activity": "Complimentary welcome breakfast and opening remarks"},
-              {"time": "10:00 AM", "speaker": "Samuel Leathers", "role": "Head of Product, IOG", "topic": "Cardano: a brief history of how we got here and where we're going next"},
-              {"time": "11:00 AM", "speakers": "Tamara Haasen (President, IOG) & Lloyd Duhon (Host, GM Cardano)", "topic": "Keynote fireside chat"},
-              {"time": "12:00 PM", "activity": "Complimentary lunch break"},
-              {"time": "1:00 PM", "speaker": "Jack Briggs", "role": "Ecosystem Director, Intersect", "topic": "Intersect Decisions & Budget Priorities"},
-              {"time": "1:20 PM", "speaker": "Logan Panchot", "role": "CEO, Clear Contracts Inc", "topic": "Community Spotlight: Community Governance Tools and ClarityDAO"},
-              {"time": "2:00 PM", "speaker": "Ken Ladd", "role": "Vice Chairman, Cardano Constitutional Delegate Committee", "topic": "Community Spotlight: Cardano Constitution Definitions"},
-              {"time": "2:30 PM", "speakers": "Wes Parkinson & Rand McHenry", "role": "Rare Network", "topic": "Community Spotlight: Intersect Marketing & Events Committee"},
-              {"time": "3:25 PM", "activity": "DRep Debate", "moderators": ["Dr. Adam Rusch", "Jenny Brito"], "dreps": ["Crypto Crow", "Gerson Gomes", "Lloyd Duhon", "Ken Ladd", "Jose Martinez"]},
-              {"time": "4:30 PM", "speaker": "Lloyd Duhon", "topic": "Closing reflections"},
-              {"time": "5:00 PM", "activity": "Event ends"}
+              {
+                "time": "9:00 AM",
+                "activity": "Complimentary welcome breakfast and opening remarks"
+              },
+              {
+                "time": "10:00 AM",
+                "speaker": "Samuel Leathers",
+                "role": "Head of Product, IOG",
+                "topic": "Cardano: a brief history of how we got here and where we're going next"
+              },
+              {
+                "time": "11:00 AM",
+                "speakers": "Tamara Haasen (President, IOG) & Lloyd Duhon (Host, GM Cardano)",
+                "topic": "Keynote fireside chat"
+              },
+              {
+                "time": "12:00 PM",
+                "activity": "Complimentary lunch break"
+              },
+              {
+                "time": "1:00 PM",
+                "speaker": "Jack Briggs",
+                "role": "Ecosystem Director, Intersect",
+                "topic": "Intersect Decisions & Budget Priorities"
+              },
+              {
+                "time": "1:20 PM",
+                "speaker": "Logan Panchot",
+                "role": "CEO, Clear Contracts Inc",
+                "topic": "Community Spotlight: Community Governance Tools and ClarityDAO"
+              },
+              {
+                "time": "2:00 PM",
+                "speaker": "Ken Ladd",
+                "role": "Vice Chairman, Cardano Constitutional Delegate Committee",
+                "topic": "Community Spotlight: Cardano Constitution Definitions"
+              },
+              {
+                "time": "2:30 PM",
+                "speakers": "Wes Parkinson & Rand McHenry",
+                "role": "Rare Network",
+                "topic": "Community Spotlight: Intersect Marketing & Events Committee"
+              },
+              {
+                "time": "3:25 PM",
+                "activity": "DRep Debate",
+                "moderators": [
+                  "Dr. Adam Rusch",
+                  "Jenny Brito"
+                ],
+                "dreps": [
+                  "Crypto Crow",
+                  "Gerson Gomes",
+                  "Lloyd Duhon",
+                  "Ken Ladd",
+                  "Jose Martinez"
+                ]
+              },
+              {
+                "time": "4:30 PM",
+                "speaker": "Lloyd Duhon",
+                "topic": "Closing reflections"
+              },
+              {
+                "time": "5:00 PM",
+                "activity": "Event ends"
+              }
             ],
             "link": "https://lu.ma/cc96lvq8",
             "x_posts": {
@@ -1492,8 +2770,19 @@
             },
             "source": "https://www.intersectmbo.org/news/intersect-development-update-47-january-31st"
           },
-          {"name": "GM2025 Fishing Charter", "date": "2025-01-26", "time": "10:00 AM", "link": "https://lu.ma/c24i2403", "announcement": "https://x.com/IntersectNA/status/1879549555361845745", "description": "Community networking fishing charter for select attendees"},
-          {"name": "Austin Constitutional Workshop", "date": "2024-10-18", "description": "Constitutional workshop held Friday before AMM Austin"},
+          {
+            "name": "GM2025 Fishing Charter",
+            "date": "2025-01-26",
+            "time": "10:00 AM",
+            "link": "https://lu.ma/c24i2403",
+            "announcement": "https://x.com/IntersectNA/status/1879549555361845745",
+            "description": "Community networking fishing charter for select attendees"
+          },
+          {
+            "name": "Austin Constitutional Workshop",
+            "date": "2024-10-18",
+            "description": "Constitutional workshop held Friday before AMM Austin"
+          },
           {
             "name": "Budget Proposal Workshop #1",
             "date": "2025-04-23",
@@ -1510,8 +2799,18 @@
             "format": "Online (Google Meet)",
             "host": "North American Community Hub",
             "topic": "Core Category Budget Proposals",
-            "agenda": ["Welcome (10 min)", "Proposal Selection (10 min)", "Group Setup (5 min)", "Proposal Exploration (45 min)", "Closing Reflection (20 min)"],
-            "resources": ["Workshop slides", "Budget Lookup List", "Attendee Feedback Form"],
+            "agenda": [
+              "Welcome (10 min)",
+              "Proposal Selection (10 min)",
+              "Group Setup (5 min)",
+              "Proposal Exploration (45 min)",
+              "Closing Reflection (20 min)"
+            ],
+            "resources": [
+              "Workshop slides",
+              "Budget Lookup List",
+              "Attendee Feedback Form"
+            ],
             "description": "Workshop attendee feedback submitted via form, anonymized, and submitted as comment on gov.tools from the North American Community Hub.",
             "link": "https://luma.com/yn1uh7yg"
           },
@@ -1524,15 +2823,68 @@
           }
         ],
         "x_spaces": [
-          {"name": "Cardano Over Coffee (Hub Launch)", "date": "2024-10", "type": "X Space", "link": "https://x.com/awen_online/status/1840104784830869848"},
-          {"name": "X Space with Rare Network", "date": "2024-12", "type": "X Space", "enterprise_member": "Rare Network", "description": "Discussed proposed Cardano Events Council", "source": "AWEN Milestone 3"},
-          {"name": "Cardano Over Coffee X Space", "date": "2025-01", "type": "X Space", "x_space": "https://x.com/i/spaces/1ZkKzRXzZWdKv", "announcement": "https://x.com/IntersectNA/status/1876601454200566159"},
-          {"name": "IntersectMBO X Space", "date": "2025-01", "type": "X Space", "x_space": "https://x.com/i/spaces/1gqxvNQPqgjxB", "announcement": "https://x.com/CullahMusic/status/1879195152796811563"},
-          {"name": "X Space with Storm Partners", "date": "2025-02", "type": "X Space", "enterprise_member": "Storm Partners", "topics": ["adoption", "innovation"], "source": "Update #47"},
-          {"name": "Cardano Over Coffee X Space", "date": "2025-03", "type": "X Space", "x_space": "https://x.com/i/spaces/1rmxPyderOLKN", "announcement": "https://x.com/coc_space/status/1897656180593357006"}
+          {
+            "name": "Cardano Over Coffee (Hub Launch)",
+            "date": "2024-10",
+            "type": "X Space",
+            "link": "https://x.com/awen_online/status/1840104784830869848"
+          },
+          {
+            "name": "X Space with Rare Network",
+            "date": "2024-12",
+            "type": "X Space",
+            "enterprise_member": "Rare Network",
+            "description": "Discussed proposed Cardano Events Council",
+            "source": "AWEN Milestone 3"
+          },
+          {
+            "name": "Cardano Over Coffee X Space",
+            "date": "2025-01",
+            "type": "X Space",
+            "x_space": "https://x.com/i/spaces/1ZkKzRXzZWdKv",
+            "announcement": "https://x.com/IntersectNA/status/1876601454200566159"
+          },
+          {
+            "name": "IntersectMBO X Space",
+            "date": "2025-01",
+            "type": "X Space",
+            "x_space": "https://x.com/i/spaces/1gqxvNQPqgjxB",
+            "announcement": "https://x.com/CullahMusic/status/1879195152796811563"
+          },
+          {
+            "name": "X Space with Storm Partners",
+            "date": "2025-02",
+            "type": "X Space",
+            "enterprise_member": "Storm Partners",
+            "topics": [
+              "adoption",
+              "innovation"
+            ],
+            "source": "Update #47"
+          },
+          {
+            "name": "Cardano Over Coffee X Space",
+            "date": "2025-03",
+            "type": "X Space",
+            "x_space": "https://x.com/i/spaces/1rmxPyderOLKN",
+            "announcement": "https://x.com/coc_space/status/1897656180593357006"
+          }
         ],
         "conferences": [
-          {"name": "ETHDenver", "date": "2025-02/03", "location": "Denver, Colorado", "contacts": ["Charles Hoskinson", "Stand With Crypto", "Stuff.io", "Midnight", "Rare Network", "HBAR Foundation"], "description": "Attended conference and networked with other blockchain communities"},
+          {
+            "name": "ETHDenver",
+            "date": "2025-02/03",
+            "location": "Denver, Colorado",
+            "contacts": [
+              "Charles Hoskinson",
+              "Stand With Crypto",
+              "Stuff.io",
+              "Midnight",
+              "Rare Network",
+              "HBAR Foundation"
+            ],
+            "description": "Attended conference and networked with other blockchain communities"
+          },
           {
             "name": "Cardano X Consensus 2025",
             "date": "2025-05-16",
@@ -1540,7 +2892,13 @@
             "location": "Toronto, Ontario (4-minute walk from main Consensus venue)",
             "type": "Official Cardano Side Event at Consensus 2025",
             "host": "Intersect North American Hub",
-            "partners": ["Draper University", "Sundial Protocol", "Rare Network", "Clay Nation", "Awen"],
+            "partners": [
+              "Draper University",
+              "Sundial Protocol",
+              "Rare Network",
+              "Clay Nation",
+              "Awen"
+            ],
             "registration": {
               "luma": "https://lu.ma/909wo06d"
             },
@@ -1548,7 +2906,15 @@
           }
         ],
         "inter_regional": [
-          {"name": "Inter-Regional Hub Town Hall", "date": "2025-02-28", "hosted_by": "Sri Lanka Hub", "attendees": 110, "link": "https://x.com/IntersectSriL/status/1894287971311878323", "recap": "https://x.com/IntersectSriL/status/1896901330771292506", "description": "First inter-regional town hall bringing together all 6 hubs"}
+          {
+            "name": "Inter-Regional Hub Town Hall",
+            "date": "2025-02-28",
+            "hosted_by": "Sri Lanka Hub",
+            "attendees": 110,
+            "link": "https://x.com/IntersectSriL/status/1894287971311878323",
+            "recap": "https://x.com/IntersectSriL/status/1896901330771292506",
+            "description": "First inter-regional town hall bringing together all 6 hubs"
+          }
         ],
         "hub_launch": [
           {
@@ -1581,8 +2947,21 @@
           "2025-03-06": 248,
           "2025-03-31": 80
         },
-        "enterprise_speakers": ["Book.io/Stuff.io", "Rare Network", "ClarityDAO", "SundaeSwap", "Optim Finance", "Storm Partners"],
-        "consensus_toronto_partners": ["Draper University", "Sundial Protocol", "Rare Network", "Clay Nation", "Awen"],
+        "enterprise_speakers": [
+          "Book.io/Stuff.io",
+          "Rare Network",
+          "ClarityDAO",
+          "SundaeSwap",
+          "Optim Finance",
+          "Storm Partners"
+        ],
+        "consensus_toronto_partners": [
+          "Draper University",
+          "Sundial Protocol",
+          "Rare Network",
+          "Clay Nation",
+          "Awen"
+        ],
         "notable_achievements": [
           "First DRep Debate hosted (Jan 2025) with 6 DReps and 3,000+ livestream viewers",
           "First US-based Intersect community hub",
@@ -1614,8 +2993,26 @@
     ],
     "estimated_total_event_attendees": 3000,
     "sub_hubs_established": 8,
-    "sub_hub_locations": ["Brazil", "Argentina", "Colombia", "Mexico", "Uruguay", "Ghana", "Kenya", "DRC"],
-    "languages_supported": ["English", "Spanish", "Portuguese", "French", "Japanese", "Sinhala", "Tamil", "Swahili"],
+    "sub_hub_locations": [
+      "Brazil",
+      "Argentina",
+      "Colombia",
+      "Mexico",
+      "Uruguay",
+      "Ghana",
+      "Kenya",
+      "DRC"
+    ],
+    "languages_supported": [
+      "English",
+      "Spanish",
+      "Portuguese",
+      "French",
+      "Japanese",
+      "Sinhala",
+      "Tamil",
+      "Swahili"
+    ],
     "membership_statistics": {
       "total_members_sept_2024": 1047,
       "paid_members_sept_2024": 626,
@@ -1627,17 +3024,226 @@
       "hub_membership_contribution": "35% of all individual memberships attributed to hubs"
     },
     "key_approvers": [
-      {"name": "Hannah Williams", "role": "Community Hub Lead / Community Analyst"},
-      {"name": "Duncan Soutar", "role": "Intersect Approver"},
-      {"name": "Abbie Yeates", "role": "Intersect Approver"}
+      {
+        "name": "Hannah Williams",
+        "role": "Community Hub Lead / Community Analyst"
+      },
+      {
+        "name": "Duncan Soutar",
+        "role": "Intersect Approver"
+      },
+      {
+        "name": "Abbie Yeates",
+        "role": "Intersect Approver"
+      }
     ],
     "data_sources": [
-      {"name": "Milestone Acceptance Forms (MAF)", "type": "Primary", "note": "48 DocuSign-verified documents (35 original + 13 interim)"},
-      {"name": "Intersect Development Updates #18-#100", "type": "KPI Data", "url": "https://intersectmbo.org/news"},
-      {"name": "Intersect MBO Documentation", "type": "Contract Data", "url": "https://docs.intersectmbo.org"},
-      {"name": "Cardano Forum", "type": "Event Reports", "url": "https://forum.cardano.org"},
-      {"name": "Lido Nation", "type": "Event Coverage", "url": "https://www.lidonation.com"}
+      {
+        "name": "Milestone Acceptance Forms (MAF)",
+        "type": "Primary",
+        "note": "48 DocuSign-verified documents (35 original + 13 interim)"
+      },
+      {
+        "name": "Intersect Development Updates #18-#100",
+        "type": "KPI Data",
+        "url": "https://intersectmbo.org/news"
+      },
+      {
+        "name": "Intersect MBO Documentation",
+        "type": "Contract Data",
+        "url": "https://docs.intersectmbo.org"
+      },
+      {
+        "name": "Cardano Forum",
+        "type": "Event Reports",
+        "url": "https://forum.cardano.org"
+      },
+      {
+        "name": "Lido Nation",
+        "type": "Event Coverage",
+        "url": "https://www.lidonation.com"
+      }
     ],
     "hub_management_note": "Intersect's direct management of the six community hubs concluded in 2025, with town halls shifting to community-hub-led format"
+  },
+  "funding": {
+    "sources": {
+      "cdh_contracts": "https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-cdh-contracts",
+      "intersect_contracts": "https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-intersect-contracts",
+      "mcc_bridge_contracts": "https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts"
+    },
+    "phase_1_hub_contracts": {
+      "latam": {
+        "amount": 42000,
+        "currency": "USD",
+        "source": "CDH"
+      },
+      "sri_lanka": {
+        "amount": 36000,
+        "currency": "USD",
+        "source": "CDH"
+      },
+      "africa_wada": {
+        "amount": 30000,
+        "currency": "USD",
+        "source": "CDH"
+      },
+      "japan": {
+        "amount": 28000,
+        "currency": "USD",
+        "source": "CDH"
+      },
+      "north_america": {
+        "amount": 25000,
+        "currency": "USD",
+        "source": "Intersect"
+      },
+      "europe": {
+        "amount": 75758,
+        "currency": "ADA",
+        "source": "Intersect"
+      },
+      "total_usd": 161000,
+      "total_ada": 75758
+    },
+    "amm_contracts": {
+      "latam": {
+        "amount": 29412,
+        "currency": "ADA"
+      },
+      "japan": {
+        "amount": 28571,
+        "currency": "ADA"
+      },
+      "sri_lanka": {
+        "amount": 28571,
+        "currency": "ADA"
+      },
+      "europe": {
+        "amount": 14286,
+        "currency": "ADA"
+      },
+      "africa_wada": {
+        "amount": 10000,
+        "currency": "USD"
+      },
+      "north_america": {
+        "amount": 5000,
+        "currency": "USD"
+      },
+      "total_usd": 15000,
+      "total_ada": 100840
+    },
+    "phase_2_bridge": {
+      "latam": {
+        "amount": 23438,
+        "currency": "ADA"
+      },
+      "sri_lanka": {
+        "amount": 18182,
+        "currency": "ADA"
+      },
+      "africa_wada": {
+        "amount": 18182,
+        "currency": "ADA"
+      },
+      "north_america": {
+        "amount": 16216,
+        "currency": "ADA"
+      },
+      "japan": {
+        "amount": 12000,
+        "currency": "ADA"
+      },
+      "europe": null,
+      "total_ada": 88018
+    },
+    "program_totals": {
+      "total_usd": 176000,
+      "total_ada": 264616
+    }
+  },
+  "roi_analysis": {
+    "methodology": "USD-denominated Phase 1 contracts only (excludes ADA contracts to avoid exchange rate assumptions)",
+    "usd_hubs_only": {
+      "total_spend": 161000,
+      "individual_members": 1249,
+      "events": 158,
+      "milestones": 46,
+      "adjusted_attendees": 27279
+    },
+    "program_wide_metrics": {
+      "cost_per_individual_member": 128.9,
+      "cost_per_event": 1019,
+      "cost_per_attendee": 5.9,
+      "cost_per_milestone": 3500,
+      "avg_monthly_cost_per_hub": 2095,
+      "avg_contract_per_hub": 29333,
+      "pct_intersect_members_in_hub_regions": 70,
+      "milestone_completion_rate": 100
+    },
+    "per_hub_efficiency": {
+      "japan": {
+        "phase_1_usd": 28000,
+        "actual_spend_usd": 19049,
+        "members": 533,
+        "events": 61,
+        "cost_per_member": 52.53,
+        "cost_per_event": 459,
+        "ada_returned": 15436
+      },
+      "north_america": {
+        "phase_1_usd": 25000,
+        "members": 239,
+        "events": 12,
+        "cost_per_member": 104.6,
+        "cost_per_event": 2083,
+        "enterprise_members": 6
+      },
+      "sri_lanka": {
+        "phase_1_usd": 36000,
+        "members": 263,
+        "events": 21,
+        "cost_per_member": 136.88,
+        "cost_per_event": 1714,
+        "students_trained": 700
+      },
+      "latam": {
+        "phase_1_usd": 42000,
+        "members": 127,
+        "events": 18,
+        "cost_per_member": 330.71,
+        "cost_per_event": 2333
+      },
+      "africa_wada": {
+        "phase_1_usd": 30000,
+        "members": 87,
+        "events": 46,
+        "cost_per_member": 344.83,
+        "cost_per_event": 652
+      }
+    }
+  },
+  "contract_deliverables": {
+    "source": "Hub Shapers Handbook",
+    "monthly_requirements": [
+      "Monthly Town Hall meeting",
+      "Social media activity",
+      "Attend/host specified events",
+      "Host at least one X Space",
+      "Update Status Report per Hub Shapers Handbook",
+      "Update events tracker per Hub Shapers Handbook"
+    ],
+    "acceptance_method": "Milestone Acceptance Form (MAF) - DocuSign-verified",
+    "approvers": [
+      "Hannah Williams",
+      "Duncan Soutar",
+      "Abbie Yeates"
+    ],
+    "total_mafs": 48,
+    "original_contract_mafs": 35,
+    "interim_contract_mafs": 13,
+    "total_milestones": 49,
+    "milestone_completion_rate": "100%"
   }
 }

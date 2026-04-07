@@ -16,6 +16,7 @@
 
         html {
             scroll-behavior: smooth;
+            scroll-padding-top: 130px;
         }
 
         body {
@@ -237,6 +238,7 @@
             padding: 20px;
             background: #f8f9ff;
             border-radius: 12px;
+            margin-top: 15px;
             margin-bottom: 20px;
             align-items: flex-start;
             border: 1px solid #e0e4f0;
@@ -258,7 +260,7 @@
         }
 
         .hub-meta span {
-            color: #fff;
+            color: #333;
         }
 
         .hub-meta p {
@@ -442,9 +444,6 @@
         }
 
         .hub-panel .hub-header {
-            position: sticky;
-            top: 60px;
-            z-index: 50;
             border-radius: 16px 16px 0 0;
         }
 
@@ -453,6 +452,7 @@
             display: flex;
             align-items: center;
             gap: 15px;
+            color: #fff;
         }
 
         .hub-header .region-badge {
@@ -473,7 +473,7 @@
         }
 
         .hub-content {
-            padding: 0 30px 30px;
+            padding: 20px 30px 30px;
         }
 
         .info-grid {
@@ -817,7 +817,7 @@
             }
 
             .hub-panel .hub-header {
-                top: 52px;
+                /* non-sticky, no override needed */
             }
 
             .hub-header h2 {
@@ -1011,8 +1011,10 @@
         .hub-tabs {
             display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
             margin-bottom: 24px; padding: 14px 16px;
-            background: #fff; border: 1px solid #e0e4f0;
-            border-radius: 14px; box-shadow: 0 2px 8px rgba(2,40,170,0.06);
+            background: rgba(255,255,255,0.97); border: 1px solid #e0e4f0;
+            border-radius: 14px; box-shadow: 0 4px 20px rgba(2,40,170,0.1);
+            position: sticky; top: 55px; z-index: 90;
+            backdrop-filter: blur(12px);
         }
         .hub-tab {
             background: transparent; border: 1px solid #e0e4f0;
@@ -1025,7 +1027,7 @@
             background: #0228aa; color: #fff; border-color: #0228aa;
             box-shadow: 0 2px 12px rgba(2,40,170,0.2);
         }
-        .hub-panel { display: none; }
+        .hub-panel { display: none; scroll-margin-top: 120px; }
         .hub-panel.active { display: block; }
 
         @media (max-width: 680px) {
@@ -1127,7 +1129,7 @@
             <h1>Intersect Community Hubs</h1>
             <p>Post-Mortem Report (May 2024 - June 2025)</p>
             <p style="font-size: 0.9em; color: #888; margin-top: 5px;">By <strong>IntersectMCC</strong> (Membership & Community Committee)</p>
-            <p style="font-size: 0.8em; color: #666; margin-top: 8px;">Version Version 1.4 · March 26, 2026</p>
+            <p style="font-size: 0.8em; color: #666; margin-top: 8px;">Version 1.5 · April 7, 2026</p>
         </header>
 
         <!-- Disclaimer Banner -->
@@ -1141,6 +1143,7 @@
         <nav class="sticky-nav">
             <div class="sticky-nav-inner">
                 <a href="#executive-summary" class="nav-link">📋 Summary</a>
+                <a href="#section-funding" class="nav-link">💰 Budget & ROI</a>
                 <a href="#hub-tabs-section" class="nav-link">🌐 Regional Hubs</a>
                 <a href="#section-faq" class="nav-link">💬 FAQ</a>
                 <a href="#references" class="nav-link">📚 References</a>
@@ -1179,7 +1182,7 @@
                             <tr><td>6</td><td><a href="#awen-hub" style="color: #2353ff;">North America Hub</a> <span style="color: #888; font-size: 0.8em;">(AWEN)</span></td><td>North America</td><td><a href="https://www.intersectmbo.org/news/intersect-development-update-32-september-20th" style="color: #888;">#32</a></td><td>Sep 17, 2024 - Jun 2025</td><td>9 (6+3)</td></tr>
                         </table>
                     </div>
-                    <p style="margin-top: 15px; color: #888; font-size: 0.9em;"><strong>Contract Phases:</strong> Original contracts funded by CDH. Interim 3-month bridge funding (Apr-Jun 2025) until Treasury withdrawal. Source: <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts" target="_blank" style="color: #2353ff;">Intersect MBO Documentation</a></p>
+                    <p style="margin-top: 15px; color: #888; font-size: 0.9em;"><strong>Contract Phases:</strong> Original contracts funded by CDH and Intersect (<a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-cdh-contracts" target="_blank" style="color: #2353ff;">CDH Contracts</a> · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-intersect-contracts" target="_blank" style="color: #2353ff;">Intersect Contracts</a>). Interim 3-month bridge funding (Apr-Jun 2025) until Treasury withdrawal. Source: <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts" target="_blank" style="color: #2353ff;">MCC Contracts</a></p>
                 </div>
 
             </div>
@@ -1330,6 +1333,425 @@
             </div>
             <p style="font-size: 0.8em; color: #666; margin-top: 10px;"><em>*Attendees include industry events where hubs were represented. Figures are those attributed to a community hub region.</em></p>
             <p style="font-size: 0.8em; color: #888; margin-top: 6px;"><sup>†</sup> <strong style="color: #d97706;">Outlier figures</strong> — Sri Lanka (165,122) and Europe (100,853) reflect total attendance at large conferences/events where the hub was present, not hub-organised or hub-attributed attendance specifically. These two figures account for 265,975 of the 293,254 reported total (90.7%). <strong>Adjusted attendee total excluding these outliers: ~27,279.</strong> See <a href="#attendee-note" style="color: #2353ff;">Data Methodology Note</a> in References.</p>
+        </div>
+
+        <!-- ════════════════════════════════════════════
+             SECTION: PROGRAM FUNDING & ROI ANALYSIS
+        ═════════════════════════════════════════════ -->
+        <div id="section-funding">
+            <div class="faq-section-header">
+                <span>Program Funding & ROI</span>
+            </div>
+
+            <!-- Funding Overview Cards -->
+            <div class="summary-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); margin-bottom: 30px;">
+                <div class="summary-card">
+                    <div style="font-size: 1.5em; margin-bottom: 8px;">💵</div>
+                    <div class="number" style="font-size: 2em;">$176K</div>
+                    <div class="label">USD Contracts</div>
+                    <div style="font-size: 0.75em; color: #888; margin-top: 4px;">Hub + AMM combined</div>
+                </div>
+                <div class="summary-card">
+                    <div style="font-size: 1.5em; margin-bottom: 8px;">₳</div>
+                    <div class="number" style="font-size: 2em;">278K</div>
+                    <div class="label">ADA Contracts</div>
+                    <div style="font-size: 0.75em; color: #888; margin-top: 4px;">Hub + AMM + Bridge</div>
+                </div>
+                <div class="summary-card">
+                    <div style="font-size: 1.5em; margin-bottom: 8px;">👤</div>
+                    <div class="number" style="font-size: 2em;">2,395</div>
+                    <div class="label">Total Members</div>
+                    <div style="font-size: 0.75em; color: #888; margin-top: 4px;">1,268 individual + 1,111 assoc. + 16 enterprise</div>
+                </div>
+                <div class="summary-card">
+                    <div style="font-size: 1.5em; margin-bottom: 8px;">🎪</div>
+                    <div class="number" style="font-size: 2em;">167</div>
+                    <div class="label">Events Delivered</div>
+                    <div style="font-size: 0.75em; color: #888; margin-top: 4px;">Across 6 regions, 14 months</div>
+                </div>
+            </div>
+
+            <!-- Complete Funding Table -->
+            <div class="hub-section" style="margin-bottom: 30px;">
+                <div class="hub-header" style="background: linear-gradient(90deg, #059669 0%, #10b981 100%);">
+                    <h2>💰 Complete Program Funding</h2>
+                    <div style="text-align: right;">
+                        <div style="font-size: 0.8em; color: #fff; margin-top: 5px;">All phases · Public record</div>
+                    </div>
+                </div>
+                <div class="hub-content">
+                    <div class="table-scroll">
+                        <table class="milestone-table" style="font-size: 0.88em;">
+                            <tr>
+                                <th>Hub</th>
+                                <th>Phase 1 Contract</th>
+                                <th>AMM Contract</th>
+                                <th>Phase 2 Bridge</th>
+                                <th>Source</th>
+                            </tr>
+                            <tr>
+                                <td>🌎 LATAM</td>
+                                <td style="text-align: right;">$42,000 USD</td>
+                                <td style="text-align: right;">29,412 ADA</td>
+                                <td style="text-align: right;">23,438 ADA</td>
+                                <td><a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-cdh-contracts" style="color: #2353ff;">CDH</a></td>
+                            </tr>
+                            <tr>
+                                <td>🇱🇰 Sri Lanka</td>
+                                <td style="text-align: right;">$36,000 USD</td>
+                                <td style="text-align: right;">28,571 ADA</td>
+                                <td style="text-align: right;">18,182 ADA</td>
+                                <td><a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-cdh-contracts" style="color: #2353ff;">CDH</a></td>
+                            </tr>
+                            <tr>
+                                <td>🌍 Africa (WADA)</td>
+                                <td style="text-align: right;">$30,000 USD</td>
+                                <td style="text-align: right;">$10,000 USD</td>
+                                <td style="text-align: right;">18,182 ADA</td>
+                                <td><a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-cdh-contracts" style="color: #2353ff;">CDH</a></td>
+                            </tr>
+                            <tr>
+                                <td>🇺🇸 North America</td>
+                                <td style="text-align: right;">$25,000 USD</td>
+                                <td style="text-align: right;">$5,000 USD</td>
+                                <td style="text-align: right;">16,216 ADA</td>
+                                <td><a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-intersect-contracts" style="color: #2353ff;">Intersect</a></td>
+                            </tr>
+                            <tr>
+                                <td>🇯🇵 Japan</td>
+                                <td style="text-align: right;">$28,000 USD</td>
+                                <td style="text-align: right;">28,571 ADA</td>
+                                <td style="text-align: right;">12,000 ADA</td>
+                                <td><a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-cdh-contracts" style="color: #2353ff;">CDH</a></td>
+                            </tr>
+                            <tr>
+                                <td>🇪🇺 Europe</td>
+                                <td style="text-align: right;">75,758 ADA</td>
+                                <td style="text-align: right;">14,286 ADA</td>
+                                <td style="text-align: right;">—</td>
+                                <td><a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-intersect-contracts" style="color: #2353ff;">Intersect</a></td>
+                            </tr>
+                            <tr style="background: rgba(0,212,255,0.1); font-weight: bold;">
+                                <td>USD Total</td>
+                                <td style="text-align: right;">$161,000</td>
+                                <td style="text-align: right;">$15,000</td>
+                                <td style="text-align: right;">—</td>
+                                <td></td>
+                            </tr>
+                            <tr style="background: rgba(0,212,255,0.06); font-weight: bold;">
+                                <td>ADA Total</td>
+                                <td style="text-align: right;">75,758</td>
+                                <td style="text-align: right;">100,840</td>
+                                <td style="text-align: right;">88,018</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p style="margin-top: 15px; font-size: 0.85em; color: #888;"><strong>Combined ADA total:</strong> 264,616 ADA across all phases. <strong>Combined USD total:</strong> $176,000 across all phases.</p>
+                    <p style="font-size: 0.8em; color: #666; margin-top: 8px;">Sources: <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-cdh-contracts" style="color: #2353ff;">2024 CDH Contracts</a> · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-intersect-contracts" style="color: #2353ff;">2024 Intersect Contracts</a> · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts" style="color: #2353ff;">2025 MCC Bridge Contracts</a></p>
+                </div>
+            </div>
+
+            <!-- ROI Analysis -->
+            <div class="hub-section" style="margin-bottom: 30px;">
+                <div class="hub-header" style="background: linear-gradient(90deg, #0228aa 0%, #2353ff 100%);">
+                    <h2>📊 Return on Investment Analysis</h2>
+                    <div style="text-align: right;">
+                        <div style="font-size: 0.8em; color: #fff; margin-top: 5px;">USD-denominated contracts only · Conservative estimates</div>
+                    </div>
+                </div>
+                <div class="hub-content">
+                    <div class="info-card" style="margin-bottom: 20px; background: rgba(217,119,6,0.06); border: 1px solid rgba(217,119,6,0.25);">
+                        <p style="font-size: 0.88em; color: #d97706; margin: 0;"><strong>⚠️ Methodology Note:</strong> ROI metrics below use only USD-denominated Phase 1 contracts ($161,000 across 5 hubs) for cost-per-member calculations, as these represent confirmed USD values. Europe's contract (75,758 ADA) and all ADA-denominated AMM and bridge payments are excluded from USD cost calculations to avoid exchange rate assumptions. Actual total program cost was higher when ADA contracts are included.</p>
+                    </div>
+
+                    <!-- Cost Efficiency Table -->
+                    <h3 style="color: #00d4ff; margin-bottom: 15px;">Cost Efficiency by Hub (Phase 1 USD Contracts)</h3>
+                    <div class="table-scroll">
+                        <table class="milestone-table" style="font-size: 0.88em;">
+                            <tr>
+                                <th>Hub</th>
+                                <th>Phase 1 (USD)</th>
+                                <th>Ind. Members</th>
+                                <th>Cost / Member</th>
+                                <th>Events</th>
+                                <th>Cost / Event</th>
+                                <th>Milestones</th>
+                            </tr>
+                            <tr>
+                                <td>🇯🇵 Japan</td>
+                                <td style="text-align: right;">$28,000</td>
+                                <td style="text-align: center;">533</td>
+                                <td style="text-align: right; color: #059669; font-weight: bold;">$52.53</td>
+                                <td style="text-align: center;">61</td>
+                                <td style="text-align: right;">$459</td>
+                                <td style="text-align: center;">10</td>
+                            </tr>
+                            <tr>
+                                <td>🇺🇸 North America</td>
+                                <td style="text-align: right;">$25,000</td>
+                                <td style="text-align: center;">239</td>
+                                <td style="text-align: right; color: #059669; font-weight: bold;">$104.60</td>
+                                <td style="text-align: center;">12</td>
+                                <td style="text-align: right;">$2,083</td>
+                                <td style="text-align: center;">9</td>
+                            </tr>
+                            <tr>
+                                <td>🇱🇰 Sri Lanka</td>
+                                <td style="text-align: right;">$36,000</td>
+                                <td style="text-align: center;">263</td>
+                                <td style="text-align: right; color: #059669; font-weight: bold;">$136.88</td>
+                                <td style="text-align: center;">21</td>
+                                <td style="text-align: right;">$1,714</td>
+                                <td style="text-align: center;">10</td>
+                            </tr>
+                            <tr>
+                                <td>🌎 LATAM</td>
+                                <td style="text-align: right;">$42,000</td>
+                                <td style="text-align: center;">127</td>
+                                <td style="text-align: right; color: #e67e22; font-weight: bold;">$330.71</td>
+                                <td style="text-align: center;">18</td>
+                                <td style="text-align: right;">$2,333</td>
+                                <td style="text-align: center;">9</td>
+                            </tr>
+                            <tr>
+                                <td>🌍 Africa (WADA)</td>
+                                <td style="text-align: right;">$30,000</td>
+                                <td style="text-align: center;">87</td>
+                                <td style="text-align: right; color: #e67e22; font-weight: bold;">$344.83</td>
+                                <td style="text-align: center;">46</td>
+                                <td style="text-align: right;">$652</td>
+                                <td style="text-align: center;">8</td>
+                            </tr>
+                            <tr style="background: rgba(0,212,255,0.1); font-weight: bold;">
+                                <td>Total (USD hubs)</td>
+                                <td style="text-align: right;">$161,000</td>
+                                <td style="text-align: center;">1,249</td>
+                                <td style="text-align: right; color: #059669;">$128.90</td>
+                                <td style="text-align: center;">158</td>
+                                <td style="text-align: right;">$1,019</td>
+                                <td style="text-align: center;">46</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p style="font-size: 0.8em; color: #888; margin-top: 8px;">Europe excluded (ADA-only contract). Membership data as of March 2025. Events include both Phase 1 and Phase 2 activity.</p>
+
+                    <!-- Key ROI Insights -->
+                    <h3 style="color: #00d4ff; margin: 25px 0 15px;">Key Findings</h3>
+                    <div class="info-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                        <div class="info-card" style="background: rgba(5,150,105,0.08); border-left: 4px solid #059669;">
+                            <h3 style="color: #059669; border: none; padding: 0; margin-bottom: 10px;">Most Efficient: Japan Hub</h3>
+                            <ul style="font-size: 0.9em; padding-left: 18px; color: #575757;">
+                                <li><strong>$52.53</strong> per individual member — lowest cost across all hubs</li>
+                                <li><strong>61 events</strong> from a $28,000 contract = $459/event</li>
+                                <li><strong>$19,049 actual spend</strong> with 15,436 ADA returned to treasury</li>
+                                <li>Detailed financial transparency provided voluntarily</li>
+                                <li>533 individual members = <strong>30% of all Intersect individual members</strong></li>
+                            </ul>
+                        </div>
+                        <div class="info-card" style="background: rgba(35,83,255,0.08); border-left: 4px solid #2353ff;">
+                            <h3 style="color: #2353ff; border: none; padding: 0; margin-bottom: 10px;">Highest Volume: Africa (WADA)</h3>
+                            <ul style="font-size: 0.9em; padding-left: 18px; color: #575757;">
+                                <li><strong>46 events</strong> — second highest event count across all hubs</li>
+                                <li><strong>$652 per event</strong> — lowest cost per event of any hub</li>
+                                <li>Multi-country reach: Kenya, DRC, Cameroon, Liberia, South Sudan</li>
+                                <li>8 sub-hubs established across the continent</li>
+                                <li>Multi-language delivery: English, French, Swahili</li>
+                            </ul>
+                        </div>
+                        <div class="info-card" style="background: rgba(155,89,182,0.08); border-left: 4px solid #9b59b6;">
+                            <h3 style="color: #9b59b6; border: none; padding: 0; margin-bottom: 10px;">Highest Impact: North America</h3>
+                            <ul style="font-size: 0.9em; padding-left: 18px; color: #575757;">
+                                <li><strong>$104.60</strong> per individual member — strong efficiency from shortest contract</li>
+                                <li><strong>6 enterprise members</strong> — most of any hub (38% of total enterprise)</li>
+                                <li><strong>Consensus Toronto:</strong> 621 signups, 143 attended — largest single hub event</li>
+                                <li>First-ever DRep Debate with 3,000+ livestream viewers</li>
+                                <li>Operational for only 9 months (shortest contract period)</li>
+                            </ul>
+                        </div>
+                        <div class="info-card" style="background: rgba(230,126,34,0.08); border-left: 4px solid #e67e22;">
+                            <h3 style="color: #e67e22; border: none; padding: 0; margin-bottom: 10px;">Education Leader: Sri Lanka</h3>
+                            <ul style="font-size: 0.9em; padding-left: 18px; color: #575757;">
+                                <li><strong>700+ university students</strong> trained in Cardano development</li>
+                                <li><strong>UniHack 2025:</strong> 225 students, 61 teams, 18 universities</li>
+                                <li>Multi-language content: Sinhala, Tamil, English</li>
+                                <li>University partnerships: Kelaniya (108 certified), Ruhuna (168 students)</li>
+                                <li>Met with the President of Sri Lanka — highest-level government engagement</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Program-Wide Metrics -->
+                    <h3 style="color: #00d4ff; margin: 25px 0 15px;">Program-Wide Efficiency</h3>
+                    <div class="summary-grid" style="grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));">
+                        <div class="summary-card" style="border-left: 4px solid #059669;">
+                            <div class="number" style="font-size: 1.8em; color: #059669;">$128.90</div>
+                            <div class="label">Cost per Individual Member</div>
+                            <div style="font-size: 0.75em; color: #888; margin-top: 4px;">$161K ÷ 1,249 members (USD hubs)</div>
+                        </div>
+                        <div class="summary-card" style="border-left: 4px solid #2353ff;">
+                            <div class="number" style="font-size: 1.8em; color: #2353ff;">$1,019</div>
+                            <div class="label">Cost per Event</div>
+                            <div style="font-size: 0.75em; color: #888; margin-top: 4px;">$161K ÷ 158 events (USD hubs)</div>
+                        </div>
+                        <div class="summary-card" style="border-left: 4px solid #9b59b6;">
+                            <div class="number" style="font-size: 1.8em; color: #9b59b6;">$5.90</div>
+                            <div class="label">Cost per Attendee</div>
+                            <div style="font-size: 0.75em; color: #888; margin-top: 4px;">$161K ÷ 27,279 adj. attendees</div>
+                        </div>
+                        <div class="summary-card" style="border-left: 4px solid #e67e22;">
+                            <div class="number" style="font-size: 1.8em; color: #e67e22;">$3,500</div>
+                            <div class="label">Cost per Milestone</div>
+                            <div style="font-size: 0.75em; color: #888; margin-top: 4px;">$161K ÷ 46 milestones (USD hubs)</div>
+                        </div>
+                        <div class="summary-card" style="border-left: 4px solid #00d4ff;">
+                            <div class="number" style="font-size: 1.8em; color: #00d4ff;">70%</div>
+                            <div class="label">Intersect Members in Hub Regions</div>
+                            <div style="font-size: 0.75em; color: #888; margin-top: 4px;">1,268 of 1,799 individual members</div>
+                        </div>
+                        <div class="summary-card" style="border-left: 4px solid #dc2626;">
+                            <div class="number" style="font-size: 1.8em; color: #dc2626;">100%</div>
+                            <div class="label">Milestones Completed</div>
+                            <div style="font-size: 0.75em; color: #888; margin-top: 4px;">49/49 milestones across all hubs</div>
+                        </div>
+                    </div>
+
+                    <!-- Japan Benchmark -->
+                    <h3 style="color: #00d4ff; margin: 25px 0 15px;">Detailed Cost Benchmark: Japan Hub</h3>
+                    <div class="info-card" style="background: rgba(0,212,255,0.05); border-left: 4px solid #00d4ff;">
+                        <p style="margin-bottom: 12px; font-size: 0.92em;">Japan is the only hub with a full itemized spend breakdown. This serves as the benchmark for what community hub operations actually cost:</p>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 15px;">
+                            <div style="background: #ebf0ff; padding: 14px; border-radius: 10px; text-align: center;">
+                                <div style="font-size: 1.6em; font-weight: 700; color: #0228aa;">54.9%</div>
+                                <div style="font-size: 0.82em; color: #575757;">Events ($10,452)</div>
+                            </div>
+                            <div style="background: #ebf0ff; padding: 14px; border-radius: 10px; text-align: center;">
+                                <div style="font-size: 1.6em; font-weight: 700; color: #0228aa;">25.7%</div>
+                                <div style="font-size: 0.82em; color: #575757;">Staff Labor ($4,900)</div>
+                            </div>
+                            <div style="background: #ebf0ff; padding: 14px; border-radius: 10px; text-align: center;">
+                                <div style="font-size: 1.6em; font-weight: 700; color: #0228aa;">18.3%</div>
+                                <div style="font-size: 0.82em; color: #575757;">Hub Manager ($3,493)</div>
+                            </div>
+                            <div style="background: #ebf0ff; padding: 14px; border-radius: 10px; text-align: center;">
+                                <div style="font-size: 1.6em; font-weight: 700; color: #0228aa;">1.1%</div>
+                                <div style="font-size: 0.82em; color: #575757;">Tools ($203)</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; flex-wrap: wrap; gap: 15px; font-size: 0.88em;">
+                            <span><strong style="color: #059669;">Total spend:</strong> $19,049 USD (¥2,857,325)</span>
+                            <span><strong style="color: #059669;">Contract value:</strong> $28,000 USD</span>
+                            <span><strong style="color: #059669;">Returned to treasury:</strong> 15,436 ADA</span>
+                        </div>
+                        <p style="margin-top: 12px; font-size: 0.82em; color: #888;">At $19,049 actual spend: cost per individual member = <strong style="color: #059669;">$35.74</strong> · cost per event = <strong style="color: #059669;">$312</strong>. Source: <a href="https://docs.google.com/spreadsheets/d/1muVvwKtyk6WZHOKFpXRorlfGUdqiXAl70P88ttcK_ns/edit" target="_blank" style="color: #2353ff;">Japan Hub Council Expenditure Spreadsheet</a></p>
+                    </div>
+
+                    <!-- KPI Achievement -->
+                    <h3 style="color: #00d4ff; margin: 25px 0 15px;">Contract Deliverables Assessment</h3>
+                    <p style="font-size: 0.88em; color: #888; margin-bottom: 15px;">Hub contracts required six specific monthly deliverables per the <strong>Hub Shaper's Handbook</strong>. Acceptance was verified via DocuSign-signed Milestone Acceptance Forms (MAFs). Source: <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts" target="_blank" style="color: #2353ff;">Intersect MCC Contracts</a></p>
+                    <div class="table-scroll">
+                        <table class="milestone-table" style="font-size: 0.88em;">
+                            <tr>
+                                <th>Contract Requirement</th>
+                                <th>Delivered</th>
+                                <th>Status</th>
+                                <th>Evidence</th>
+                            </tr>
+                            <tr>
+                                <td>Monthly Town Hall meeting</td>
+                                <td style="text-align: center;">All 6 hubs</td>
+                                <td><span class="status-badge status-completed">Delivered</span></td>
+                                <td style="font-size: 0.85em;">NA: 6 Town Halls (avg ~130 attendees, peak 326). Japan: bi-monthly schedule (2nd/4th Monday). LATAM: bilingual Spanish + Portuguese. Sri Lanka: 6 Town Halls (69–102 attendees). WADA: monthly across 3 African sub-regions. Europe: 155 attendees at peak.</td>
+                            </tr>
+                            <tr>
+                                <td>Social media activity</td>
+                                <td style="text-align: center;">All 6 hubs</td>
+                                <td><span class="status-badge status-completed">Delivered</span></td>
+                                <td style="font-size: 0.85em;">185+ X/Twitter posts documented across all hubs. Each hub maintained a dedicated @Intersect[Region] account. NA: 384 followers, ~70 posts. Content in 8 languages.</td>
+                            </tr>
+                            <tr>
+                                <td>Attend/host events</td>
+                                <td style="text-align: center;">167 events</td>
+                                <td><span class="status-badge status-completed">Delivered</span></td>
+                                <td style="font-size: 0.85em;">Japan: 61 events. WADA: 46 events across 5 countries. Sri Lanka: 21 events including UniHack (225 students). LATAM: 18 events across 4 countries. NA: 12 events including Consensus Toronto (143 attended). Europe: 9 events.</td>
+                            </tr>
+                            <tr>
+                                <td>Host at least one X Space/month</td>
+                                <td style="text-align: center;">All 6 hubs</td>
+                                <td><span class="status-badge status-completed">Delivered</span></td>
+                                <td style="font-size: 0.85em;">Japan: weekly X Spaces (1st/3rd/5th Monday). NA: monthly spaces including DeFi focus, inter-regional. WADA: monthly spaces (100 attendees peak). Sri Lanka: multi-language series (Sinhala/Tamil). Recordings linked per hub.</td>
+                            </tr>
+                            <tr>
+                                <td>Update Status Report (Hub Shaper's Handbook)</td>
+                                <td style="text-align: center;">48 MAFs</td>
+                                <td><span class="status-badge status-completed">Delivered</span></td>
+                                <td style="font-size: 0.85em;">48 Milestone Acceptance Forms submitted and DocuSign-verified across all hubs — 35 original contract MAFs + 13 interim contract MAFs. Approvers: Hannah Williams, Duncan Soutar, Abbie Yeates.</td>
+                            </tr>
+                            <tr>
+                                <td>Update events tracker (Hub Shaper's Handbook)</td>
+                                <td style="text-align: center;">All 6 hubs</td>
+                                <td><span class="status-badge status-completed">Delivered</span></td>
+                                <td style="font-size: 0.85em;">Event tracking maintained per hub. 30+ Luma event pages, 15+ video recordings catalogued. Events documented with dates, attendee counts, and linked evidence.</td>
+                            </tr>
+                            <tr style="background: rgba(0,212,255,0.1); font-weight: bold;">
+                                <td>Milestone completion</td>
+                                <td style="text-align: center;">49/49 (100%)</td>
+                                <td><span class="status-badge status-completed">Complete</span></td>
+                                <td style="font-size: 0.85em;">Zero milestone failures across the entire program. All milestones accepted via DocuSign verification.</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Beyond-Scope Outcomes -->
+                    <h3 style="color: #00d4ff; margin: 25px 0 15px;">Outcomes Beyond Contract Scope</h3>
+                    <p style="font-size: 0.88em; color: #888; margin-bottom: 15px;">The following outcomes were not contractual requirements but demonstrate impact beyond the minimum deliverables:</p>
+                    <div class="info-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                        <div class="info-card" style="border-left: 4px solid #059669;">
+                            <h3 style="color: #059669; border: none; padding: 0; margin-bottom: 10px;">Membership Growth</h3>
+                            <p style="font-size: 0.9em; color: #575757;">No membership targets were set in contracts. Hubs collectively produced <strong>1,268 individual members, 1,111 associates, and 16 enterprise accounts</strong> — representing 70% of Intersect's total individual membership. Japan alone contributed 533 individual members (30% of all Intersect individual members).</p>
+                            <p style="font-size: 0.82em; margin-top: 8px;"><a href="https://docs.google.com/presentation/d/1LckpJMmmd4ctA9NUfA-yYwlVFI7HWiuihy1d94C9n5s/edit" target="_blank" style="color: #059669;">Membership Data Source (March 2025)</a></p>
+                        </div>
+                        <div class="info-card" style="border-left: 4px solid #2353ff;">
+                            <h3 style="color: #2353ff; border: none; padding: 0; margin-bottom: 10px;">Sub-Hub Expansion</h3>
+                            <p style="font-size: 0.9em; color: #575757;">Contracts did not require geographic expansion. Hubs organically established <strong>8 sub-hubs</strong> — WADA expanded across Kenya, DRC, Cameroon, Liberia, and South Sudan. LATAM launched sub-hubs in Uruguay and Mexico. NA established regional community nodes.</p>
+                            <p style="font-size: 0.82em; margin-top: 8px;"><a href="#wada-hub" onclick="switchHub('wada-hub')" style="color: #2353ff;">WADA Sub-Hubs</a> · <a href="#latam-hub" onclick="switchHub('latam-hub')" style="color: #2353ff;">LATAM Sub-Hubs</a> · <a href="https://www.intersectmbo.org/news/intersect-development-update-25-august-2nd" target="_blank" style="color: #2353ff;">Dev Update #25</a></p>
+                        </div>
+                        <div class="info-card" style="border-left: 4px solid #9b59b6;">
+                            <h3 style="color: #9b59b6; border: none; padding: 0; margin-bottom: 10px;">Education & University Programs</h3>
+                            <p style="font-size: 0.9em; color: #575757;">Not a contract deliverable. Sri Lanka built university partnerships producing <strong>700+ students trained</strong>, including UniHack 2025 (225 students, 61 teams, 18 universities) and Uni Kelaniya (108 certified). This created a pipeline of new Cardano developers.</p>
+                            <p style="font-size: 0.82em; margin-top: 8px;"><a href="#srilanka-hub" onclick="switchHub('srilanka-hub')" style="color: #9b59b6;">Sri Lanka Hub Details</a> · <a href="https://youtu.be/zQuA67sxU8I" target="_blank" style="color: #9b59b6;">Town Hall Video</a></p>
+                        </div>
+                        <div class="info-card" style="border-left: 4px solid #e67e22;">
+                            <h3 style="color: #e67e22; border: none; padding: 0; margin-bottom: 10px;">Governance Participation</h3>
+                            <p style="font-size: 0.9em; color: #575757;">Contracts required event hosting but not governance-specific outcomes. Hubs delivered budget workshops, DRep debates, constitutional document translations, GovTool engagement (12+ proposals reviewed by NA alone), and CC election support — directly enabling governance participation across regions.</p>
+                            <p style="font-size: 0.82em; margin-top: 8px;"><a href="https://lu.ma/cc96lvq8" target="_blank" style="color: #e67e22;">GM2025 DRep Debate</a> · <a href="https://gov.tools/budget_discussion" target="_blank" style="color: #e67e22;">GovTool Budget Discussion</a> · <a href="#awen-hub" onclick="switchHub('awen-hub')" style="color: #e67e22;">NA Budget Workshops</a></p>
+                        </div>
+                        <div class="info-card" style="border-left: 4px solid #00d4ff;">
+                            <h3 style="color: #00d4ff; border: none; padding: 0; margin-bottom: 10px;">Translation & Localization</h3>
+                            <p style="font-size: 0.9em; color: #575757;">Content delivered in <strong>8 languages</strong> — English, Japanese, Spanish, Portuguese, Sinhala, Tamil, French, and Swahili. Japan translated the full Constitution, governance materials, and Intersect videos. Sri Lanka produced trilingual content. WADA operated across three languages.</p>
+                            <p style="font-size: 0.82em; margin-top: 8px;"><a href="#japan-hub" onclick="switchHub('japan-hub')" style="color: #00d4ff;">Japan Translations</a> · <a href="#srilanka-hub" onclick="switchHub('srilanka-hub')" style="color: #00d4ff;">Sri Lanka Trilingual</a> · <a href="#wada-hub" onclick="switchHub('wada-hub')" style="color: #00d4ff;">WADA Multi-Language</a></p>
+                        </div>
+                        <div class="info-card" style="border-left: 4px solid #dc2626;">
+                            <h3 style="color: #dc2626; border: none; padding: 0; margin-bottom: 10px;">Financial Transparency (Voluntary)</h3>
+                            <p style="font-size: 0.9em; color: #575757;">Not required by any contract. Japan voluntarily published a full itemized cost breakdown ($19,049 actual spend) and <strong>returned 15,436 ADA in unused funds</strong> to the treasury. This level of disclosure is now the baseline standard for the 2026 framework.</p>
+                            <p style="font-size: 0.82em; margin-top: 8px;"><a href="https://docs.google.com/spreadsheets/d/1muVvwKtyk6WZHOKFpXRorlfGUdqiXAl70P88ttcK_ns/edit" target="_blank" style="color: #dc2626;">Japan Expenditure Spreadsheet</a> · <a href="https://cardanoscan.io/address/0111e909a2fb7ed1b970f7e4ca388350b07ec1151a2a01234f622c584edb506c52dad37a14f71a1d7309f2e9e24f594eb880ec13a9f670fa11" target="_blank" style="color: #dc2626;">Returned Funds on Cardanoscan</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Comparative Context -->
+                    <h3 style="color: #00d4ff; margin: 25px 0 15px;">Comparative Context</h3>
+                    <div class="info-card" style="background: rgba(35,83,255,0.05); border-left: 4px solid #2353ff;">
+                        <p style="font-size: 0.92em; margin-bottom: 12px;">For context, the total confirmed USD spend on Community Hubs ($161,000) and AMM events ($15,000) represents:</p>
+                        <ul style="font-size: 0.9em; padding-left: 18px; color: #575757;">
+                            <li><strong>$176,000 USD</strong> in confirmed fiat spending across 6 regions over 14 months</li>
+                            <li><strong>$29,333 average per hub</strong> (USD-contracted hubs) for the entire program duration</li>
+                            <li><strong>$2,095 per month per hub</strong> — less than a single part-time contractor in most markets</li>
+                            <li>Each hub delivered an average of <strong>26.3 events</strong>, <strong>8.2 milestones</strong>, and <strong>211 individual members</strong></li>
+                            <li>These are <strong>community volunteer operations with modest budgets</strong>, not enterprise-scale programs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Section: Regional Hubs with Tabs -->
@@ -1631,7 +2053,8 @@
                 <!-- Milestones -->
                 <div class="info-card">
                     <h3>Milestones</h3>
-                    <p style="font-size: 0.85em; color: #888; margin-bottom: 10px;"><strong>Original Contract</strong> (Sep 17, 2024 - Mar 7, 2025)</p>
+                    <p style="font-size: 0.85em; color: #888; margin-bottom: 10px;"><strong>Original Contract</strong> (Sep 17, 2024 - Mar 7, 2025) · $25,000 USD · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-intersect-contracts" target="_blank" style="color: #059669;">Intersect Contract</a></p>
+                    <p style="font-size: 0.85em; color: #888; margin-bottom: 10px;"><strong>AMM Contract:</strong> $5,000 USD · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-intersect-contracts" target="_blank" style="color: #059669;">Source</a></p>
                     <table class="milestone-table">
                         <tr><th>#</th><th>Milestone</th><th>Status</th></tr>
                         <tr><td>1</td><td>Initial Kickoff</td><td><span class="status-badge status-completed">Completed</span></td></tr>
@@ -1756,7 +2179,8 @@
                 <!-- Milestones -->
                 <div class="info-card" style="margin-top: 20px;">
                     <h3>Milestones</h3>
-                    <p style="font-size: 0.85em; color: #888; margin-bottom: 10px;"><strong>Original Contract</strong> (Sep 9, 2024 - Feb 10, 2025)</p>
+                    <p style="font-size: 0.85em; color: #888; margin-bottom: 10px;"><strong>Original Contract</strong> (Sep 9, 2024 - Feb 10, 2025) · 75,758 ADA · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-intersect-contracts" target="_blank" style="color: #059669;">Intersect Contract</a></p>
+                    <p style="font-size: 0.85em; color: #888; margin-bottom: 10px;"><strong>AMM Contract:</strong> 14,286 ADA · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-intersect-contracts" target="_blank" style="color: #059669;">Source</a></p>
                     <table class="milestone-table">
                         <tr><th>#</th><th>Milestone</th><th>Status</th></tr>
                         <tr><td>1</td><td>Initial Setup & Launch</td><td><span class="status-badge status-completed">Completed</span></td></tr>
@@ -2031,7 +2455,8 @@
                 <!-- Milestones -->
                 <div class="info-card" style="margin-top: 20px;">
                     <h3>Milestones</h3>
-                    <p style="font-size: 0.85em; color: #888; margin-bottom: 10px;"><strong>Original Contract</strong> (Jun 14 - Nov 5, 2024)</p>
+                    <p style="font-size: 0.85em; color: #888; margin-bottom: 10px;"><strong>Original Contract</strong> (Jun 14 - Nov 5, 2024) · $28,000 USD · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-cdh-contracts" target="_blank" style="color: #059669;">CDH Contract</a></p>
+                    <p style="font-size: 0.85em; color: #888; margin-bottom: 10px;"><strong>AMM Contract:</strong> 28,571 ADA · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-intersect-contracts" target="_blank" style="color: #059669;">Source</a></p>
                     <table class="milestone-table">
                         <tr><th>#</th><th>Milestone</th><th>Status</th></tr>
                         <tr><td>1</td><td>Initial Kickoff</td><td><span class="status-badge status-completed">Completed</span></td></tr>
@@ -2214,7 +2639,8 @@
                 <!-- Milestones -->
                 <div class="info-card" style="margin-top: 20px;">
                     <h3>Milestones</h3>
-                    <p style="font-size: 0.85em; color: #888; margin-bottom: 10px;"><strong>Original Contract</strong> (May 31 - Dec 17, 2024)</p>
+                    <p style="font-size: 0.85em; color: #888; margin-bottom: 10px;"><strong>Original Contract</strong> (May 31 - Dec 17, 2024) · $42,000 USD · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-cdh-contracts" target="_blank" style="color: #059669;">CDH Contract</a></p>
+                    <p style="font-size: 0.85em; color: #888; margin-bottom: 10px;"><strong>AMM Contract:</strong> 29,412 ADA · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-intersect-contracts" target="_blank" style="color: #059669;">Source</a></p>
                     <table class="milestone-table">
                         <tr><th>#</th><th>Milestone</th><th>Status</th></tr>
                         <tr><td>1</td><td>Initial Kickoff</td><td><span class="status-badge status-completed">Completed</span></td></tr>
@@ -2453,7 +2879,8 @@
                 <!-- Milestones -->
                 <div class="info-card" style="margin-top: 20px;">
                     <h3>Milestones</h3>
-                    <p style="font-size: 0.85em; color: #888; margin-bottom: 10px;"><strong>Original Contract</strong> (Jun 24 - Nov 28, 2024)</p>
+                    <p style="font-size: 0.85em; color: #888; margin-bottom: 10px;"><strong>Original Contract</strong> (Jun 24 - Nov 28, 2024) · $36,000 USD · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-cdh-contracts" target="_blank" style="color: #059669;">CDH Contract</a></p>
+                    <p style="font-size: 0.85em; color: #888; margin-bottom: 10px;"><strong>AMM Contract:</strong> 28,571 ADA · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-intersect-contracts" target="_blank" style="color: #059669;">Source</a></p>
                     <table class="milestone-table">
                         <tr><th>#</th><th>Milestone</th><th>Status</th></tr>
                         <tr><td>1</td><td>Initial Kickoff</td><td><span class="status-badge status-completed">Completed</span></td></tr>
@@ -2659,7 +3086,8 @@
                 <!-- Milestones -->
                 <div class="info-card" style="margin-top: 20px;">
                     <h3>Milestones</h3>
-                    <p style="font-size: 0.85em; color: #888; margin-bottom: 10px;"><strong>Original Contract</strong> (Jul 1 - Oct 2, 2024)</p>
+                    <p style="font-size: 0.85em; color: #888; margin-bottom: 10px;"><strong>Original Contract</strong> (Jul 1 - Oct 2, 2024) · $30,000 USD · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-cdh-contracts" target="_blank" style="color: #059669;">CDH Contract</a></p>
+                    <p style="font-size: 0.85em; color: #888; margin-bottom: 10px;"><strong>AMM Contract:</strong> $10,000 USD · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-intersect-contracts" target="_blank" style="color: #059669;">Source</a></p>
                     <table class="milestone-table">
                         <tr><th>#</th><th>Milestone</th><th>Status</th><th>Date</th></tr>
                         <tr><td>1</td><td>Initial Kickoff</td><td><span class="status-badge status-completed">Completed</span></td><td>-</td></tr>
@@ -2747,19 +3175,39 @@
                 <div class="myth-body"><div class="myth-body-inner">
                     <div class="reality-block response-block">
                         <span class="response-label">The Reality</span>
-                        <p>The hub program had two distinct funding phases with different accountability structures — and this distinction matters a great deal.</p>
+                        <p>The hub program had two distinct funding phases — and both are now publicly documented.</p>
                         <ul>
-                            <li><strong>Phase 1 (~6 months):</strong> Funded by Cardano Development Holdings (CDH), a private organization. These were private contracts — the same public disclosure standard that applies to treasury grants cannot be retroactively applied to private contracts.</li>
-                            <li><strong>Phase 2 (April–June 2025 bridge):</strong> Funded through public treasury withdrawal. These amounts are on-chain public record: see the table below.</li>
+                            <li><strong>Phase 1 (~6 months):</strong> Funded by CDH and Intersect operational budgets. Contract amounts are now publicly disclosed via Intersect's archived contract records (see tables below).</li>
+                            <li><strong>Phase 2 (April–June 2025 bridge):</strong> Funded through public treasury withdrawal. These amounts are on-chain public record.</li>
+                            <li><strong>AMM Contracts:</strong> Separate contracts were issued for Annual Members Meeting (AMM) event delivery across hub regions.</li>
                             <li><strong>All activity was milestone-gated:</strong> 48 Milestone Acceptance Forms (MAFs), DocuSign-verified, were required before any payment was released. Deliverables were confirmed before funds moved — in both phases.</li>
                         </ul>
                     </div>
                     <div class="data-block">
-                        <span class="response-label">Phase 2 Bridge Payments (Public Record)</span>
-                        <div class="data-row"><span class="dk">North America</span><span class="dv">16,216 ADA</span></div>
+                        <span class="response-label">Phase 1 — Original Hub Contracts (<a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-cdh-contracts" target="_blank" style="color: #2353ff;">CDH</a> · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-intersect-contracts" target="_blank" style="color: #2353ff;">Intersect</a>)</span>
+                        <div class="data-row"><span class="dk">LATAM</span><span class="dv">$42,000 USD</span></div>
+                        <div class="data-row"><span class="dk">Sri Lanka (Coin Ceylon)</span><span class="dv">$36,000 USD</span></div>
+                        <div class="data-row"><span class="dk">Africa (WADA)</span><span class="dv">$30,000 USD</span></div>
+                        <div class="data-row"><span class="dk">Japan</span><span class="dv">$28,000 USD</span></div>
+                        <div class="data-row"><span class="dk">North America (Awen)</span><span class="dv">$25,000 USD</span></div>
+                        <div class="data-row"><span class="dk">Europe (Clay Nation)</span><span class="dv">75,758 ADA</span></div>
+                        <div class="data-row" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 8px; font-weight: bold;"><span class="dk">Total (USD contracts)</span><span class="dv">$161,000 USD</span></div>
+                    </div>
+                    <div class="data-block">
+                        <span class="response-label">AMM Event Contracts (<a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-intersect-contracts" target="_blank" style="color: #2353ff;">Source</a>)</span>
+                        <div class="data-row"><span class="dk">LATAM</span><span class="dv">29,412 ADA</span></div>
+                        <div class="data-row"><span class="dk">Japan</span><span class="dv">28,571 ADA</span></div>
+                        <div class="data-row"><span class="dk">Sri Lanka (Coin Ceylon)</span><span class="dv">28,571 ADA</span></div>
+                        <div class="data-row"><span class="dk">Europe (Clay Nation)</span><span class="dv">14,286 ADA</span></div>
+                        <div class="data-row"><span class="dk">Africa (WADA)</span><span class="dv">$10,000 USD</span></div>
+                        <div class="data-row"><span class="dk">North America (Awen)</span><span class="dv">$5,000 USD</span></div>
+                    </div>
+                    <div class="data-block">
+                        <span class="response-label">Phase 2 — Bridge Payments (Treasury-Funded, On-Chain)</span>
                         <div class="data-row"><span class="dk">LATAM</span><span class="dv">23,438 ADA</span></div>
                         <div class="data-row"><span class="dk">Sri Lanka</span><span class="dv">18,182 ADA</span></div>
                         <div class="data-row"><span class="dk">Africa (WADA)</span><span class="dv">18,182 ADA</span></div>
+                        <div class="data-row"><span class="dk">North America</span><span class="dv">16,216 ADA</span></div>
                         <div class="data-row"><span class="dk">Japan</span><span class="dv">12,000 ADA</span></div>
                     </div>
                 </div></div>
@@ -2777,9 +3225,9 @@
                 <div class="myth-body"><div class="myth-body-inner">
                     <div class="reality-block response-block">
                         <span class="response-label">The Reality</span>
-                        <p>Japan's detailed cost breakdown is commendable. It's also worth being precise about what it represents: a self-reported Google Sheet from a hub that wound down operations and needed to account for funds being returned. The circumstance created the reporting — it was not a contract requirement.</p>
-                        <p>All six hubs operated under the same CDH private contract structure, which did not mandate detailed financial disclosure. Holding five hubs to a standard that was never contractually required — and asking them to reconstruct 2-year-old records retroactively — is not a reasonable accountability mechanism. What we do have for all hubs: activity documentation, milestone sign-offs, event records, and membership outcomes.</p>
-                        <p>Japan's level of financial reporting is exactly the standard the 2026 framework now requires of all hubs. The gap between Japan's reporting and the others was not evidence of wrongdoing — it was a structural omission in the original contract design. The 2026 framework corrects it: all hubs will operate under treasury funding with mandatory financial disclosure built into every contract from the start.</p>
+                        <p>Japan's detailed cost breakdown is commendable — and it's also worth noting that Phase 1 contract amounts for all hubs are now publicly disclosed through Intersect's archived contract records. The total contract values for each hub are documented in the financial tables above.</p>
+                        <p>What Japan provided that others did not was an <em>itemized spend breakdown</em> — not just the contract total, but where every dollar went (events 55%, staff 26%, management 18%, tools 1%). That level of granularity was not a contract requirement for any hub, and the circumstance (returning unused funds) created the reporting.</p>
+                        <p>Japan's level of financial reporting is exactly the standard the 2026 framework now requires of all hubs. The gap between Japan's reporting and the others was not evidence of wrongdoing — it was a structural omission in the original contract design. The 2026 framework corrects it: all hubs will operate under treasury funding with mandatory itemized financial disclosure built into every contract from the start.</p>
                     </div>
                 </div></div>
             </div>
@@ -2796,8 +3244,8 @@
                 <div class="myth-body"><div class="myth-body-inner">
                     <div class="reality-block response-block">
                         <span class="response-label">The Reality</span>
-                        <p>These are the Phase 2 bridge payment amounts — the treasury-funded period. The ADA amounts are publicly confirmed. Itemized receipts for those funds were not required by the contracts for this period. That is a gap in contract design, and it is one the 2026 framework directly addresses.</p>
-                        <p>Japan's cost breakdown is the most useful public reference for what hub operations cost: approximately $19,000 USD across events (55%), staff labor (26%), hub management (18%), and tools (1%). The 2026 contracts require this level of itemized reporting by default from all hubs — that standard now applies program-wide from day one.</p>
+                        <p>Phase 1 contract totals are now publicly disclosed: LATAM received $42,000 USD, Sri Lanka $36,000 USD, and so on (see full table above). Phase 2 bridge payments are on-chain public record. What remains unavailable is itemized spend breakdowns — receipts showing exactly how each hub allocated its funds internally. That granularity was not required by the original contracts.</p>
+                        <p>Japan's cost breakdown remains the most useful public reference for what hub operations cost: approximately $19,000 USD across events (55%), staff labor (26%), hub management (18%), and tools (1%). The 2026 contracts require this level of itemized reporting by default from all hubs — that standard now applies program-wide from day one.</p>
                     </div>
                 </div></div>
             </div>
@@ -2817,14 +3265,15 @@
                 <div class="myth-body"><div class="myth-body-inner">
                     <div class="reality-block response-block">
                         <span class="response-label">The Reality</span>
-                        <p>The post-mortem is the most complete picture of hub activity and outcomes ever compiled. The data is not perfect — but it is substantial and points in one consistent direction.</p>
+                        <p>We now have both the funding data and the outcomes data. The <a href="#section-funding" style="color: #2353ff;">Budget & ROI section</a> presents the full analysis — here are the highlights:</p>
                         <ul>
-                            <li><strong>70% of Intersect's individual members</strong> are located in hub regions. That is not coincidental.</li>
-                            <li><strong>Japan:</strong> 533 individual members from 61 events at ~$19K total spend ≈ <strong>~$36 per individual member</strong> in direct event costs.</li>
-                            <li><strong>North America:</strong> 239 individual members, 225 associates, 6 enterprise members from 12 events.</li>
-                            <li>These are not passive attendees — they made an active commitment to join and participate in Intersect governance.</li>
+                            <li><strong>$161,000 USD</strong> in confirmed Phase 1 contracts produced <strong>1,249 individual members</strong> across 5 USD-contracted hubs = <strong>$128.90 per member</strong>.</li>
+                            <li><strong>158 events</strong> delivered at an average cost of <strong>$1,019 per event</strong>.</li>
+                            <li><strong>Japan:</strong> 533 individual members from 61 events at $19,049 actual spend = <strong>$35.74 per member</strong> — with 15,436 ADA returned to treasury.</li>
+                            <li><strong>North America:</strong> 239 individual members + 6 enterprise members from $25,000 = <strong>$104.60 per member</strong> in just 9 months.</li>
+                            <li><strong>70% of Intersect's individual members</strong> are located in hub regions. These are not passive attendees — they made an active commitment to join and participate in governance.</li>
                         </ul>
-                        <p>Across all hubs, that adds up to 1,268 individual members, 1,111 associates, and 16 enterprise accounts — 70% of Intersect's total individual membership.</p>
+                        <p>Across all hubs: 1,268 individual members, 1,111 associates, and 16 enterprise accounts. Average monthly cost per hub was approximately <strong>$2,095</strong> — less than a single part-time contractor in most markets.</p>
                     </div>
                     <div class="data-block">
                         <span class="response-label">Membership Outcomes by Hub</span>
@@ -2851,7 +3300,7 @@
                     <div class="reality-block response-block">
                         <span class="response-label">The Reality</span>
                         <p>The post-mortem report is the 2024–2025 record — the most comprehensive aggregation of hub activity, membership outcomes, and contract documentation ever compiled for this program.</p>
-                        <p>If the concern is specifically about itemized expense receipts from private CDH-funded contracts — that standard cannot be retroactively applied to private contracting arrangements made under different terms. If the concern is about confidence that 2026 will have the accountability mechanisms 2025 lacked — the 2026 framework answers that directly. Delaying 2026 approval does not recover 2025 data. It forfeits the membership momentum and community relationships that hubs already built.</p>
+                        <p>Phase 1 contract totals are now publicly disclosed ($161,000 USD + 75,758 ADA across all hubs). Phase 2 bridge payments are on-chain. If the remaining concern is about itemized expense receipts — the original contracts did not require that level of disclosure. The 2026 framework addresses this directly with mandatory itemized reporting. Delaying 2026 approval does not recover 2025 data. It forfeits the membership momentum and community relationships that hubs already built.</p>
                     </div>
                 </div></div>
             </div>
@@ -2870,13 +3319,14 @@
                 </button>
                 <div class="myth-body"><div class="myth-body-inner">
                     <div class="reality-block response-block">
-                        <span class="response-label">Three Structural Differences</span>
+                        <span class="response-label">What's Already Changed — and What 2026 Adds</span>
+                        <p>Even before 2026, significant progress has been made. Phase 1 contract amounts ($161,000 USD + 75,758 ADA) and AMM contracts ($15,000 USD + 100,840 ADA) are now publicly disclosed through Intersect's archived records. Phase 2 bridge payments are on-chain. The <a href="#section-funding" style="color: #2353ff;">Budget & ROI section</a> presents the complete financial picture.</p>
+                        <p>The 2026 framework adds three further structural improvements:</p>
                         <ul>
-                            <li><strong>Funding source:</strong> 2026 hubs funded from community treasury — not private CDH funds. Treasury funding carries explicit public accountability requirements by default.</li>
-                            <li><strong>Reporting requirements:</strong> Standardized financial reporting and KPI disclosure are built into every 2026 contract from day one — not added retroactively.</li>
+                            <li><strong>Funding source:</strong> 2026 hubs funded from community treasury with public accountability requirements built in from day one.</li>
+                            <li><strong>Itemized reporting:</strong> The gap in 2025 was not contract totals (now public) but itemized spend breakdowns. 2026 contracts require Japan-level financial disclosure — category-by-category reporting — as a standard contract term for all hubs.</li>
                             <li><strong>Community governance approval:</strong> The community approves the framework, the budget, and the conditions. Accountability is not internal to Intersect — it is governed by the community itself.</li>
                         </ul>
-                        <p>The 2026 design is built on the post-mortem foundation — a documented record of what worked, what didn't, and what the program actually produced.</p>
                     </div>
                 </div></div>
             </div>
@@ -2893,11 +3343,127 @@
                 <div class="myth-body"><div class="myth-body-inner">
                     <div class="reality-block response-block">
                         <span class="response-label">The Reality</span>
-                        <p>"Mismanagement" implies behavioral failure. The gaps in 2025 were structural, not behavioral: reporting was inconsistent because reporting standards were not mandated. Financial disclosure was uneven because contracts did not require it uniformly. These are contract design problems, not character problems.</p>
-                        <p>Evidence of actual delivery: 35 original contracts and 13 interim contracts completed with milestone sign-offs. 167 events run across six regions. 2,395 total Intersect members in hub regions. Six regions maintained active presence across a 14-month program period.</p>
-                        <p>The people who ran 2025 hubs built the community relationships, local credibility, and institutional knowledge that a new program needs. The 2026 framework fixes the contract design.</p>
+                        <p>"Mismanagement" implies behavioral failure. The financial record now tells a different story: $176,000 USD in confirmed contracts produced 2,395 Intersect members, 167 events, and 49 completed milestones with zero failures. The average cost was $128.90 per individual member and $2,095 per month per hub. Japan voluntarily returned 15,436 ADA in unused funds to the treasury.</p>
+                        <p>The gaps in 2025 were structural, not behavioral: itemized spend reporting was not mandated in contracts, so it wasn't provided uniformly. Contract totals are now publicly disclosed. What was missing was not accountability in delivery — every milestone was DocuSign-verified — but granularity in financial reporting. Those are contract design problems, not character problems.</p>
+                        <p>The people who ran 2025 hubs built the community relationships, local credibility, and institutional knowledge that a new program needs. The 2026 framework fixes the contract design while retaining the operational expertise.</p>
                     </div>
                 </div></div>
+            <!-- Governance & Process -->
+            <div class="faq-category-label" style="margin:24px 0 12px;">Governance &amp; Process<span></span></div>
+
+            <div class="myth-card" id="faq-4-1">
+                <button class="myth-trigger" onclick="toggleCard('faq-4-1')">
+                    <div class="myth-icon red">💸</div>
+                    <div class="myth-trigger-text">
+                        <span class="myth-tag">Community Concern</span>
+                        <span class="myth-question">"Why did LATAM get $42K and North America only $25K? Who decided the amounts and on what basis?"</span>
+                    </div>
+                    <div class="myth-chevron">▼</div>
+                </button>
+                <div class="myth-body"><div class="myth-body-inner">
+                    <div class="reality-block response-block">
+                        <span class="response-label">The Reality</span>
+                        <p>Contract amounts varied based on several factors: scope of work, regional cost of living, contract duration, and the number of milestones in each statement of work. These were not arbitrary or equal-share allocations.</p>
+                        <ul>
+                            <li><strong>LATAM ($42,000 · 7 months):</strong> Covered a vast multi-country region (Argentina, Brazil, Uruguay, Mexico) with sub-hub coordination, leadership transition mid-contract, and the most expensive physical event logistics across multiple countries.</li>
+                            <li><strong>Sri Lanka ($36,000 · 12 months):</strong> Longest contract period, university partnership programs, multi-language content (Sinhala/Tamil/English), and large-scale events including hackathons.</li>
+                            <li><strong>Africa ($30,000 · 3 months):</strong> Shortest original contract, but covering 5+ countries across Central, West, and East Africa with multi-language delivery (English/French/Swahili).</li>
+                            <li><strong>Japan ($28,000 · 5 months):</strong> Founding hub with established infrastructure. Actual spend was $19,049 — 68% of contract value — with unused funds returned.</li>
+                            <li><strong>North America ($25,000 · 6 months):</strong> Last hub launched (Sep 2024). Shorter contract period and lower regional event costs. Despite the smallest USD budget, produced the most enterprise members (6) and the second-highest individual member count per dollar.</li>
+                            <li><strong>Europe (75,758 ADA · 5 months):</strong> ADA-denominated contract through Intersect rather than CDH. Clay Nation leveraged existing conference presence.</li>
+                        </ul>
+                        <p>Were the criteria for contract sizing published in advance? No — and that is a legitimate criticism. The 2026 framework addresses this with a transparent, request-based funding model where hub budgets are tied to specific deliverables and approved through a documented process.</p>
+                    </div>
+                    <div class="data-block">
+                        <span class="response-label">Contract Value vs. Output</span>
+                        <div class="data-row"><span class="dk">LATAM — $42,000</span><span class="dv">127 members · 18 events · 9 milestones</span></div>
+                        <div class="data-row"><span class="dk">Sri Lanka — $36,000</span><span class="dv">263 members · 21 events · 10 milestones</span></div>
+                        <div class="data-row"><span class="dk">Africa — $30,000</span><span class="dv">87 members · 46 events · 8 milestones</span></div>
+                        <div class="data-row"><span class="dk">Japan — $28,000</span><span class="dv">533 members · 61 events · 10 milestones</span></div>
+                        <div class="data-row"><span class="dk">N. America — $25,000</span><span class="dv">239 members · 12 events · 9 milestones</span></div>
+                        <div class="data-row"><span class="dk">Europe — 75,758 ADA</span><span class="dv">19 members · 9 events · 3 milestones</span></div>
+                    </div>
+                </div></div>
+            </div>
+
+            <div class="myth-card" id="faq-4-2">
+                <button class="myth-trigger" onclick="toggleCard('faq-4-2')">
+                    <div class="myth-icon red">🤝</div>
+                    <div class="myth-trigger-text">
+                        <span class="myth-tag">Community Concern</span>
+                        <span class="myth-question">"This is Intersect giving contracts to their own friends with no competitive process."</span>
+                    </div>
+                    <div class="myth-chevron">▼</div>
+                </button>
+                <div class="myth-body"><div class="myth-body-inner">
+                    <div class="reality-block response-block">
+                        <span class="response-label">The Reality</span>
+                        <p>The hub program did not use a traditional competitive procurement process — and it is fair to ask why. Here is what actually happened:</p>
+                        <ul>
+                            <li><strong>Hub applications were opened publicly</strong> through Intersect Development Updates (<a href="https://www.intersectmbo.org/news/intersect-development-update-13-may-10th" target="_blank" style="color: #2353ff;">Update #13, May 2024</a>). The program was announced and applications were invited from the community.</li>
+                            <li><strong>Selection was based on demonstrated capacity:</strong> Applicants needed to show they could organize events, build community, and operate in their region. Japan and LATAM were already active as founding hubs before the formal program launched.</li>
+                            <li><strong>These are community organizers, not enterprise vendors.</strong> The average contract was ~$29,000 over 6 months ($2,095/month). There was no RFP process because these are not six-figure enterprise contracts — they are modest community grants to people doing grassroots work.</li>
+                        </ul>
+                        <p>Is it valid to ask for a more formal selection process? Yes — and the 2026 framework introduces exactly that: a documented application and evaluation process overseen by the MCC, with criteria published in advance and community input on hub selection.</p>
+                    </div>
+                </div></div>
+            </div>
+
+            <div class="myth-card" id="faq-4-3">
+                <button class="myth-trigger" onclick="toggleCard('faq-4-3')">
+                    <div class="myth-icon amber">📝</div>
+                    <div class="myth-trigger-text">
+                        <span class="myth-tag">Community Concern</span>
+                        <span class="myth-question">"The hub managers wrote their own post-mortem. Of course it looks good."</span>
+                    </div>
+                    <div class="myth-chevron">▼</div>
+                </button>
+                <div class="myth-body"><div class="myth-body-inner">
+                    <div class="reality-block response-block">
+                        <span class="response-label">The Reality</span>
+                        <p>This report was compiled by a hub participant — that is disclosed in the header. The relevant question is not who wrote it, but whether the data can be independently verified. It can:</p>
+                        <ul>
+                            <li><strong>Funding amounts:</strong> Sourced from <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-cdh-contracts" target="_blank" style="color: #2353ff;">Intersect's published contract archive</a> — not self-reported. Every figure links to its source.</li>
+                            <li><strong>Milestones:</strong> 48 Milestone Acceptance Forms were DocuSign-verified by independent Intersect approvers (Hannah Williams, Duncan Soutar, Abbie Yeates) — not by the hub managers themselves.</li>
+                            <li><strong>Membership data:</strong> Sourced from Intersect's internal membership dashboard (<a href="https://docs.google.com/presentation/d/1LckpJMmmd4ctA9NUfA-yYwlVFI7HWiuihy1d94C9n5s/edit" target="_blank" style="color: #2353ff;">March 2025 report</a>), not hub self-reporting.</li>
+                            <li><strong>Event evidence:</strong> 185+ X/Twitter links, 30+ Luma event pages, 15+ video recordings — all public, all independently viewable.</li>
+                        </ul>
+                        <p>The author has a perspective — every author does. But the data is externally sourced, independently verifiable, and the methodology is transparent. Readers are encouraged to check every linked source.</p>
+                    </div>
+                </div></div>
+            <div class="myth-card" id="faq-4-4">
+                <button class="myth-trigger" onclick="toggleCard('faq-4-4')">
+                    <div class="myth-icon blue">🇪🇺</div>
+                    <div class="myth-trigger-text">
+                        <span class="myth-tag">Community Concern</span>
+                        <span class="myth-question">"Europe's numbers look weak compared to the other hubs. Was it a failure?"</span>
+                    </div>
+                    <div class="myth-chevron">▼</div>
+                </button>
+                <div class="myth-body"><div class="myth-body-inner">
+                    <div class="reality-block response-block">
+                        <span class="response-label">The Reality</span>
+                        <p>Europe's numbers reflect a fundamentally different contract — not a lower standard of performance. Comparing Europe's output directly to other hubs without acknowledging contract scope is misleading.</p>
+                        <ul>
+                            <li><strong>Shortest contract with fewest milestones:</strong> Europe had a 5-month contract (Sep 2024 – Feb 2025) with only 3 milestones — compared to 7–10 milestones for other hubs operating 6–12 months. The contract was scoped for a shorter engagement from the start.</li>
+                            <li><strong>No interim bridge contract:</strong> Europe was the only hub that did not receive a Phase 2 interim contract (Apr–Jun 2025). The other five hubs had three additional months of funded activity that Europe did not.</li>
+                            <li><strong>Different operational model:</strong> Clay Nation leveraged their existing presence at major European conferences and events (Cardano Summit, NFT Paris, Hosky Summit Gdansk) rather than building standalone hub infrastructure. This is a valid and cost-effective approach for a region where Cardano already has significant conference presence.</li>
+                            <li><strong>155 attendees at peak Town Hall</strong> — the highest single Town Hall attendance of any hub. This demonstrates strong engagement capacity when activated.</li>
+                            <li><strong>3 enterprise members</strong> — tied for the second-highest enterprise count, suggesting the conference-integrated model was effective at reaching institutional participants.</li>
+                        </ul>
+                        <p>Europe delivered on 100% of its contracted milestones within a narrower scope and shorter timeline. The lower volume numbers are a direct function of a smaller contract — not a reflection of execution quality. If anything, the European model offers a useful data point for what a lighter-touch, conference-integrated hub approach looks like compared to the ground-up community building done by other hubs.</p>
+                    </div>
+                    <div class="data-block">
+                        <span class="response-label">Europe vs. Program Average</span>
+                        <div class="data-row"><span class="dk">Contract duration</span><span class="dv">5 months (avg: 9 months)</span></div>
+                        <div class="data-row"><span class="dk">Milestones</span><span class="dv">3 of 3 completed (avg: 8.2)</span></div>
+                        <div class="data-row"><span class="dk">Interim contract</span><span class="dv">None (5 other hubs received one)</span></div>
+                        <div class="data-row"><span class="dk">Events</span><span class="dv">9 (avg: 27.8)</span></div>
+                        <div class="data-row"><span class="dk">Enterprise members</span><span class="dv">3 (avg: 2.7)</span></div>
+                        <div class="data-row"><span class="dk">Peak Town Hall</span><span class="dv">155 attendees (highest of any hub)</span></div>
+                    </div>
+                </div></div>
+            </div>
             </div>
         </div>
 
@@ -2945,7 +3511,8 @@
                 <p style="font-size: 0.9em; color: #888; margin-bottom: 10px;"><strong>Data Sources:</strong></p>
                 <ul style="font-size: 0.85em; color: #888; list-style: none; padding: 0;">
                     <li style="margin-bottom: 5px;">- <strong>Primary:</strong> 48 Milestone Acceptance Forms (MAF) - 35 original + 13 interim contracts - DocuSign-verified documents submitted to billing@intersectmbo.org</li>
-                    <li style="margin-bottom: 5px;">- <strong>Contract Data:</strong> <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts" target="_blank" style="color: #2353ff;">Intersect MBO - Membership and Community Committee Contracts</a></li>
+                    <li style="margin-bottom: 5px;">- <strong>Phase 1 Contracts:</strong> <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-cdh-contracts" target="_blank" style="color: #2353ff;">2024 CDH Contracts</a> · <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2024-intersect-cdh-and-grant-contracts/2024-intersect-contracts" target="_blank" style="color: #2353ff;">2024 Intersect Contracts</a></li>
+                    <li style="margin-bottom: 5px;">- <strong>Phase 2 Contracts:</strong> <a href="https://docs.intersectmbo.org/intersect-knowledge-base/archive/cardano-budget-archive/intersect-operational-services/2025-delivery-assurance-contract-updates/membership-and-community-committee-contracts" target="_blank" style="color: #2353ff;">2025 MCC Bridge Contracts</a></li>
                     <li style="margin-bottom: 5px;">- <strong>Hub Timeline & KPIs:</strong> Intersect Development Updates #13-#70 (May 2024 - July 2025) - <a href="https://intersectmbo.org/news" target="_blank" style="color: #2353ff;">intersectmbo.org/news</a></li>
                     <li style="margin-bottom: 5px;">- <strong>Community Hubs:</strong> <a href="https://docs.intersectmbo.org/intersect-overview/intersect-committees/membership-and-community-committee-mcc/community-hubs" target="_blank" style="color: #2353ff;">Community Hubs Documentation</a> · <a href="https://committees.docs.intersectmbo.org/groups-overview/working-groups/mcc-community-hubs-working-group" target="_blank" style="color: #2353ff;">Working Group KPIs</a></li>
                     <li style="margin-bottom: 5px;">- <strong>Event Reports:</strong> <a href="https://forum.cardano.org" target="_blank" style="color: #2353ff;">Cardano Forum</a></li>
@@ -3024,6 +3591,25 @@
             document.querySelectorAll('.hub-tab').forEach(t => {
                 if (t.getAttribute('onclick').includes(hubId)) t.classList.add('active');
             });
+            // Scroll to top of hub tabs section
+            const tabsSection = document.getElementById('hub-tabs-section');
+            if (tabsSection) tabsSection.scrollIntoView({ behavior: 'smooth' });
+            // Reset all subsections to expanded — they have stale maxHeight from when panel was hidden
+            if (panel) {
+                panel.querySelectorAll('.hub-section-header.collapsible').forEach(h => {
+                    h.classList.remove('collapsed');
+                });
+                panel.querySelectorAll('.subsection-content').forEach(w => {
+                    w.classList.remove('collapsed');
+                    w.style.maxHeight = 'none';
+                });
+                // After reflow, set correct maxHeight for future collapse animations
+                requestAnimationFrame(() => {
+                    panel.querySelectorAll('.subsection-content').forEach(w => {
+                        w.style.maxHeight = w.scrollHeight + 'px';
+                    });
+                });
+            }
         }
 
         // --- Collapsible h3 Subsections ---
