@@ -262,7 +262,7 @@
       ],
       "hub_applications_opened": "May 2024 (Update #13)"
     },
-    "version": "1.5",
+    "version": "1.6",
     "video_recordings": 15
   },
   "summary": {
@@ -352,7 +352,7 @@
       "languages_supported": 8,
       "countries_reached": 15,
       "hackathon_developers": "225+",
-      "university_students_engaged": "400+"
+      "university_students_engaged": "700+"
     },
     "combined_x_metrics": {
       "total_followers": 1141,
@@ -721,7 +721,7 @@
     {
       "hub_name": "Japan Hub",
       "region": "Asia",
-      "impact_summary": "Achieved ~30% of all Intersect individual memberships (492 members) from Japan alone. Hosted 20+ local meetups across 6 cities, comprehensive Japanese translations of governance documents, and weekly X Spaces. Successfully hosted Charles Hoskinson for Tech for Impact Summit and Tokyo Tech Lecture.",
+      "impact_summary": "Achieved ~30% of all Intersect individual memberships (533 individual members as of March 2025; was 492 in August 2024 per Update #28) from Japan alone. Hosted 20+ local meetups across 6 cities, comprehensive Japanese translations of governance documents, and weekly X Spaces. Successfully hosted Charles Hoskinson for Tech for Impact Summit and Tokyo Tech Lecture.",
       "hub_managers": [
         "Yuki Koriyama",
         "Yuta Oishi"
@@ -1038,7 +1038,10 @@
       ],
       "kpis": {
         "membership_share": "~30% of Intersect individual memberships",
-        "individual_members": 492,
+        "individual_members": 533,
+        "individual_members_as_of": "2025-03",
+        "individual_members_aug_2024": 492,
+        "individual_members_source": "Existing Community Hubs Report (March 2025 snapshot)",
         "total_local_meetups": 20,
         "meetup_cities": [
           "Tokyo",
@@ -1063,7 +1066,7 @@
           "Intersect document translations (videos and articles)"
         ],
         "notable_achievements": [
-          "~30% of all Intersect individual memberships from Japan (492 members)",
+          "~30% of all Intersect individual memberships from Japan (533 individual members as of March 2025)",
           "20+ local face-to-face meetups across Japan",
           "Weekly X Spaces plus localized in-person events",
           "Comprehensive Japanese translations of governance documents",
@@ -1521,7 +1524,8 @@
           "attendees": 110,
           "note": "First inter-regional hub town hall bringing together all 6 hubs"
         },
-        "university_students_reached": 400,
+        "university_students_reached": 700,
+      "university_students_breakdown": "400+ engineering students reached via the university workshop series + 225 students at UniHack 2025 (61 teams across 18 universities) + 108 certified at University of Kelaniya. Some overlap is possible across these groups; figure is a conservative roll-up.",
         "media_coverage": [
           "Siyatha News TV features",
           "DailyFT press",
@@ -1533,7 +1537,7 @@
           "Hosted first inter-regional hub town hall with 110 participants from all 6 hubs",
           "UniHack 2025: 225+ developers across 18 universities",
           "Visit from Governor of Central Bank of Sri Lanka at Industry Expo",
-          "University workshop series reaching 400+ engineering students",
+          "University workshop series reaching 400+ engineering students (700+ total students engaged when including UniHack 225 and Uni Kelaniya 108 certified)",
           "Content produced in English, Tamil, and Sinhala",
           "Intersect 'Get to Know' video series explaining five pillars of Intersect"
         ]
@@ -1548,7 +1552,7 @@
         "West Africa",
         "East Africa"
       ],
-      "impact_summary": "Launched localized hubs in Ghana, Kenya, and DRC with 584+ total attendees. Facilitated multi-language support (English, French, Swahili) and active DRep engagement discussions. 96 attendees at CC Elections X Space and 124 at African DReps governance panel.",
+      "impact_summary": "Launched localized hubs in Ghana, Kenya, and DRC with 584 attendees at the three sub-hub launches (1,391 total across all WADA events). Facilitated multi-language support (English, French, Swahili) and active DRep engagement discussions. 96 attendees at CC Elections X Space and 124 at African DReps governance panel.",
       "project_lead": "Josh Fielding",
       "intersect_approver": "Hannah Williams",
       "role": "Community Hub Lead",
@@ -1915,7 +1919,9 @@
         }
       ],
       "kpis": {
-        "total_attendees_all_regions": 584,
+        "total_attendees_sub_hub_launches": 584,
+        "total_attendees_sub_hub_launches_note": "Sum of Ghana (179) + Kenya (157) + DRC (248) sub-hub launch events only. Total attendees across all WADA events (including X Spaces, town halls, AMM, and other engagements) = 1,391 per March 2025 Existing Community Hubs Report.",
+        "total_attendees_all_events": 1391,
         "localized_hubs": [
           "Ghana",
           "Kenya",
@@ -1931,7 +1937,7 @@
         ],
         "notable_achievements": [
           "Launched localized hubs in Ghana, Kenya, and DRC",
-          "Total 584+ attendees across all regional events",
+          "584 attendees across the three sub-hub launch events (Ghana, Kenya, DRC); 1,391 total attendees across all WADA events per March 2025 snapshot",
           "Weekly virtual meetings and regular town halls",
           "96 attendees at CC Elections X Space",
           "124 attendees at African DReps governance panel",
@@ -3020,7 +3026,9 @@
       "paid_members_aug_2024": 800,
       "new_members_since_may_30_2024": 500,
       "japan_membership_share": "~30%",
-      "japan_individual_members": 492,
+      "japan_individual_members": 533,
+      "japan_individual_members_as_of": "2025-03",
+      "japan_individual_members_aug_2024": 492,
       "hub_membership_contribution": "35% of all individual memberships attributed to hubs"
     },
     "key_approvers": [
@@ -3168,18 +3176,23 @@
     "usd_hubs_only": {
       "total_spend": 161000,
       "individual_members": 1249,
-      "events": 158,
+      "events": 164,
+      "events_note": "NA event count was updated from 12 (March 2025 snapshot) to 18 (NA hub's own end-of-program KPI rollup). Other USD hubs use the March 2025 snapshot figure and may also undercount Phase 2 activity.",
       "milestones": 46,
       "adjusted_attendees": 27279
     },
     "program_wide_metrics": {
       "cost_per_individual_member": 128.9,
-      "cost_per_event": 1019,
-      "cost_per_attendee": 5.9,
+      "cost_per_event": 982,
+      "cost_per_attendee": 4.58,
+      "cost_per_attendee_note": "$125,000 (USD hubs minus Sri Lanka's $36K) divided by 27,279 adjusted attendees. Sri Lanka is excluded from both numerator and denominator because its 165,122-attendee figure reflects total reach of large conferences/radio coverage, not hub-organized attendance.",
       "cost_per_milestone": 3500,
-      "avg_monthly_cost_per_hub": 2095,
-      "avg_contract_per_hub": 29333,
+      "avg_monthly_cost_per_hub": 2640,
+      "avg_monthly_cost_per_hub_note": "$161,000 / 61.6 hub-months. Per-hub durations: Japan 14, LATAM 13, SL 13, WADA 12, NA 9.4. Range: $2,000/mo (Japan) to $3,231/mo (LATAM). NA = $2,660/mo.",
+      "avg_contract_per_hub": 32200,
+      "avg_contract_per_hub_note": "$161,000 Phase 1 USD / 5 USD-contracted hubs (Europe excluded — ADA contract)",
       "pct_intersect_members_in_hub_regions": 70,
+      "pct_intersect_members_in_hub_regions_note": "1,268 hub individual members / ~1,799 total Intersect individual members per March 2025 Existing Community Hubs Report. The August 2024 '35% of members attributed to hubs' figure (Update #28) is a different metric (direct recruitment) and is not directly comparable.",
       "milestone_completion_rate": 100
     },
     "per_hub_efficiency": {
@@ -3195,9 +3208,14 @@
       "north_america": {
         "phase_1_usd": 25000,
         "members": 239,
-        "events": 12,
+        "events": 18,
+        "events_source": "NA hub's own end-of-program KPI rollup (kpis.total_hub_events). Was 12 in the March 12, 2025 snapshot.",
         "cost_per_member": 104.6,
-        "cost_per_event": 2083,
+        "cost_per_event": 1389,
+        "cost_per_milestone": 2778,
+        "milestones": 9,
+        "duration_months": 9.4,
+        "cost_per_month": 2660,
         "enterprise_members": 6
       },
       "sri_lanka": {

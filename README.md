@@ -46,7 +46,7 @@ The MCC's 2026 budget proposal covers seven work packages totalling $300,000 USD
 | WADA | Africa | 8 |
 | Europe (Clay Nation) | Europe | 3 |
 
-**Key Statistics:** 167 events · 293,000+ attendees · 70% of individual memberships within hub regions · 49 milestones completed · 48 MAF documents (DocuSign-verified)
+**Key Statistics:** 173 events · 293,000+ attendees · 70% of individual memberships within hub regions · 49 milestones completed · 48 MAF documents (DocuSign-verified)
 
 **Data Sources:** Milestone Acceptance Forms, Intersect Development Updates #13–#70, public records (X posts, Luma events, YouTube recordings), [Community Hubs Stats (March 2025)](https://docs.google.com/presentation/d/1LckpJMmmd4ctA9NUfA-yYwlVFI7HWiuihy1d94C9n5s/edit)
 
